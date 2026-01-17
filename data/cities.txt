@@ -1,0 +1,6 @@
+# Test cities for climate data fetching
+# Format: One city per line (can also use CSV with city,country,latitude,longitude columns)
+
+Chicago
+Paris
+Tokyo
