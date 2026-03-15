@@ -1,0 +1,241 @@
+city_id,city_name,country,month,avg_high_temp_c,avg_low_temp_c,avg_precip_mm
+1392685764,Tokyo,Japan,1,9.31,0.26,0.99
+1392685764,Tokyo,Japan,2,10.3,1.14,2.36
+1392685764,Tokyo,Japan,3,14.66,5.42,4.61
+1392685764,Tokyo,Japan,4,19.21,11.05,5.45
+1392685764,Tokyo,Japan,5,22.2,14.58,6.53
+1392685764,Tokyo,Japan,6,25.88,19.04,7.37
+1392685764,Tokyo,Japan,7,31.47,24.4,3.17
+1392685764,Tokyo,Japan,8,31.86,25.27,4.19
+1392685764,Tokyo,Japan,9,29.08,22.53,6.43
+1392685764,Tokyo,Japan,10,22.42,14.63,4.02
+1392685764,Tokyo,Japan,11,17.72,9.25,3.43
+1392685764,Tokyo,Japan,12,12.09,3.02,1.05
+1764068610,Bangkok,Thailand,1,32.0,22.2,0.64
+1764068610,Bangkok,Thailand,2,32.23,23.88,2.15
+1764068610,Bangkok,Thailand,3,33.02,25.61,2.11
+1764068610,Bangkok,Thailand,4,34.87,27.18,2.06
+1764068610,Bangkok,Thailand,5,33.46,26.4,6.77
+1764068610,Bangkok,Thailand,6,32.64,25.98,5.92
+1764068610,Bangkok,Thailand,7,31.51,25.63,8.61
+1764068610,Bangkok,Thailand,8,31.84,25.42,7.61
+1764068610,Bangkok,Thailand,9,31.09,25.07,12.15
+1764068610,Bangkok,Thailand,10,31.08,24.27,7.36
+1764068610,Bangkok,Thailand,11,31.74,23.86,2.86
+1764068610,Bangkok,Thailand,12,31.64,22.68,0.57
+1702341327,Singapore,Singapore,1,28.82,23.72,9.8
+1702341327,Singapore,Singapore,2,29.58,24.13,6.12
+1702341327,Singapore,Singapore,3,30.07,24.51,5.87
+1702341327,Singapore,Singapore,4,30.05,24.99,6.7
+1702341327,Singapore,Singapore,5,30.18,26.0,7.81
+1702341327,Singapore,Singapore,6,29.31,25.28,10.31
+1702341327,Singapore,Singapore,7,29.7,25.61,5.94
+1702341327,Singapore,Singapore,8,29.36,24.96,8.44
+1702341327,Singapore,Singapore,9,29.59,25.18,7.15
+1702341327,Singapore,Singapore,10,29.95,24.55,7.24
+1702341327,Singapore,Singapore,11,29.58,24.14,12.19
+1702341327,Singapore,Singapore,12,29.4,24.08,9.42
+1784736618,Dubai,United Arab Emirates,1,24.09,16.07,0.88
+1784736618,Dubai,United Arab Emirates,2,24.93,16.74,0.93
+1784736618,Dubai,United Arab Emirates,3,28.35,19.01,0.52
+1784736618,Dubai,United Arab Emirates,4,31.06,20.92,1.32
+1784736618,Dubai,United Arab Emirates,5,35.62,25.03,0.16
+1784736618,Dubai,United Arab Emirates,6,39.29,28.35,0.0
+1784736618,Dubai,United Arab Emirates,7,40.32,31.12,0.28
+1784736618,Dubai,United Arab Emirates,8,41.05,30.52,0.0
+1784736618,Dubai,United Arab Emirates,9,38.94,28.31,0.01
+1784736618,Dubai,United Arab Emirates,10,35.25,25.43,0.1
+1784736618,Dubai,United Arab Emirates,11,31.24,22.21,0.27
+1784736618,Dubai,United Arab Emirates,12,26.65,17.9,0.4
+1356226629,Mumbai,India,1,29.0,18.47,0.07
+1356226629,Mumbai,India,2,31.36,19.44,0.0
+1356226629,Mumbai,India,3,33.13,22.34,0.17
+1356226629,Mumbai,India,4,33.85,24.88,0.01
+1356226629,Mumbai,India,5,33.34,27.25,0.35
+1356226629,Mumbai,India,6,30.72,26.51,13.78
+1356226629,Mumbai,India,7,27.82,25.26,33.84
+1356226629,Mumbai,India,8,28.42,25.25,11.89
+1356226629,Mumbai,India,9,28.49,24.74,15.35
+1356226629,Mumbai,India,10,31.16,23.83,3.06
+1356226629,Mumbai,India,11,32.85,21.96,0.06
+1356226629,Mumbai,India,12,31.51,21.08,0.02
+1410836482,Seoul,"Korea, South",1,2.05,-6.99,0.64
+1410836482,Seoul,"Korea, South",2,5.17,-4.44,0.83
+1410836482,Seoul,"Korea, South",3,12.03,0.24,1.62
+1410836482,Seoul,"Korea, South",4,18.85,7.26,1.92
+1410836482,Seoul,"Korea, South",5,22.81,11.69,3.35
+1410836482,Seoul,"Korea, South",6,27.2,17.68,7.38
+1410836482,Seoul,"Korea, South",7,28.93,22.44,12.48
+1410836482,Seoul,"Korea, South",8,29.26,22.62,10.29
+1410836482,Seoul,"Korea, South",9,26.29,18.27,6.68
+1410836482,Seoul,"Korea, South",10,18.54,9.17,3.18
+1410836482,Seoul,"Korea, South",11,11.92,2.36,2.29
+1410836482,Seoul,"Korea, South",12,2.41,-5.68,1.02
+1250015082,Paris,France,1,7.35,1.75,1.96
+1250015082,Paris,France,2,10.63,3.61,1.62
+1250015082,Paris,France,3,13.17,4.65,2.73
+1250015082,Paris,France,4,15.02,5.91,2.41
+1250015082,Paris,France,5,19.73,10.24,2.47
+1250015082,Paris,France,6,23.74,13.33,2.83
+1250015082,Paris,France,7,25.68,14.97,2.09
+1250015082,Paris,France,8,25.73,15.61,3.29
+1250015082,Paris,France,9,21.82,12.61,3.06
+1250015082,Paris,France,10,18.55,10.53,3.32
+1250015082,Paris,France,11,11.72,6.07,2.54
+1250015082,Paris,France,12,8.34,3.78,2.42
+1826645935,London,United Kingdom,1,7.94,1.6,1.56
+1826645935,London,United Kingdom,2,10.68,3.96,2.12
+1826645935,London,United Kingdom,3,11.63,4.46,2.45
+1826645935,London,United Kingdom,4,13.85,5.22,1.75
+1826645935,London,United Kingdom,5,17.97,8.94,2.14
+1826645935,London,United Kingdom,6,21.5,11.24,1.41
+1826645935,London,United Kingdom,7,22.78,13.67,2.03
+1826645935,London,United Kingdom,8,23.42,13.88,1.22
+1826645935,London,United Kingdom,9,20.53,12.09,3.08
+1826645935,London,United Kingdom,10,16.69,9.49,2.73
+1826645935,London,United Kingdom,11,11.34,5.7,3.24
+1826645935,London,United Kingdom,12,8.82,4.26,1.89
+1724594040,Barcelona,Spain,1,14.2,4.5,0.59
+1724594040,Barcelona,Spain,2,15.7,6.02,0.99
+1724594040,Barcelona,Spain,3,16.7,8.96,1.89
+1724594040,Barcelona,Spain,4,18.72,9.91,2.46
+1724594040,Barcelona,Spain,5,21.78,13.84,1.98
+1724594040,Barcelona,Spain,6,26.32,19.08,1.62
+1724594040,Barcelona,Spain,7,29.26,21.69,1.13
+1724594040,Barcelona,Spain,8,30.04,22.13,1.53
+1724594040,Barcelona,Spain,9,25.84,17.97,2.6
+1724594040,Barcelona,Spain,10,23.42,15.92,2.52
+1724594040,Barcelona,Spain,11,19.03,10.73,1.75
+1724594040,Barcelona,Spain,12,15.89,6.19,0.79
+1380382862,Rome,Italy,1,13.0,4.35,2.0
+1380382862,Rome,Italy,2,14.98,4.84,2.04
+1380382862,Rome,Italy,3,16.91,6.73,2.68
+1380382862,Rome,Italy,4,19.61,8.63,1.81
+1380382862,Rome,Italy,5,24.34,13.69,2.98
+1380382862,Rome,Italy,6,30.31,18.31,1.5
+1380382862,Rome,Italy,7,34.66,21.95,0.37
+1380382862,Rome,Italy,8,33.21,21.51,1.59
+1380382862,Rome,Italy,9,27.72,17.29,3.76
+1380382862,Rome,Italy,10,24.35,14.87,2.75
+1380382862,Rome,Italy,11,17.82,9.16,4.35
+1380382862,Rome,Italy,12,14.28,6.39,3.74
+1528355309,Amsterdam,Netherlands,1,7.23,2.71,3.02
+1528355309,Amsterdam,Netherlands,2,9.34,4.04,3.46
+1528355309,Amsterdam,Netherlands,3,11.03,3.8,2.05
+1528355309,Amsterdam,Netherlands,4,12.76,5.55,2.84
+1528355309,Amsterdam,Netherlands,5,17.86,9.56,3.12
+1528355309,Amsterdam,Netherlands,6,20.6,12.38,2.27
+1528355309,Amsterdam,Netherlands,7,21.18,13.9,3.18
+1528355309,Amsterdam,Netherlands,8,22.53,14.56,1.96
+1528355309,Amsterdam,Netherlands,9,20.21,12.36,2.97
+1528355309,Amsterdam,Netherlands,10,16.05,10.1,3.29
+1528355309,Amsterdam,Netherlands,11,10.33,5.42,3.87
+1528355309,Amsterdam,Netherlands,12,7.59,3.5,3.03
+1840034016,New York,United States,1,5.48,-1.99,4.52
+1840034016,New York,United States,2,7.1,-1.84,2.55
+1840034016,New York,United States,3,10.75,1.72,4.68
+1840034016,New York,United States,4,15.51,6.51,4.09
+1840034016,New York,United States,5,20.68,11.72,2.79
+1840034016,New York,United States,6,25.89,16.78,2.55
+1840034016,New York,United States,7,29.56,20.99,3.62
+1840034016,New York,United States,8,28.31,19.78,4.08
+1840034016,New York,United States,9,24.6,15.99,3.93
+1840034016,New York,United States,10,19.02,9.94,3.92
+1840034016,New York,United States,11,12.99,4.74,2.6
+1840034016,New York,United States,12,7.02,-0.14,4.65
+1484247881,Mexico City,Mexico,1,23.01,7.14,0.14
+1484247881,Mexico City,Mexico,2,24.95,7.54,0.25
+1484247881,Mexico City,Mexico,3,27.64,9.72,0.35
+1484247881,Mexico City,Mexico,4,27.99,11.98,0.82
+1484247881,Mexico City,Mexico,5,29.17,13.36,1.5
+1484247881,Mexico City,Mexico,6,27.48,13.74,4.04
+1484247881,Mexico City,Mexico,7,23.38,12.88,8.25
+1484247881,Mexico City,Mexico,8,23.09,12.51,7.99
+1484247881,Mexico City,Mexico,9,23.24,12.43,6.77
+1484247881,Mexico City,Mexico,10,22.72,11.02,2.61
+1484247881,Mexico City,Mexico,11,24.54,9.59,0.4
+1484247881,Mexico City,Mexico,12,21.54,7.7,0.46
+1076887657,Rio de Janeiro,Brazil,1,28.75,23.1,6.34
+1076887657,Rio de Janeiro,Brazil,2,29.38,23.6,3.86
+1076887657,Rio de Janeiro,Brazil,3,29.29,23.23,4.0
+1076887657,Rio de Janeiro,Brazil,4,27.01,21.32,3.36
+1076887657,Rio de Janeiro,Brazil,5,25.92,19.95,1.53
+1076887657,Rio de Janeiro,Brazil,6,25.26,18.58,1.32
+1076887657,Rio de Janeiro,Brazil,7,25.0,18.17,1.36
+1076887657,Rio de Janeiro,Brazil,8,25.2,18.09,2.63
+1076887657,Rio de Janeiro,Brazil,9,26.59,19.44,1.92
+1076887657,Rio de Janeiro,Brazil,10,26.61,20.67,2.76
+1076887657,Rio de Janeiro,Brazil,11,27.25,21.11,3.54
+1076887657,Rio de Janeiro,Brazil,12,28.46,22.25,4.79
+1032717330,Buenos Aires,Argentina,1,29.01,21.46,2.06
+1032717330,Buenos Aires,Argentina,2,27.94,20.06,3.11
+1032717330,Buenos Aires,Argentina,3,25.74,19.06,5.91
+1032717330,Buenos Aires,Argentina,4,20.83,14.23,3.23
+1032717330,Buenos Aires,Argentina,5,16.62,9.87,1.58
+1032717330,Buenos Aires,Argentina,6,14.9,8.19,0.93
+1032717330,Buenos Aires,Argentina,7,14.33,7.26,1.45
+1032717330,Buenos Aires,Argentina,8,15.68,8.49,2.41
+1032717330,Buenos Aires,Argentina,9,18.61,10.7,1.21
+1032717330,Buenos Aires,Argentina,10,21.89,13.45,2.03
+1032717330,Buenos Aires,Argentina,11,25.27,16.93,3.37
+1032717330,Buenos Aires,Argentina,12,26.86,18.6,2.63
+1124825478,Vancouver,Canada,1,5.99,1.38,8.01
+1124825478,Vancouver,Canada,2,6.36,1.44,4.46
+1124825478,Vancouver,Canada,3,8.84,2.8,4.89
+1124825478,Vancouver,Canada,4,10.63,4.29,4.95
+1124825478,Vancouver,Canada,5,15.39,8.67,2.74
+1124825478,Vancouver,Canada,6,18.43,11.69,2.69
+1124825478,Vancouver,Canada,7,22.85,14.91,0.96
+1124825478,Vancouver,Canada,8,22.96,15.4,1.3
+1124825478,Vancouver,Canada,9,18.89,12.44,2.14
+1124825478,Vancouver,Canada,10,14.12,8.6,7.11
+1124825478,Vancouver,Canada,11,7.77,3.1,8.09
+1124825478,Vancouver,Canada,12,6.31,2.03,8.73
+1710680650,Cape Town,South Africa,1,26.17,17.1,0.36
+1710680650,Cape Town,South Africa,2,25.89,17.18,0.56
+1710680650,Cape Town,South Africa,3,24.02,16.03,1.5
+1710680650,Cape Town,South Africa,4,21.36,13.81,1.52
+1710680650,Cape Town,South Africa,5,19.11,11.87,1.7
+1710680650,Cape Town,South Africa,6,18.1,11.21,5.14
+1710680650,Cape Town,South Africa,7,15.91,9.43,4.78
+1710680650,Cape Town,South Africa,8,16.67,9.47,3.16
+1710680650,Cape Town,South Africa,9,17.46,10.26,2.03
+1710680650,Cape Town,South Africa,10,22.58,13.5,0.48
+1710680650,Cape Town,South Africa,11,23.35,14.57,0.57
+1710680650,Cape Town,South Africa,12,24.09,16.18,1.22
+1504175315,Casablanca,Morocco,1,18.97,9.45,0.86
+1504175315,Casablanca,Morocco,2,19.03,10.38,1.63
+1504175315,Casablanca,Morocco,3,19.19,11.42,2.43
+1504175315,Casablanca,Morocco,4,21.47,13.12,0.7
+1504175315,Casablanca,Morocco,5,23.05,15.36,0.89
+1504175315,Casablanca,Morocco,6,25.13,18.42,0.38
+1504175315,Casablanca,Morocco,7,27.38,19.85,0.02
+1504175315,Casablanca,Morocco,8,27.73,20.15,0.09
+1504175315,Casablanca,Morocco,9,25.79,18.48,0.32
+1504175315,Casablanca,Morocco,10,26.05,17.34,1.23
+1504175315,Casablanca,Morocco,11,22.76,13.82,0.5
+1504175315,Casablanca,Morocco,12,19.97,11.12,1.29
+1036074917,Sydney,Australia,1,25.79,19.22,4.36
+1036074917,Sydney,Australia,2,26.09,18.77,4.29
+1036074917,Sydney,Australia,3,25.04,17.75,5.5
+1036074917,Sydney,Australia,4,21.98,14.11,4.58
+1036074917,Sydney,Australia,5,19.0,10.76,3.32
+1036074917,Sydney,Australia,6,16.78,7.98,1.92
+1036074917,Sydney,Australia,7,16.94,8.43,3.54
+1036074917,Sydney,Australia,8,18.94,9.39,1.5
+1036074917,Sydney,Australia,9,21.3,10.81,1.81
+1036074917,Sydney,Australia,10,22.38,12.88,2.75
+1036074917,Sydney,Australia,11,23.57,15.47,3.05
+1036074917,Sydney,Australia,12,25.52,17.38,2.12
+1554435911,Auckland,New Zealand,1,22.95,17.87,4.71
+1554435911,Auckland,New Zealand,2,22.95,17.66,5.18
+1554435911,Auckland,New Zealand,3,21.31,15.62,2.64
+1554435911,Auckland,New Zealand,4,19.78,14.98,3.29
+1554435911,Auckland,New Zealand,5,17.24,12.51,3.74
+1554435911,Auckland,New Zealand,6,15.52,11.17,3.7
+1554435911,Auckland,New Zealand,7,14.68,9.94,5.07
+1554435911,Auckland,New Zealand,8,14.65,8.86,3.47
+1554435911,Auckland,New Zealand,9,15.93,10.83,3.71
+1554435911,Auckland,New Zealand,10,17.06,12.05,3.9
+1554435911,Auckland,New Zealand,11,19.26,13.61,4.56
+1554435911,Auckland,New Zealand,12,21.64,16.25,4.07
