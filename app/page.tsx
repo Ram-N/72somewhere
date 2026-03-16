@@ -251,6 +251,26 @@ export default function Home() {
                 </button>
               </div>
               <div className="relative pt-6 pb-2">
+                {/* Floating label for min temp */}
+                <div
+                  className="absolute -top-8 bg-blue-600 text-white px-2 py-1 rounded text-sm font-medium"
+                  style={{
+                    left: `calc(${((minTemp - sliderMin) / (sliderMax - sliderMin)) * 100}% - 20px)`,
+                  }}
+                >
+                  {minTemp}°{tempUnit}
+                </div>
+
+                {/* Floating label for max temp */}
+                <div
+                  className="absolute -top-8 bg-blue-600 text-white px-2 py-1 rounded text-sm font-medium"
+                  style={{
+                    left: `calc(${((maxTemp - sliderMin) / (sliderMax - sliderMin)) * 100}% - 20px)`,
+                  }}
+                >
+                  {maxTemp}°{tempUnit}
+                </div>
+
                 <input
                   type="range"
                   min={sliderMin}
@@ -315,7 +335,7 @@ export default function Home() {
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900">
-                Perfect Destinations for You
+                {startDate && endDate ? `${startDate} to ${endDate}` : 'Date range'} • {minTemp}°{tempUnit}-{maxTemp}°{tempUnit}
               </h2>
 
               {/* View Mode Toggle */}
