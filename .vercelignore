@@ -1,0 +1,22 @@
+# Data files (not needed for deployment) - parent directory
+../data/
+../*.csv
+../*.zip
+../*.xlsx
+
+# Python virtual environments
+../venv/
+../env/
+../*.pyc
+../__pycache__/
+
+# Scripts (backend processing, not for frontend)
+../data/scripts/
+
+# Progress tracking files
+../*_progress*.json
+
+# Development files
+../TODO.md
+../.DS_Store
+../*.Zone.Identifier

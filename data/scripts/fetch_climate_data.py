@@ -27,7 +27,7 @@ import urllib.error
 API_BASE_URL = "https://archive-api.open-meteo.com/v1/archive"
 START_DATE = "2022-01-01"
 END_DATE = "2024-12-31"
-DELAY_BETWEEN_CALLS = 1.0  # seconds (respectful rate limiting)
+DELAY_BETWEEN_CALLS = 80.0  # seconds (rate limit: ~78 API calls per city)
 MAX_RETRIES = 3
 RETRY_DELAY = 5.0  # seconds
 
@@ -182,19 +182,33 @@ def save_progress(progress_file: Path, progress: Dict):
 def main():
     """Fetch climate data for all cities and save to CSV."""
     import sys
+    import argparse
 
     # Parse command line arguments
-    if len(sys.argv) > 1:
-        input_filename = sys.argv[1]
-    else:
-        input_filename = "worldcities_top20.csv"
+    parser = argparse.ArgumentParser(description='Fetch climate data from Open-Meteo API')
+    parser.add_argument('input_file', nargs='?', default='worldcities_top20.csv',
+                        help='Input CSV file with city data (default: worldcities_top20.csv)')
+    parser.add_argument('--start-row', type=int, default=None,
+                        help='Start row index for batch processing (0-indexed, inclusive)')
+    parser.add_argument('--end-row', type=int, default=None,
+                        help='End row index for batch processing (0-indexed, inclusive)')
+    parser.add_argument('--batch-name', type=str, default=None,
+                        help='Custom batch name for progress/output files (e.g., "batch1")')
+
+    args = parser.parse_args()
+    input_filename = args.input_file
 
     # Set up paths
     script_dir = Path(__file__).parent
     data_dir = script_dir.parent
     input_file = data_dir / input_filename
-    output_file = data_dir / f"climate_data_{input_filename.replace('worldcities_', '').replace('.csv', '')}.csv"
-    progress_file = data_dir / f"climate_fetch_progress_{input_filename.replace('.csv', '')}.json"
+
+    # Generate file names with batch suffix if provided
+    base_name = input_filename.replace('worldcities_', '').replace('.csv', '')
+    batch_suffix = f"_{args.batch_name}" if args.batch_name else ""
+
+    output_file = data_dir / f"climate_data_{base_name}{batch_suffix}.csv"
+    progress_file = data_dir / f"climate_fetch_progress_{input_filename.replace('.csv', '')}{batch_suffix}.json"
 
     if not input_file.exists():
         print(f"Error: Input file not found: {input_file}")
@@ -208,6 +222,15 @@ def main():
             cities.append(row)
 
     print(f"Loaded {len(cities)} cities from {input_file.name}")
+
+    # Apply batch filtering if specified
+    if args.start_row is not None or args.end_row is not None:
+        start = args.start_row if args.start_row is not None else 0
+        end = args.end_row + 1 if args.end_row is not None else len(cities)
+        cities = cities[start:end]
+        print(f"Batch mode: Processing rows {start} to {end-1} ({len(cities)} cities)")
+        if args.batch_name:
+            print(f"Batch name: {args.batch_name}")
 
     # Load progress
     progress = load_progress(progress_file)
