@@ -1,8 +1,8 @@
 {
   "created": "2026-03-15T16:02:33.343201",
-  "last_updated": "2026-03-18T22:59:34.476077",
+  "last_updated": "2026-03-18T23:26:29.265081",
   "total_cities": 510,
-  "completed_count": 140,
+  "completed_count": 160,
   "failed_count": 0,
   "cities": [
     {
@@ -1360,8 +1360,8 @@
       "city_id": "1250774071",
       "city_name": "Marseille",
       "country": "France",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.804782",
       "attempt_count": 1
     },
     {
@@ -1369,8 +1369,8 @@
       "city_id": "1250196189",
       "city_name": "Lyon",
       "country": "France",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805100",
       "attempt_count": 1
     },
     {
@@ -1378,8 +1378,8 @@
       "city_id": "1250258110",
       "city_name": "Toulouse",
       "country": "France",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805105",
       "attempt_count": 1
     },
     {
@@ -1387,8 +1387,8 @@
       "city_id": "1254304969",
       "city_name": "Cayenne",
       "country": "French Guiana",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805109",
       "attempt_count": 1
     },
     {
@@ -1396,8 +1396,8 @@
       "city_id": "1258907380",
       "city_name": "Papeete",
       "country": "French Polynesia",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805111",
       "attempt_count": 1
     },
     {
@@ -1405,8 +1405,8 @@
       "city_id": "1266952885",
       "city_name": "Libreville",
       "country": "Gabon",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805114",
       "attempt_count": 1
     },
     {
@@ -1414,8 +1414,8 @@
       "city_id": "1270723713",
       "city_name": "Banjul",
       "country": "Gambia, The",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805116",
       "attempt_count": 1
     },
     {
@@ -1423,8 +1423,8 @@
       "city_id": "1916116052",
       "city_name": "Gaza",
       "country": "Gaza Strip",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805118",
       "attempt_count": 1
     },
     {
@@ -1432,8 +1432,8 @@
       "city_id": "1268203191",
       "city_name": "Tbilisi",
       "country": "Georgia",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805120",
       "attempt_count": 1
     },
     {
@@ -1441,8 +1441,8 @@
       "city_id": "1276451290",
       "city_name": "Berlin",
       "country": "Germany",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:11:51.805123",
       "attempt_count": 1
     },
     {
@@ -1450,180 +1450,180 @@
       "city_id": "1276171358",
       "city_name": "Stuttgart",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.584994",
+      "attempt_count": 1
     },
     {
       "index": 161,
       "city_id": "1276692352",
       "city_name": "Munich",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585043",
+      "attempt_count": 1
     },
     {
       "index": 162,
       "city_id": "1276041799",
       "city_name": "Hamburg",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585047",
+      "attempt_count": 1
     },
     {
       "index": 163,
       "city_id": "1276015998",
       "city_name": "Cologne",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585049",
+      "attempt_count": 1
     },
     {
       "index": 164,
       "city_id": "1276054552",
       "city_name": "Frankfurt",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585051",
+      "attempt_count": 1
     },
     {
       "index": 165,
       "city_id": "1276615258",
       "city_name": "Dusseldorf",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585052",
+      "attempt_count": 1
     },
     {
       "index": 166,
       "city_id": "1276563678",
       "city_name": "Leipzig",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585054",
+      "attempt_count": 1
     },
     {
       "index": 167,
       "city_id": "1276562886",
       "city_name": "Dortmund",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585056",
+      "attempt_count": 1
     },
     {
       "index": 168,
       "city_id": "1276769247",
       "city_name": "Essen",
       "country": "Germany",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585058",
+      "attempt_count": 1
     },
     {
       "index": 169,
       "city_id": "1288181103",
       "city_name": "Kumasi",
       "country": "Ghana",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:26:05.585060",
+      "attempt_count": 1
     },
     {
       "index": 170,
       "city_id": "1288164978",
       "city_name": "Boankra",
       "country": "Ghana",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 171,
       "city_id": "1288299415",
       "city_name": "Accra",
       "country": "Ghana",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 172,
       "city_id": "1292385245",
       "city_name": "Gibraltar",
       "country": "Gibraltar",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 173,
       "city_id": "1300715560",
       "city_name": "Athens",
       "country": "Greece",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 174,
       "city_id": "1300397999",
       "city_name": "Thessaloniki",
       "country": "Greece",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 175,
       "city_id": "1304028354",
       "city_name": "Nuuk",
       "country": "Greenland",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 176,
       "city_id": "1308891766",
       "city_name": "Saint George's",
       "country": "Grenada",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 177,
       "city_id": "1312938008",
       "city_name": "Basse-Terre",
       "country": "Guadeloupe",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 178,
       "city_id": "1316937540",
       "city_name": "Hagta",
       "country": "Guam",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 179,
       "city_id": "1320197916",
       "city_name": "Guatemala City",
       "country": "Guatemala",
-      "status": "pending",
+      "status": "processing",
       "completed_at": null,
-      "attempt_count": 0
+      "attempt_count": 1
     },
     {
       "index": 180,

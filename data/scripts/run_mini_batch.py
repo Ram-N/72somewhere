@@ -140,6 +140,18 @@ class CityIndexTracker:
         print("=" * 60)
 
 
+def chime():
+    """Play a short chime via Windows PowerShell (WSL interop)."""
+    try:
+        subprocess.run(
+            ['powershell.exe', '-c',
+             '[console]::beep(392,200); [console]::beep(523,200); [console]::beep(659,200); [console]::beep(784,200); [console]::beep(1047,600)'],
+            capture_output=True
+        )
+    except Exception:
+        print('\a')  # fallback: terminal bell
+
+
 def run_fetch_script(cities_file: Path, start_row: int, end_row: int, batch_size: int) -> bool:
     """Run the fetch_climate_data.py script for a batch."""
     script_path = Path(__file__).parent / "fetch_climate_data.py"
@@ -228,6 +240,7 @@ def main():
     if not batch:
         print("\n🎉 All cities have been processed!")
         tracker.print_status()
+        chime()
         return 0
 
     # Display batch info
@@ -256,9 +269,11 @@ def main():
     if success:
         tracker.mark_completed(indices)
         print("\n✓ Batch completed successfully!")
+        chime()
     else:
         tracker.mark_failed(indices)
         print("\n✗ Batch failed. Cities marked as failed in index.")
+        chime()
 
     # Show updated status
     print()

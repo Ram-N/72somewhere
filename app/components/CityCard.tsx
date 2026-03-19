@@ -8,6 +8,7 @@ import {
   Bar,
   XAxis,
   YAxis,
+  CartesianGrid,
   Tooltip,
   ReferenceArea,
   ResponsiveContainer,
@@ -149,36 +150,42 @@ export default function CityCard({
 
   // Build chart data (all 12 months)
   const chartData =
-    yearData?.map((m) => ({
-      label: MONTH_LABELS[m.month - 1],
-      high: convertTemp(m.avg_high_temp_c, tempUnit),
-      low: convertTemp(m.avg_low_temp_c, tempUnit),
-      avg: convertTemp((m.avg_high_temp_c + m.avg_low_temp_c) / 2, tempUnit),
-      precip: m.avg_precip_mm,
-      inSearch: searchMonths.includes(m.month),
-    })) ?? [];
+    yearData?.map((m) => {
+      const highTemp = convertTemp(m.avg_high_temp_c, tempUnit);
+      const lowTemp = convertTemp(m.avg_low_temp_c, tempUnit);
+      return {
+        label: MONTH_LABELS[m.month - 1],
+        high: highTemp,
+        low: lowTemp,
+        avg: convertTemp((m.avg_high_temp_c + m.avg_low_temp_c) / 2, tempUnit),
+        precip: m.avg_precip_mm,
+        bandLow: lowTemp,
+        bandRange: highTemp - lowTemp,
+        inSearch: searchMonths.includes(m.month),
+      };
+    }) ?? [];
 
   const userMinDisplay = userMinTemp;
   const userMaxDisplay = userMaxTemp;
 
   const bestMonths = yearData ? getBestMonths(yearData, userMinC, userMaxC) : "";
 
-  // Fixed pixel heights — back face (with chart) is taller; set container to max
-  const containerHeight = size === "large" ? 460 : 380;
+  const containerHeight = size === "large" ? 340 : 148;
+  const chartHeight = size === "large" ? 200 : 65;
 
   return (
     <div
-      className={`flip-card cursor-pointer w-full`}
+      className={`flip-card cursor-pointer w-full ${isFlipped ? "flipped" : ""}`}
       style={{ height: containerHeight }}
       onClick={handleFlip}
     >
-      <div className={`flip-card-inner ${isFlipped ? "flipped" : ""}`}>
+      <div className="flip-card-inner">
         {/* FRONT FACE */}
-        <div className="flip-card-front border border-gray-200 rounded-lg p-4 bg-white hover:shadow-md transition-shadow flex flex-col overflow-hidden">
+        <div className={`flip-card-front border border-gray-200 rounded-lg ${size === "compact" ? "p-3" : "p-4"} bg-white hover:shadow-md transition-shadow flex flex-col`}>
           {/* Header row */}
           <div className="flex justify-between items-start mb-1">
             <div>
-              <h3 className={`font-semibold text-gray-900 ${size === "large" ? "text-2xl" : "text-lg"}`}>
+              <h3 className={`font-semibold text-gray-900 ${size === "large" ? "text-2xl" : "text-base"}`}>
                 {destination.city_name}
               </h3>
               <p className="text-sm text-gray-600">{destination.country}</p>
@@ -192,7 +199,7 @@ export default function CityCard({
           </div>
 
           {/* Temp stats */}
-          <div className="text-sm space-y-1 mt-2 flex-1">
+          <div className={`${size === "compact" ? "text-xs space-y-0.5 mt-1" : "text-sm space-y-1 mt-2"} flex-1`}>
             <p className="text-gray-700">
               🌡️{" "}
               {tempUnit === "F"
@@ -226,13 +233,13 @@ export default function CityCard({
 
           {/* Flip hint */}
           {!hasFlipped && (
-            <p className="text-xs text-blue-500 mt-2 text-center">↻ See year graph</p>
+            <p className="text-xs text-blue-500 mt-1 text-center">↻ See year graph</p>
           )}
         </div>
 
         {/* BACK FACE */}
         <div
-          className="flip-card-back border border-gray-200 rounded-lg p-4 bg-white flex flex-col overflow-hidden"
+          className={`flip-card-back border border-gray-200 rounded-lg ${size === "compact" ? "p-3" : "p-4"} bg-white flex flex-col`}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Back header */}
@@ -271,12 +278,24 @@ export default function CityCard({
               Loading…
             </div>
           ) : yearData && yearData.length > 0 ? (
-            <ResponsiveContainer width="100%" height={220}>
-              <ComposedChart data={chartData} margin={{ top: 10, right: showPrecip ? 30 : 5, left: 0, bottom: 0 }}>
-                <XAxis dataKey="label" tick={{ fontSize: 10 }} />
+            <ResponsiveContainer width="100%" height={chartHeight}>
+              <ComposedChart
+                data={chartData}
+                margin={{ top: 8, right: showPrecip ? 50 : 16, left: 4, bottom: 4 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
+                <XAxis
+                  dataKey="label"
+                  tick={{ fontSize: 10, fill: "#6b7280" }}
+                  axisLine={{ stroke: "#e5e7eb" }}
+                  tickLine={false}
+                />
                 <YAxis
                   yAxisId="temp"
-                  tick={{ fontSize: 10 }}
+                  width={34}
+                  tick={{ fontSize: 10, fill: "#6b7280" }}
+                  axisLine={false}
+                  tickLine={false}
                   domain={["auto", "auto"]}
                   tickFormatter={(v) => `${v}°`}
                 />
@@ -284,14 +303,22 @@ export default function CityCard({
                   <YAxis
                     yAxisId="precip"
                     orientation="right"
-                    tick={{ fontSize: 10 }}
+                    width={40}
+                    tick={{ fontSize: 10, fill: "#6b7280" }}
+                    axisLine={false}
+                    tickLine={false}
                     tickFormatter={(v) => `${v}mm`}
                   />
                 )}
                 <Tooltip
+                  contentStyle={{ fontSize: 11, padding: "4px 8px", borderRadius: 6 }}
                   formatter={(value, name) => {
+                    if (name === "bandLow" || name === "bandRange") return null;
                     if (name === "precip") return [`${value} mm`, "Precip"];
-                    return [`${value}°${tempUnit}`, name === "high" ? "High" : name === "low" ? "Low" : "Avg"];
+                    return [
+                      `${value}°${tempUnit}`,
+                      name === "high" ? "High" : name === "low" ? "Low" : "Avg",
+                    ];
                   }}
                 />
 
@@ -301,26 +328,29 @@ export default function CityCard({
                   y1={userMinDisplay}
                   y2={userMaxDisplay}
                   fill="#86efac"
-                  fillOpacity={0.25}
+                  fillOpacity={0.3}
                   strokeOpacity={0}
                 />
 
-                {/* High-low band */}
+                {/* High-low band using stackId (avoids white-fill covering axes) */}
                 <Area
                   yAxisId="temp"
                   type="monotone"
-                  dataKey="high"
-                  stroke="transparent"
-                  fill="#fbbf24"
-                  fillOpacity={0.2}
+                  dataKey="bandLow"
+                  stackId="band"
+                  stroke="none"
+                  fill="transparent"
+                  legendType="none"
                 />
                 <Area
                   yAxisId="temp"
                   type="monotone"
-                  dataKey="low"
-                  stroke="transparent"
-                  fill="#ffffff"
-                  fillOpacity={1}
+                  dataKey="bandRange"
+                  stackId="band"
+                  stroke="none"
+                  fill="#fbbf24"
+                  fillOpacity={0.22}
+                  legendType="none"
                 />
 
                 {/* Temp lines */}
@@ -349,7 +379,7 @@ export default function CityCard({
                     yAxisId="precip"
                     dataKey="precip"
                     fill="#93c5fd"
-                    fillOpacity={0.6}
+                    fillOpacity={0.65}
                     name="precip"
                   />
                 )}
