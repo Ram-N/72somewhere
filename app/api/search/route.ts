@@ -85,6 +85,7 @@ export async function POST(request: NextRequest) {
         const tempDiff = Math.abs(avgTemp - targetTemp);
 
         return {
+          city_id: city.city_id,
           city_name: city.city_name,
           country: city.country,
           avg_high: Math.round(avgHigh * 10) / 10,

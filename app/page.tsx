@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import CityCard from "./components/CityCard";
 
 type DurationOption = "1week" | "2weeks" | "3weeks" | "1month";
 
@@ -48,6 +49,21 @@ export default function Home() {
   };
 
   const endDate = getEndDate(startDate, duration);
+
+  // Compute which months the search spans
+  const getSearchMonths = (start: string, end: string): number[] => {
+    if (!start || !end) return [];
+    const months = new Set<number>();
+    const current = new Date(start);
+    const endObj = new Date(end);
+    while (current <= endObj) {
+      months.add(current.getMonth() + 1);
+      current.setMonth(current.getMonth() + 1);
+    }
+    return Array.from(months);
+  };
+
+  const searchMonths = getSearchMonths(startDate, endDate);
 
   // Temperature conversion helpers
   const celsiusToFahrenheit = (c: number): number => Math.round((c * 9/5) + 32);
@@ -373,28 +389,15 @@ export default function Home() {
             {viewMode === "all" && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {results.map((destination, index) => (
-                  <div
-                    key={index}
-                    className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
-                  >
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      {destination.city_name}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-2">
-                      {destination.country}
-                    </p>
-                    <div className="text-sm space-y-1">
-                      <p className="text-gray-700">
-                        🌡️ {destination.avg_temp?.toFixed(1)}°C
-                      </p>
-                      <p className="text-gray-700">
-                        ☀️ High: {destination.avg_high}°C / Low: {destination.avg_low}°C
-                      </p>
-                      <p className="text-gray-700">
-                        🌧️ Precipitation: {destination.avg_precip?.toFixed(1)}mm
-                      </p>
-                    </div>
-                  </div>
+                  <CityCard
+                    key={destination.city_id || index}
+                    destination={destination}
+                    tempUnit={tempUnit}
+                    userMinTemp={minTemp}
+                    userMaxTemp={maxTemp}
+                    searchMonths={searchMonths}
+                    size="compact"
+                  />
                 ))}
               </div>
             )}
@@ -415,29 +418,21 @@ export default function Home() {
                   </button>
 
                   {/* Card */}
-                  <div className="flex-1 max-w-md border border-gray-200 rounded-lg p-6 shadow-md">
+                  <div className="flex-1 max-w-md">
                     <div className="text-center mb-2">
                       <span className="text-sm text-gray-500">
                         {currentCardIndex + 1} of {results.length}
                       </span>
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-2 text-center">
-                      {results[currentCardIndex].city_name}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4 text-center">
-                      {results[currentCardIndex].country}
-                    </p>
-                    <div className="space-y-3">
-                      <p className="text-base text-gray-700">
-                        🌡️ Average: {results[currentCardIndex].avg_temp?.toFixed(1)}°C
-                      </p>
-                      <p className="text-base text-gray-700">
-                        ☀️ High: {results[currentCardIndex].avg_high}°C / Low: {results[currentCardIndex].avg_low}°C
-                      </p>
-                      <p className="text-base text-gray-700">
-                        🌧️ Precipitation: {results[currentCardIndex].avg_precip?.toFixed(1)}mm
-                      </p>
-                    </div>
+                    <CityCard
+                      key={results[currentCardIndex].city_id || currentCardIndex}
+                      destination={results[currentCardIndex]}
+                      tempUnit={tempUnit}
+                      userMinTemp={minTemp}
+                      userMaxTemp={maxTemp}
+                      searchMonths={searchMonths}
+                      size="large"
+                    />
                   </div>
 
                   {/* Next Button */}
