@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   ComposedChart,
   Area,
@@ -130,12 +130,9 @@ export default function CityCard({
   const userMinC = tempUnit === "F" ? (userMinTemp - 32) * (5 / 9) : userMinTemp;
   const userMaxC = tempUnit === "F" ? (userMaxTemp - 32) * (5 / 9) : userMaxTemp;
 
-  const handleFlip = async () => {
-    const newFlipped = !isFlipped;
-    setIsFlipped(newFlipped);
-    if (!hasFlipped) setHasFlipped(true);
-
-    if (newFlipped && !yearData) {
+  // Load year data on mount so graph is ready immediately
+  useEffect(() => {
+    const load = async () => {
       setIsLoading(true);
       try {
         const res = await fetch(`/api/city/${destination.city_id}`);
@@ -146,7 +143,13 @@ export default function CityCard({
       } finally {
         setIsLoading(false);
       }
-    }
+    };
+    load();
+  }, [destination.city_id]);
+
+  const handleFlip = () => {
+    setIsFlipped((prev) => !prev);
+    if (!hasFlipped) setHasFlipped(true);
   };
 
   const badge = getMatchBadge(yearData, userMinC, userMaxC);
@@ -185,7 +188,7 @@ export default function CityCard({
       onClick={handleFlip}
     >
       <div className="flip-card-inner">
-        {/* FRONT FACE */}
+        {/* FRONT FACE — graph (default view) */}
         <div className={`flip-card-front border border-gray-200 rounded-lg ${size === "compact" ? "p-3" : "p-4"} bg-white hover:shadow-md transition-shadow flex flex-col ${matchesTemp === false ? "opacity-80" : ""}`}>
           {/* Header row */}
           <div className="flex justify-between items-start mb-1">
@@ -193,9 +196,8 @@ export default function CityCard({
               <h3 className={`font-semibold text-gray-900 ${size === "large" ? "text-2xl" : "text-base"}`}>
                 {destination.city_name}
               </h3>
-              <p className="text-sm text-gray-600">{destination.country}</p>
+              <p className="text-xs text-gray-500">{destination.country}</p>
             </div>
-            {/* Match badges */}
             <div className="flex flex-col items-end gap-1">
               {matchesTemp === false && (
                 <span className="text-xs px-2 py-1 rounded-full font-medium bg-orange-100 text-orange-700">
@@ -207,279 +209,157 @@ export default function CityCard({
                   Temp ✓
                 </span>
               )}
-              {yearData && (
-                <span className={`text-xs px-2 py-1 rounded-full font-medium ${badge.color}`}>
-                  {badge.count}/12 months
-                </span>
-              )}
-            </div>
-          </div>
-
-          {/* Temp stats */}
-          <div className={`${size === "compact" ? "text-xs space-y-0.5 mt-1" : "text-sm space-y-1 mt-2"} flex-1`}>
-            <p className="text-gray-700">
-              🌡️{" "}
-              {tempUnit === "F"
-                ? `${toF(destination.avg_temp)}°F`
-                : `${destination.avg_temp}°C`}
-            </p>
-            <p className="text-gray-700">
-              ☀️ High:{" "}
-              {tempUnit === "F" ? toF(destination.avg_high) : destination.avg_high}°{tempUnit} / Low:{" "}
-              {tempUnit === "F" ? toF(destination.avg_low) : destination.avg_low}°{tempUnit}
-            </p>
-            <p className="text-gray-700">
-              🌧️ Precip: {destination.avg_precip?.toFixed(1)} mm
-            </p>
-          </div>
-
-          {/* Sparkline */}
-          {yearData && yearData.length > 0 && (
-            <div className="mt-3 opacity-60">
-              <LineChart width={200} height={40} data={chartData}>
-                <Line
-                  type="monotone"
-                  dataKey="avg"
-                  stroke="#6b7280"
-                  strokeWidth={1.5}
-                  dot={false}
-                />
-              </LineChart>
-            </div>
-          )}
-
-          {/* Flip hint */}
-          {!hasFlipped && (
-            <p className="text-xs text-blue-500 mt-1 text-center">↻ See year graph</p>
-          )}
-        </div>
-
-        {/* BACK FACE */}
-        <div
-          className={`flip-card-back border border-gray-200 rounded-lg ${size === "compact" ? "p-3" : "p-4"} bg-white flex flex-col`}
-          onClick={(e) => e.stopPropagation()}
-        >
-          {/* Back header */}
-          <div className="flex justify-between items-center mb-2">
-            <div>
-              <h3 className="font-semibold text-gray-900">{destination.city_name}</h3>
-              {bestMonths && (
-                <p className="text-xs text-gray-500">Best: {bestMonths}</p>
-              )}
-            </div>
-            <div className="flex gap-2 items-center">
               <button
                 className="text-xs px-2 py-1 rounded bg-blue-50 text-blue-600 hover:bg-blue-100"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setShowPrecip((p) => !p);
-                }}
+                onClick={(e) => { e.stopPropagation(); setShowPrecip((p) => !p); }}
               >
                 {showPrecip ? "☔ Rain ✓" : "☔ Rain"}
-              </button>
-              <button
-                className="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsFlipped(false);
-                }}
-              >
-                ↩ back
               </button>
             </div>
           </div>
 
           {/* Graph */}
           {isLoading ? (
-            <div className="flex-1 flex items-center justify-center text-gray-400 text-sm">
-              Loading…
-            </div>
+            <div className="flex-1 flex items-center justify-center text-gray-400 text-sm">Loading…</div>
           ) : yearData && yearData.length > 0 ? (
-            <div className="relative">
-            {hoveredMatch !== null && (() => {
-              const d = chartData[hoveredMatch.index];
-              if (!d) return null;
-              const monthName = MONTH_NAMES[hoveredMatch.index];
-              return (
-                <div
-                  className="absolute z-20 bg-gray-900 text-white text-xs rounded-md px-2 py-1.5 pointer-events-none shadow-lg whitespace-nowrap"
-                  style={{ left: hoveredMatch.x, bottom: 20, transform: "translateX(-50%)" }}
-                >
-                  <div className="font-semibold text-green-400 mb-0.5">✓ {monthName} matches your range</div>
-                  <div>High: {d.high}° / Low: {d.low}°{tempUnit}</div>
-                  <div>Rain: {d.precip.toFixed(1)} mm</div>
-                  <div className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-900" />
-                </div>
-              );
-            })()}
-            <ResponsiveContainer width="100%" height={chartHeight}>
-              <ComposedChart
-                data={chartData}
-                margin={{ top: 8, right: showPrecip ? 8 : 8, left: 4, bottom: 4 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
-                <XAxis
-                  dataKey="label"
-                  axisLine={{ stroke: "#e5e7eb" }}
-                  tickLine={false}
-                  interval={0}
-                  height={22}
-                  tick={(tickProps: any) => {
-                    const { x, y, payload, index } = tickProps;
-                    const match = chartData[index]?.isMatch;
-                    return (
-                      <g key={index} transform={`translate(${x},${y})`}>
-                        {match && (
-                          <rect x={-7} y={0} width={14} height={14} rx={3} fill="#16a34a" fillOpacity={0.15} />
-                        )}
-                        <text
-                          x={0} y={11}
-                          textAnchor="middle"
-                          fontSize={match ? 10 : 9}
-                          fontWeight={match ? "700" : "400"}
-                          fill={match ? "#16a34a" : "#9ca3af"}
-                        >
-                          {payload.value}
-                        </text>
-                        {/* Transparent hit area for tooltip hover */}
-                        {match && (
-                          <rect
-                            x={-10} y={-2} width={20} height={18}
-                            fill="transparent"
-                            style={{ cursor: "default" }}
-                            onMouseEnter={() => setHoveredMatch({ index, x })}
-                            onMouseLeave={() => setHoveredMatch(null)}
-                          />
-                        )}
-                      </g>
-                    );
-                  }}
-                />
-                <YAxis
-                  yAxisId="temp"
-                  width={34}
-                  tick={{ fontSize: 10, fill: "#6b7280" }}
-                  axisLine={false}
-                  tickLine={false}
-                  domain={["auto", "auto"]}
-                  tickFormatter={(v) => `${v}°`}
-                />
-                {showPrecip && (
-                  <YAxis
-                    yAxisId="precip"
-                    orientation="right"
-                    width={28}
-                    tick={{ fontSize: 9, fill: "#6b7280" }}
-                    axisLine={false}
+            <div className="relative flex-1">
+              {hoveredMatch !== null && (() => {
+                const d = chartData[hoveredMatch.index];
+                if (!d) return null;
+                const monthName = MONTH_NAMES[hoveredMatch.index];
+                return (
+                  <div
+                    className="absolute z-20 bg-gray-900 text-white text-xs rounded-md px-2 py-1.5 pointer-events-none shadow-lg whitespace-nowrap"
+                    style={{ left: hoveredMatch.x, bottom: 20, transform: "translateX(-50%)" }}
+                  >
+                    <div className="font-semibold text-green-400 mb-0.5">✓ {monthName} matches your range</div>
+                    <div>High: {d.high}° / Low: {d.low}°{tempUnit}</div>
+                    <div>Rain: {d.precip.toFixed(1)} mm</div>
+                    <div className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-900" />
+                  </div>
+                );
+              })()}
+              <ResponsiveContainer width="100%" height={chartHeight}>
+                <ComposedChart data={chartData} margin={{ top: 8, right: showPrecip ? 8 : 8, left: 4, bottom: 4 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
+                  <XAxis
+                    dataKey="label"
+                    axisLine={{ stroke: "#e5e7eb" }}
                     tickLine={false}
-                    tickCount={3}
-                    tickFormatter={(v) => `${v}`}
+                    interval={0}
+                    height={22}
+                    tick={(tickProps: any) => {
+                      const { x, y, payload, index } = tickProps;
+                      const match = chartData[index]?.isMatch;
+                      return (
+                        <g key={index} transform={`translate(${x},${y})`}>
+                          {match && <rect x={-7} y={0} width={14} height={14} rx={3} fill="#16a34a" fillOpacity={0.15} />}
+                          <text x={0} y={11} textAnchor="middle" fontSize={match ? 10 : 9} fontWeight={match ? "700" : "400"} fill={match ? "#16a34a" : "#9ca3af"}>
+                            {payload.value}
+                          </text>
+                          {match && (
+                            <rect x={-10} y={-2} width={20} height={18} fill="transparent" style={{ cursor: "default" }}
+                              onMouseEnter={() => setHoveredMatch({ index, x })}
+                              onMouseLeave={() => setHoveredMatch(null)}
+                            />
+                          )}
+                        </g>
+                      );
+                    }}
                   />
-                )}
-                <Tooltip
-                  contentStyle={{ fontSize: 11, padding: "4px 8px", borderRadius: 6 }}
-                  formatter={(value, name) => {
-                    if (name === "bandLow" || name === "bandRange") return null;
-                    if (name === "precip") return [`${value} mm`, "Precip"];
-                    return [
-                      `${value}°${tempUnit}`,
-                      name === "high" ? "High" : name === "low" ? "Low" : "Avg",
-                    ];
-                  }}
-                />
-
-                {/* User preference band */}
-                <ReferenceArea
-                  yAxisId="temp"
-                  y1={userMinDisplay}
-                  y2={userMaxDisplay}
-                  fill="#4ade80"
-                  fillOpacity={0.25}
-                  stroke="#16a34a"
-                  strokeOpacity={0.5}
-                  strokeDasharray="4 3"
-                />
-
-                {/* High-low band using stackId (avoids white-fill covering axes) */}
-                <Area
-                  yAxisId="temp"
-                  type="monotone"
-                  dataKey="bandLow"
-                  stackId="band"
-                  stroke="none"
-                  fill="transparent"
-                  legendType="none"
-                />
-                <Area
-                  yAxisId="temp"
-                  type="monotone"
-                  dataKey="bandRange"
-                  stackId="band"
-                  stroke="none"
-                  fill="#fbbf24"
-                  fillOpacity={0.22}
-                  legendType="none"
-                />
-
-                {/* Temp lines */}
-                <Line
-                  yAxisId="temp"
-                  type="monotone"
-                  dataKey="high"
-                  stroke="#f97316"
-                  strokeWidth={2}
-                  dot={(dotProps: any) => {
-                    const { cx, cy, index } = dotProps;
-                    if (!chartData[index]?.isMatch) return <g key={index} />;
-                    return <circle key={index} cx={cx} cy={cy} r={4} fill="#f97316" stroke="white" strokeWidth={1.5} />;
-                  }}
-                  name="high"
-                />
-                <Line
-                  yAxisId="temp"
-                  type="monotone"
-                  dataKey="low"
-                  stroke="#3b82f6"
-                  strokeWidth={2}
-                  dot={(dotProps: any) => {
-                    const { cx, cy, index } = dotProps;
-                    if (!chartData[index]?.isMatch) return <g key={index} />;
-                    return <circle key={index} cx={cx} cy={cy} r={4} fill="#3b82f6" stroke="white" strokeWidth={1.5} />;
-                  }}
-                  name="low"
-                />
-
-                {/* Precipitation bars */}
-                {showPrecip && (
-                  <Bar
-                    yAxisId="precip"
-                    dataKey="precip"
-                    fill="#93c5fd"
-                    fillOpacity={0.65}
-                    name="precip"
+                  <YAxis yAxisId="temp" width={34} tick={{ fontSize: 10, fill: "#6b7280" }} axisLine={false} tickLine={false} domain={["auto", "auto"]} tickFormatter={(v) => `${v}°`} />
+                  {showPrecip && (
+                    <YAxis yAxisId="precip" orientation="right" width={28} tick={{ fontSize: 9, fill: "#6b7280" }} axisLine={false} tickLine={false} tickCount={3} tickFormatter={(v) => `${v}`} />
+                  )}
+                  <Tooltip
+                    contentStyle={{ fontSize: 11, padding: "4px 8px", borderRadius: 6 }}
+                    formatter={(value, name) => {
+                      if (name === "bandLow" || name === "bandRange") return null;
+                      if (name === "precip") return [`${value} mm`, "Precip"];
+                      return [`${value}°${tempUnit}`, name === "high" ? "High" : name === "low" ? "Low" : "Avg"];
+                    }}
                   />
-                )}
-              </ComposedChart>
-            </ResponsiveContainer>
+                  <ReferenceArea yAxisId="temp" y1={userMinDisplay} y2={userMaxDisplay} fill="#4ade80" fillOpacity={0.25} stroke="#16a34a" strokeOpacity={0.5} strokeDasharray="4 3" />
+                  <Area yAxisId="temp" type="monotone" dataKey="bandLow" stackId="band" stroke="none" fill="transparent" legendType="none" />
+                  <Area yAxisId="temp" type="monotone" dataKey="bandRange" stackId="band" stroke="none" fill="#fbbf24" fillOpacity={0.22} legendType="none" />
+                  <Line yAxisId="temp" type="monotone" dataKey="high" stroke="#f97316" strokeWidth={2}
+                    dot={(dotProps: any) => {
+                      const { cx, cy, index } = dotProps;
+                      if (!chartData[index]?.isMatch) return <g key={index} />;
+                      return <circle key={index} cx={cx} cy={cy} r={4} fill="#f97316" stroke="white" strokeWidth={1.5} />;
+                    }} name="high" />
+                  <Line yAxisId="temp" type="monotone" dataKey="low" stroke="#3b82f6" strokeWidth={2}
+                    dot={(dotProps: any) => {
+                      const { cx, cy, index } = dotProps;
+                      if (!chartData[index]?.isMatch) return <g key={index} />;
+                      return <circle key={index} cx={cx} cy={cy} r={4} fill="#3b82f6" stroke="white" strokeWidth={1.5} />;
+                    }} name="low" />
+                  {showPrecip && <Bar yAxisId="precip" dataKey="precip" fill="#93c5fd" fillOpacity={0.65} name="precip" />}
+                </ComposedChart>
+              </ResponsiveContainer>
             </div>
           ) : (
-            <div className="flex-1 flex items-center justify-center text-gray-400 text-sm">
-              No data available
-            </div>
+            <div className="flex-1 flex items-center justify-center text-gray-400 text-sm">No data available</div>
           )}
 
           {/* Legend */}
-          <div className="flex gap-3 mt-2 text-xs text-gray-500">
-            <span className="flex items-center gap-1">
-              <span className="w-3 h-0.5 bg-orange-400 inline-block" /> High
-            </span>
-            <span className="flex items-center gap-1">
-              <span className="w-3 h-0.5 bg-blue-500 inline-block" /> Low
-            </span>
-            <span className="flex items-center gap-1">
-              <span className="w-3 h-2 bg-green-300 border border-green-600 border-dashed inline-block rounded-sm" /> Your range
-            </span>
+          <div className="flex gap-3 mt-1 text-xs text-gray-500">
+            <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-orange-400 inline-block" /> High</span>
+            <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-blue-500 inline-block" /> Low</span>
+            <span className="flex items-center gap-1"><span className="w-3 h-2 bg-green-300 border border-green-600 border-dashed inline-block rounded-sm" /> Your range</span>
+            {!hasFlipped && <span className="ml-auto text-blue-400">↻ details</span>}
           </div>
+        </div>
+
+        {/* BACK FACE — stats */}
+        <div
+          className={`flip-card-back border border-gray-200 rounded-lg ${size === "compact" ? "p-3" : "p-4"} bg-white flex flex-col`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Stats header */}
+          <div className="flex justify-between items-start mb-2">
+            <div>
+              <h3 className={`font-semibold text-gray-900 ${size === "large" ? "text-2xl" : "text-base"}`}>
+                {destination.city_name}
+              </h3>
+              <p className="text-sm text-gray-600">{destination.country}</p>
+              {bestMonths && <p className="text-xs text-gray-400">Best: {bestMonths}</p>}
+            </div>
+            <div className="flex flex-col items-end gap-1">
+              {yearData && (
+                <span className={`text-xs px-2 py-1 rounded-full font-medium ${badge.color}`}>
+                  {badge.count}/12 months
+                </span>
+              )}
+              <button
+                className="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600 hover:bg-gray-200"
+                onClick={(e) => { e.stopPropagation(); setIsFlipped(false); }}
+              >
+                ↩ graph
+              </button>
+            </div>
+          </div>
+
+          {/* Temp stats */}
+          <div className={`${size === "compact" ? "text-xs space-y-0.5" : "text-sm space-y-1"} flex-1`}>
+            <p className="text-gray-700">
+              🌡️{" "}{tempUnit === "F" ? `${toF(destination.avg_temp)}°F` : `${destination.avg_temp}°C`}
+            </p>
+            <p className="text-gray-700">
+              ☀️ High:{" "}{tempUnit === "F" ? toF(destination.avg_high) : destination.avg_high}°{tempUnit}
+              {" "}/ Low:{" "}{tempUnit === "F" ? toF(destination.avg_low) : destination.avg_low}°{tempUnit}
+            </p>
+            <p className="text-gray-700">🌧️ Precip: {destination.avg_precip?.toFixed(1)} mm</p>
+          </div>
+
+          {/* Sparkline */}
+          {yearData && yearData.length > 0 && (
+            <div className="mt-2 opacity-60">
+              <LineChart width={200} height={40} data={chartData}>
+                <Line type="monotone" dataKey="avg" stroke="#6b7280" strokeWidth={1.5} dot={false} />
+              </LineChart>
+            </div>
+          )}
         </div>
       </div>
     </div>
