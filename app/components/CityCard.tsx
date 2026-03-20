@@ -57,8 +57,7 @@ function convertTemp(c: number, unit: "C" | "F"): number {
 function getBestMonths(yearData: MonthRecord[], minC: number, maxC: number): string {
   const matching = yearData
     .filter((m) => {
-      const avg = (m.avg_high_temp_c + m.avg_low_temp_c) / 2;
-      return avg >= minC && avg <= maxC;
+        return m.avg_high_temp_c >= minC && m.avg_low_temp_c <= maxC;
     })
     .map((m) => m.month);
 
@@ -96,8 +95,7 @@ function getMatchBadge(yearData: MonthRecord[] | null, minC: number, maxC: numbe
   if (!yearData) return { count: 0, color: "bg-gray-100 text-gray-500" };
 
   const count = yearData.filter((m) => {
-    const avg = (m.avg_high_temp_c + m.avg_low_temp_c) / 2;
-    return avg >= minC && avg <= maxC;
+    return m.avg_high_temp_c >= minC && m.avg_low_temp_c <= maxC;
   }).length;
 
   const color =
@@ -168,7 +166,7 @@ export default function CityCard({
         bandLow: lowTemp,
         bandRange: highTemp - lowTemp,
         inSearch: searchMonths.includes(m.month),
-        isMatch: avgTemp >= userMinTemp && avgTemp <= userMaxTemp,
+        isMatch: highTemp >= userMinTemp && lowTemp <= userMaxTemp,
       };
     }) ?? [];
 
