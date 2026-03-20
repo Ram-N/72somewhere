@@ -27,7 +27,7 @@ import urllib.error
 API_BASE_URL = "https://archive-api.open-meteo.com/v1/archive"
 START_DATE = "2022-01-01"
 END_DATE = "2024-12-31"
-DELAY_BETWEEN_CALLS = 80.0  # seconds (rate limit: ~78 API calls per city)
+DELAY_BETWEEN_CALLS = 15.0  # seconds (rate limit: ~78 API calls per city)
 MAX_RETRIES = 3
 RETRY_DELAY = 5.0  # seconds
 

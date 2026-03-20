@@ -1,0 +1,3572 @@
+[
+  {
+    "cityId": "1004993580",
+    "city": "Kabul",
+    "country": "Afghanistan",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1004364776",
+    "city": "Āqchah",
+    "country": "Afghanistan",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1004003059",
+    "city": "Kandahār",
+    "country": "Afghanistan",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1008162156",
+    "city": "Tirana",
+    "country": "Albania",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1012973369",
+    "city": "Algiers",
+    "country": "Algeria",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1012126319",
+    "city": "Oran",
+    "country": "Algeria",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1016976740",
+    "city": "Pago Pago",
+    "country": "American Samoa",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1020828846",
+    "city": "Andorra la Vella",
+    "country": "Andorra",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1024949724",
+    "city": "Luanda",
+    "country": "Angola",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1024559448",
+    "city": "Cacuaco",
+    "country": "Angola",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1024791607",
+    "city": "Cazenga",
+    "country": "Angola",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1660698387",
+    "city": "The Valley",
+    "country": "Anguilla",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1028912067",
+    "city": "Saint John’s",
+    "country": "Antigua and Barbuda",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1032717330",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1032803249",
+    "city": "Córdoba",
+    "country": "Argentina",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1032770677",
+    "city": "Rosario",
+    "country": "Argentina",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1032492280",
+    "city": "Santiago del Estero",
+    "country": "Argentina",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1032403831",
+    "city": "La Plata",
+    "country": "Argentina",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1051074169",
+    "city": "Yerevan",
+    "country": "Armenia",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1533513057",
+    "city": "Oranjestad",
+    "country": "Aruba",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1036533631",
+    "city": "Melbourne",
+    "country": "Australia",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1036074917",
+    "city": "Sydney",
+    "country": "Australia",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1036192929",
+    "city": "Brisbane",
+    "country": "Australia",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1036178956",
+    "city": "Perth",
+    "country": "Australia",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1036538171",
+    "city": "Adelaide",
+    "country": "Australia",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1036153217",
+    "city": "Gold Coast",
+    "country": "Australia",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1036142029",
+    "city": "Canberra",
+    "country": "Australia",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1040261752",
+    "city": "Vienna",
+    "country": "Austria",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1031946365",
+    "city": "Baku",
+    "country": "Azerbaijan",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1044318561",
+    "city": "Nassau",
+    "country": "Bahamas, The",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1048989486",
+    "city": "Manama",
+    "country": "Bahrain",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1050529279",
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1050449249",
+    "city": "Gāzipura",
+    "country": "Bangladesh",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1050830722",
+    "city": "Chattogram",
+    "country": "Bangladesh",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1052274244",
+    "city": "Bridgetown",
+    "country": "Barbados",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1112348503",
+    "city": "Minsk",
+    "country": "Belarus",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1112580227",
+    "city": "Homyel’",
+    "country": "Belarus",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1056469830",
+    "city": "Brussels",
+    "country": "Belgium",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1056168623",
+    "city": "Antwerp",
+    "country": "Belgium",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1084586375",
+    "city": "Belmopan",
+    "country": "Belize",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1204955174",
+    "city": "Cotonou",
+    "country": "Benin",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1204016569",
+    "city": "Abomey-Calavi",
+    "country": "Benin",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1204172060",
+    "city": "Porto-Novo",
+    "country": "Benin",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1060000000",
+    "city": "Hamilton",
+    "country": "Bermuda",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1064010361",
+    "city": "Thimphu",
+    "country": "Bhutan",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1068005036",
+    "city": "Santa Cruz de la Sierra",
+    "country": "Bolivia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1068000064",
+    "city": "La Paz",
+    "country": "Bolivia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1068823873",
+    "city": "Sucre",
+    "country": "Bolivia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1070966777",
+    "city": "Sarajevo",
+    "country": "Bosnia and Herzegovina",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1072756768",
+    "city": "Gaborone",
+    "country": "Botswana",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1076532519",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076887657",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076967355",
+    "city": "Belo Horizonte",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076567885",
+    "city": "Fortaleza",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076923789",
+    "city": "Salvador",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076701712",
+    "city": "Curitiba",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076137337",
+    "city": "Recife",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076658221",
+    "city": "Porto Alegre",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076730420",
+    "city": "Guarulhos",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1076144436",
+    "city": "Brasília",
+    "country": "Brazil",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1096465895",
+    "city": "Bandar Seri Begawan",
+    "country": "Brunei",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1100762037",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1854029208",
+    "city": "Ouagadougou",
+    "country": "Burkina Faso",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1854348796",
+    "city": "Bobo-Dioulasso",
+    "country": "Burkina Faso",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1104616656",
+    "city": "Rangoon",
+    "country": "Burma",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1104468217",
+    "city": "Mandalay",
+    "country": "Burma",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1104838105",
+    "city": "Nay Pyi Taw",
+    "country": "Burma",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1108101689",
+    "city": "Bujumbura",
+    "country": "Burundi",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1108778000",
+    "city": "Gitega",
+    "country": "Burundi",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1132398770",
+    "city": "Praia",
+    "country": "Cabo Verde",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1116260534",
+    "city": "Phnom Penh",
+    "country": "Cambodia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1120494607",
+    "city": "Douala",
+    "country": "Cameroon",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1120298240",
+    "city": "Yaoundé",
+    "country": "Cameroon",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1120803808",
+    "city": "Garoua",
+    "country": "Cameroon",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1124279679",
+    "city": "Toronto",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124586170",
+    "city": "Montréal",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124825478",
+    "city": "Vancouver",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124690423",
+    "city": "Calgary",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124290735",
+    "city": "Edmonton",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124399363",
+    "city": "Ottawa",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124224963",
+    "city": "Winnipeg",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124823933",
+    "city": "Quebec City",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124567288",
+    "city": "Hamilton",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1124112672",
+    "city": "Mississauga",
+    "country": "Canada",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1136159124",
+    "city": "George Town",
+    "country": "Cayman Islands",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1140080881",
+    "city": "Bangui",
+    "country": "Central African Republic",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1148708596",
+    "city": "N’Djamena",
+    "country": "Chad",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1152554349",
+    "city": "Santiago",
+    "country": "Chile",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1152838958",
+    "city": "Concepción",
+    "country": "Chile",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1152516346",
+    "city": "Puente Alto",
+    "country": "Chile",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1152583016",
+    "city": "Maipú",
+    "country": "Chile",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1156237133",
+    "city": "Guangzhou",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156073548",
+    "city": "Shanghai",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156228865",
+    "city": "Beijing",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156158707",
+    "city": "Shenzhen",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156421555",
+    "city": "Chengdu",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156244079",
+    "city": "Xi’an",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156936556",
+    "city": "Chongqing",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156086320",
+    "city": "Linyi",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156478242",
+    "city": "Dongguan",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1156256829",
+    "city": "Baoding",
+    "country": "China",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1162889600",
+    "city": "Flying Fish Cove",
+    "country": "Christmas Island",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1170483426",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1170417589",
+    "city": "Cali",
+    "country": "Colombia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1170680389",
+    "city": "Medellín",
+    "country": "Colombia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1170179113",
+    "city": "Barranquilla",
+    "country": "Colombia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1170886102",
+    "city": "Cartagena",
+    "country": "Colombia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1174793581",
+    "city": "Moroni",
+    "country": "Comoros",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1178340306",
+    "city": "Brazzaville",
+    "country": "Congo (Brazzaville)",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1178411563",
+    "city": "Pointe-Noire",
+    "country": "Congo (Brazzaville)",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1180000363",
+    "city": "Kinshasa",
+    "country": "Congo (Kinshasa)",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1180399586",
+    "city": "Mbuji-Mayi",
+    "country": "Congo (Kinshasa)",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1180172460",
+    "city": "Kananga",
+    "country": "Congo (Kinshasa)",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1184217570",
+    "city": "Avarua",
+    "country": "Cook Islands",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1188749877",
+    "city": "San José",
+    "country": "Costa Rica",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1191233290",
+    "city": "Zagreb",
+    "country": "Croatia",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1192752771",
+    "city": "Havana",
+    "country": "Cuba",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1531000000",
+    "city": "Willemstad",
+    "country": "Curaçao",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1196944155",
+    "city": "Nicosia",
+    "country": "Cyprus",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1203744823",
+    "city": "Prague",
+    "country": "Czechia",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1384207980",
+    "city": "Abidjan",
+    "country": "Côte d’Ivoire",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1384759584",
+    "city": "Yopougon",
+    "country": "Côte d’Ivoire",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1384683557",
+    "city": "Yamoussoukro",
+    "country": "Côte d’Ivoire",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1208763942",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1262028958",
+    "city": "Djibouti",
+    "country": "Djibouti",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1212060440",
+    "city": "Roseau",
+    "country": "Dominica",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1214985348",
+    "city": "Santiago",
+    "country": "Dominican Republic",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1214636202",
+    "city": "Santo Domingo",
+    "country": "Dominican Republic",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1214664832",
+    "city": "Santo Domingo Este",
+    "country": "Dominican Republic",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1218802178",
+    "city": "Guayaquil",
+    "country": "Ecuador",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1218441993",
+    "city": "Quito",
+    "country": "Ecuador",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1818253931",
+    "city": "Cairo",
+    "country": "Egypt",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1818925479",
+    "city": "Giza",
+    "country": "Egypt",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1818695837",
+    "city": "Alexandria",
+    "country": "Egypt",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1818909612",
+    "city": "Shubrā al Khaymah",
+    "country": "Egypt",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1818251892",
+    "city": "Ashmūn",
+    "country": "Egypt",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1222647454",
+    "city": "San Salvador",
+    "country": "El Salvador",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1226861333",
+    "city": "Malabo",
+    "country": "Equatorial Guinea",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1232791236",
+    "city": "Asmara",
+    "country": "Eritrea",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1233260021",
+    "city": "Tallinn",
+    "country": "Estonia",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1748811945",
+    "city": "Mbabane",
+    "country": "Eswatini",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1748963140",
+    "city": "Lobamba",
+    "country": "Eswatini",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1231824991",
+    "city": "Addis Ababa",
+    "country": "Ethiopia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1231877186",
+    "city": "K’ebrī Beyah",
+    "country": "Ethiopia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1238780509",
+    "city": "Stanley",
+    "country": "Falkland Islands (Islas Malvinas)",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1234904517",
+    "city": "Tórshavn",
+    "country": "Faroe Islands",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1242615095",
+    "city": "Suva",
+    "country": "Fiji",
+    "region": "Oceania",
+    "subRegion": "Melanesia"
+  },
+  {
+    "cityId": "1246177997",
+    "city": "Helsinki",
+    "country": "Finland",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1250015082",
+    "city": "Paris",
+    "country": "France",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1250449238",
+    "city": "Bordeaux",
+    "country": "France",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1250774071",
+    "city": "Marseille",
+    "country": "France",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1250196189",
+    "city": "Lyon",
+    "country": "France",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1250258110",
+    "city": "Toulouse",
+    "country": "France",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1254304969",
+    "city": "Cayenne",
+    "country": "French Guiana",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1258907380",
+    "city": "Papeete",
+    "country": "French Polynesia",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1266952885",
+    "city": "Libreville",
+    "country": "Gabon",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1270723713",
+    "city": "Banjul",
+    "country": "Gambia, The",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1916116052",
+    "city": "Gaza",
+    "country": "Gaza Strip",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1268203191",
+    "city": "Tbilisi",
+    "country": "Georgia",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1276451290",
+    "city": "Berlin",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276171358",
+    "city": "Stuttgart",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276692352",
+    "city": "Munich",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276041799",
+    "city": "Hamburg",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276015998",
+    "city": "Cologne",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276054552",
+    "city": "Frankfurt",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276615258",
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276563678",
+    "city": "Leipzig",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276562886",
+    "city": "Dortmund",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1276769247",
+    "city": "Essen",
+    "country": "Germany",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1288181103",
+    "city": "Kumasi",
+    "country": "Ghana",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1288164978",
+    "city": "Boankra",
+    "country": "Ghana",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1288299415",
+    "city": "Accra",
+    "country": "Ghana",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1292385245",
+    "city": "Gibraltar",
+    "country": "Gibraltar",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1300715560",
+    "city": "Athens",
+    "country": "Greece",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1300397999",
+    "city": "Thessaloníki",
+    "country": "Greece",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1304028354",
+    "city": "Nuuk",
+    "country": "Greenland",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1308891766",
+    "city": "Saint George’s",
+    "country": "Grenada",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1312938008",
+    "city": "Basse-Terre",
+    "country": "Guadeloupe",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1316937540",
+    "city": "Hagåtña",
+    "country": "Guam",
+    "region": "Oceania",
+    "subRegion": "Micronesia"
+  },
+  {
+    "cityId": "1320197916",
+    "city": "Guatemala City",
+    "country": "Guatemala",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1320420152",
+    "city": "Mixco",
+    "country": "Guatemala",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1831991870",
+    "city": "Saint Peter Port",
+    "country": "Guernsey",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1324568159",
+    "city": "Conakry",
+    "country": "Guinea",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1624168850",
+    "city": "Bissau",
+    "country": "Guinea-Bissau",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1328160906",
+    "city": "Georgetown",
+    "country": "Guyana",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1332401940",
+    "city": "Port-au-Prince",
+    "country": "Haiti",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1332000098",
+    "city": "Carrefour",
+    "country": "Haiti",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1340762485",
+    "city": "Comayagüela",
+    "country": "Honduras",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1340344059",
+    "city": "Tegucigalpa",
+    "country": "Honduras",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1340568412",
+    "city": "San Pedro Sula",
+    "country": "Honduras",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1344982653",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1344538284",
+    "city": "Kowloon",
+    "country": "Hong Kong",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1344745541",
+    "city": "Sha Tin",
+    "country": "Hong Kong",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1348611435",
+    "city": "Budapest",
+    "country": "Hungary",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1352327190",
+    "city": "Reykjavík",
+    "country": "Iceland",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1356872604",
+    "city": "Delhi",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356226629",
+    "city": "Mumbai",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356060520",
+    "city": "Kolkāta",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356410365",
+    "city": "Bangalore",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356374944",
+    "city": "Chennai",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356871768",
+    "city": "Hyderābād",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356081074",
+    "city": "Pune",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356304381",
+    "city": "Ahmedabad",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356758738",
+    "city": "Sūrat",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1356215164",
+    "city": "New Delhi",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1360771077",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360484663",
+    "city": "Surabaya",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360543171",
+    "city": "Medan",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360141408",
+    "city": "Malang",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360673840",
+    "city": "Bekasi",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360962899",
+    "city": "Depok",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360002844",
+    "city": "Tangerang",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360745537",
+    "city": "Semarang",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360902897",
+    "city": "Palembang",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360029147",
+    "city": "Sangereng",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1364305026",
+    "city": "Tehran",
+    "country": "Iran",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1364123206",
+    "city": "Mashhad",
+    "country": "Iran",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1364023865",
+    "city": "Eşfahān",
+    "country": "Iran",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1368596238",
+    "city": "Baghdad",
+    "country": "Iraq",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1368194914",
+    "city": "Mosul",
+    "country": "Iraq",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1368714645",
+    "city": "Al Başrah",
+    "country": "Iraq",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1372595407",
+    "city": "Dublin",
+    "country": "Ireland",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1833688345",
+    "city": "Douglas",
+    "country": "Isle of Man",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1376261644",
+    "city": "Jerusalem",
+    "country": "Israel",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1376133727",
+    "city": "Haifa",
+    "country": "Israel",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1380382862",
+    "city": "Rome",
+    "country": "Italy",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1380724377",
+    "city": "Milan",
+    "country": "Italy",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1380646673",
+    "city": "Naples",
+    "country": "Italy",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1380244627",
+    "city": "Turin",
+    "country": "Italy",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1380428434",
+    "city": "Palermo",
+    "country": "Italy",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1380716540",
+    "city": "Genoa",
+    "country": "Italy",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1388709177",
+    "city": "Kingston",
+    "country": "Jamaica",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1392685764",
+    "city": "Tokyo",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392419823",
+    "city": "Ōsaka",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392407472",
+    "city": "Nagoya",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392118339",
+    "city": "Yokohama",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392576294",
+    "city": "Fukuoka",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392000195",
+    "city": "Sapporo",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392003356",
+    "city": "Kawasaki",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392978082",
+    "city": "Kōbe",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392622735",
+    "city": "Kyōto",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1392017719",
+    "city": "Saitama",
+    "country": "Japan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1832490253",
+    "city": "Saint Helier",
+    "country": "Jersey",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1400522593",
+    "city": "Amman",
+    "country": "Jordan",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1400040712",
+    "city": "Al Mafraq",
+    "country": "Jordan",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1400221568",
+    "city": "Irbid",
+    "country": "Jordan",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1398351701",
+    "city": "Almaty",
+    "country": "Kazakhstan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1398791401",
+    "city": "Shymkent",
+    "country": "Kazakhstan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1398516045",
+    "city": "Astana",
+    "country": "Kazakhstan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1404000661",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1404512373",
+    "city": "Mombasa",
+    "country": "Kenya",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1296152641",
+    "city": "Tarawa",
+    "country": "Kiribati",
+    "region": "Oceania",
+    "subRegion": "Micronesia"
+  },
+  {
+    "cityId": "1408738594",
+    "city": "Pyongyang",
+    "country": "Korea, North",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1408482040",
+    "city": "Hamhŭng",
+    "country": "Korea, North",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1408358410",
+    "city": "Nampo",
+    "country": "Korea, North",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1410836482",
+    "city": "Seoul",
+    "country": "Korea, South",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1410601465",
+    "city": "Busan",
+    "country": "Korea, South",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1410160313",
+    "city": "Incheon",
+    "country": "Korea, South",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1901760068",
+    "city": "Pristina",
+    "country": "Kosovo",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1414102075",
+    "city": "Kuwait City",
+    "country": "Kuwait",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1417191971",
+    "city": "Bishkek",
+    "country": "Kyrgyzstan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1418732714",
+    "city": "Vientiane",
+    "country": "Laos",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1428586192",
+    "city": "Riga",
+    "country": "Latvia",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1422847713",
+    "city": "Beirut",
+    "country": "Lebanon",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1426977668",
+    "city": "Maseru",
+    "country": "Lesotho",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1430477826",
+    "city": "Monrovia",
+    "country": "Liberia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1434201852",
+    "city": "Tripoli",
+    "country": "Libya",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1434915572",
+    "city": "Benghazi",
+    "country": "Libya",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1438317747",
+    "city": "Vaduz",
+    "country": "Liechtenstein",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1440887149",
+    "city": "Vilnius",
+    "country": "Lithuania",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1442262731",
+    "city": "Luxembourg",
+    "country": "Luxembourg",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1446227359",
+    "city": "Macau",
+    "country": "Macau",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1450978461",
+    "city": "Antananarivo",
+    "country": "Madagascar",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1454688499",
+    "city": "Lilongwe",
+    "country": "Malawi",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1454145012",
+    "city": "Blantyre",
+    "country": "Malawi",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1458988644",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1458417183",
+    "city": "Seberang Jaya",
+    "country": "Malaysia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1458509635",
+    "city": "Klang",
+    "country": "Malaysia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1458423505",
+    "city": "Ipoh",
+    "country": "Malaysia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1458000206",
+    "city": "Putrajaya",
+    "country": "Malaysia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1462441685",
+    "city": "Male",
+    "country": "Maldives",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1466965925",
+    "city": "Bamako",
+    "country": "Mali",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1470574399",
+    "city": "Valletta",
+    "country": "Malta",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1584000000",
+    "city": "Majuro",
+    "country": "Marshall Islands",
+    "region": "Oceania",
+    "subRegion": "Micronesia"
+  },
+  {
+    "cityId": "1474969110",
+    "city": "Fort-de-France",
+    "country": "Martinique",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1478414984",
+    "city": "Nouakchott",
+    "country": "Mauritania",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1480131261",
+    "city": "Port Louis",
+    "country": "Mauritius",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1175099654",
+    "city": "Mamoudzou",
+    "country": "Mayotte",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1484247881",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484950208",
+    "city": "Guadalajara",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484559591",
+    "city": "Monterrey",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484124846",
+    "city": "Toluca",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484708778",
+    "city": "Tijuana",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484003694",
+    "city": "Ecatepec",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484811199",
+    "city": "León de los Aldama",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484416394",
+    "city": "Puebla",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484198680",
+    "city": "Zapopan",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484840083",
+    "city": "Juárez",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1583008885",
+    "city": "Palikir",
+    "country": "Micronesia, Federated States of",
+    "region": "Oceania",
+    "subRegion": "Micronesia"
+  },
+  {
+    "cityId": "1498011437",
+    "city": "Chisinau",
+    "country": "Moldova",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1492854256",
+    "city": "Monaco",
+    "country": "Monaco",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1496024767",
+    "city": "Ulaanbaatar",
+    "country": "Mongolia",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1499454516",
+    "city": "Podgorica",
+    "country": "Montenegro",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1500971198",
+    "city": "Brades",
+    "country": "Montserrat",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1500711935",
+    "city": "Plymouth",
+    "country": "Montserrat",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1504175315",
+    "city": "Casablanca",
+    "country": "Morocco",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1504861504",
+    "city": "Tangier",
+    "country": "Morocco",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1504861997",
+    "city": "Fès",
+    "country": "Morocco",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1504023252",
+    "city": "Rabat",
+    "country": "Morocco",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1504999990",
+    "city": "Tifariti",
+    "country": "Morocco",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1508074843",
+    "city": "Maputo",
+    "country": "Mozambique",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1508768577",
+    "city": "Matola",
+    "country": "Mozambique",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1508958445",
+    "city": "Nampula",
+    "country": "Mozambique",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1516802003",
+    "city": "Windhoek",
+    "country": "Namibia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1520790128",
+    "city": "Yaren",
+    "country": "Nauru",
+    "region": "Oceania",
+    "subRegion": "Micronesia"
+  },
+  {
+    "cityId": "1524589448",
+    "city": "Kathmandu",
+    "country": "Nepal",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1528817379",
+    "city": "Tilburg",
+    "country": "Netherlands",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1528355309",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1528892850",
+    "city": "Rotterdam",
+    "country": "Netherlands",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1528799905",
+    "city": "The Hague",
+    "country": "Netherlands",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1540958092",
+    "city": "Nouméa",
+    "country": "New Caledonia",
+    "region": "Oceania",
+    "subRegion": "Melanesia"
+  },
+  {
+    "cityId": "1554435911",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1554772152",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1558296252",
+    "city": "Managua",
+    "country": "Nicaragua",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1562932886",
+    "city": "Niamey",
+    "country": "Niger",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1566593751",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1566422868",
+    "city": "Kano",
+    "country": "Nigeria",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1566342270",
+    "city": "Abuja",
+    "country": "Nigeria",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1570882835",
+    "city": "Alofi",
+    "country": "Niue",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1574121434",
+    "city": "Kingston",
+    "country": "Norfolk Island",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1807600615",
+    "city": "Skopje",
+    "country": "North Macedonia",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1580556972",
+    "city": "Capitol Hill",
+    "country": "Northern Mariana Islands",
+    "region": "Oceania",
+    "subRegion": "Micronesia"
+  },
+  {
+    "cityId": "1578324706",
+    "city": "Oslo",
+    "country": "Norway",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1512001294",
+    "city": "Masqaţ",
+    "country": "Oman",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1512035506",
+    "city": "Muscat",
+    "country": "Oman",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1586129469",
+    "city": "Karachi",
+    "country": "Pakistan",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1586801463",
+    "city": "Lahore",
+    "country": "Pakistan",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1586306717",
+    "city": "Islamabad",
+    "country": "Pakistan",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1585525081",
+    "city": "Ngerulmud",
+    "country": "Palau",
+    "region": "Oceania",
+    "subRegion": "Micronesia"
+  },
+  {
+    "cityId": "1591672475",
+    "city": "Panama City",
+    "country": "Panama",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1598685395",
+    "city": "Port Moresby",
+    "country": "Papua New Guinea",
+    "region": "Oceania",
+    "subRegion": "Melanesia"
+  },
+  {
+    "cityId": "1600057911",
+    "city": "Asunción",
+    "country": "Paraguay",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1604728603",
+    "city": "Lima",
+    "country": "Peru",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1604723954",
+    "city": "Arequipa",
+    "country": "Peru",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1604613706",
+    "city": "Trujillo",
+    "country": "Peru",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1604799615",
+    "city": "Chiclayo",
+    "country": "Peru",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1608618140",
+    "city": "Manila",
+    "country": "Philippines",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1608974097",
+    "city": "Quezon City",
+    "country": "Philippines",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1608189351",
+    "city": "Zamboanga City",
+    "country": "Philippines",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1608906877",
+    "city": "Davao",
+    "country": "Philippines",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1608897690",
+    "city": "Caloocan City",
+    "country": "Philippines",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1612000000",
+    "city": "Adamstown",
+    "country": "Pitcairn Islands",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1616024847",
+    "city": "Warsaw",
+    "country": "Poland",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1616172264",
+    "city": "Kraków",
+    "country": "Poland",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1616406372",
+    "city": "Gdańsk",
+    "country": "Poland",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1616108520",
+    "city": "Wrocław",
+    "country": "Poland",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1616832750",
+    "city": "Łódź",
+    "country": "Poland",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1620619017",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1630035577",
+    "city": "San Juan",
+    "country": "Puerto Rico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1634459660",
+    "city": "Doha",
+    "country": "Qatar",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1634097551",
+    "city": "Ar Rayyān",
+    "country": "Qatar",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1638024662",
+    "city": "Saint-Denis",
+    "country": "Reunion",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1642414442",
+    "city": "Bucharest",
+    "country": "Romania",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1643318494",
+    "city": "Moscow",
+    "country": "Russia",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1643616350",
+    "city": "Saint Petersburg",
+    "country": "Russia",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1643399240",
+    "city": "Novosibirsk",
+    "country": "Russia",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1643582706",
+    "city": "Yekaterinburg",
+    "country": "Russia",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1643101260",
+    "city": "Kazan",
+    "country": "Russia",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1646923541",
+    "city": "Kigali",
+    "country": "Rwanda",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1652681565",
+    "city": "Gustavia",
+    "country": "Saint Barthelemy",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1654761576",
+    "city": "Jamestown",
+    "country": "Saint Helena, Ascension, and Tristan da Cunha",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1659198919",
+    "city": "Basseterre",
+    "country": "Saint Kitts and Nevis",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1662922505",
+    "city": "Castries",
+    "country": "Saint Lucia",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1663133172",
+    "city": "Marigot",
+    "country": "Saint Martin",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1666340272",
+    "city": "Saint-Pierre",
+    "country": "Saint Pierre and Miquelon",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1670376659",
+    "city": "Kingstown",
+    "country": "Saint Vincent and the Grenadines",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1882489296",
+    "city": "Apia",
+    "country": "Samoa",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1674741947",
+    "city": "San Marino",
+    "country": "San Marino",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1678301324",
+    "city": "São Tomé",
+    "country": "Sao Tome and Principe",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1682999334",
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1682926944",
+    "city": "Jeddah",
+    "country": "Saudi Arabia",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1682169241",
+    "city": "Mecca",
+    "country": "Saudi Arabia",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1682345785",
+    "city": "Medina",
+    "country": "Saudi Arabia",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1682452296",
+    "city": "Ad Dammām",
+    "country": "Saudi Arabia",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1686604760",
+    "city": "Dakar",
+    "country": "Senegal",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1686165071",
+    "city": "Pikine",
+    "country": "Senegal",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1686956738",
+    "city": "Touba",
+    "country": "Senegal",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1688374696",
+    "city": "Belgrade",
+    "country": "Serbia",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1690193579",
+    "city": "Victoria",
+    "country": "Seychelles",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1694085071",
+    "city": "Freetown",
+    "country": "Sierra Leone",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1702341327",
+    "city": "Singapore",
+    "country": "Singapore",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1534859858",
+    "city": "Philipsburg",
+    "country": "Sint Maarten",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1703195001",
+    "city": "Bratislava",
+    "country": "Slovakia",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1705917455",
+    "city": "Ljubljana",
+    "country": "Slovenia",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1090737486",
+    "city": "Honiara",
+    "country": "Solomon Islands",
+    "region": "Oceania",
+    "subRegion": "Melanesia"
+  },
+  {
+    "cityId": "1706893395",
+    "city": "Mogadishu",
+    "country": "Somalia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1706832021",
+    "city": "Hargeysa",
+    "country": "Somalia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1706563100",
+    "city": "Baidoa",
+    "country": "Somalia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1710550792",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1710680650",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1710176249",
+    "city": "Pretoria",
+    "country": "South Africa",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1710627007",
+    "city": "Soweto",
+    "country": "South Africa",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1710495933",
+    "city": "Bloemfontein",
+    "country": "South Africa",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1239048838",
+    "city": "King Edward Point",
+    "country": "South Georgia And South Sandwich Islands",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1728444337",
+    "city": "Juba",
+    "country": "South Sudan",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1724616994",
+    "city": "Madrid",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724594040",
+    "city": "Barcelona",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724981666",
+    "city": "Valencia",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724991838",
+    "city": "Sevilla",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724397372",
+    "city": "Málaga",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724331267",
+    "city": "Bilbao",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724907391",
+    "city": "Zaragoza",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724107739",
+    "city": "Murcia",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724501748",
+    "city": "Las Palmas",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1724728111",
+    "city": "Palma",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1144251314",
+    "city": "Colombo",
+    "country": "Sri Lanka",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1144239330",
+    "city": "Sri Jayewardenepura Kotte",
+    "country": "Sri Lanka",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1729268475",
+    "city": "Khartoum",
+    "country": "Sudan",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1729912179",
+    "city": "Omdurman",
+    "country": "Sudan",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1729318628",
+    "city": "Khartoum North",
+    "country": "Sudan",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1740518660",
+    "city": "Paramaribo",
+    "country": "Suriname",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1930654114",
+    "city": "Longyearbyen",
+    "country": "Svalbard",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1752425602",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1752059374",
+    "city": "Gothenburg",
+    "country": "Sweden",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1756374318",
+    "city": "Bern",
+    "country": "Switzerland",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1760685964",
+    "city": "Damascus",
+    "country": "Syria",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1760366651",
+    "city": "Aleppo",
+    "country": "Syria",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1760013934",
+    "city": "Homs",
+    "country": "Syria",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1158689622",
+    "city": "Taichung",
+    "country": "Taiwan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1158331334",
+    "city": "Kaohsiung",
+    "country": "Taiwan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1158881289",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1762930616",
+    "city": "Dushanbe",
+    "country": "Tajikistan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1762372787",
+    "city": "Khŭjand",
+    "country": "Tajikistan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1834843853",
+    "city": "Dar es Salaam",
+    "country": "Tanzania",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1834011288",
+    "city": "Mwanza",
+    "country": "Tanzania",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1834288497",
+    "city": "Dodoma",
+    "country": "Tanzania",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1764068610",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1764662886",
+    "city": "Chiang Mai",
+    "country": "Thailand",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1626308942",
+    "city": "Dili",
+    "country": "Timor-Leste",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1768409132",
+    "city": "Lomé",
+    "country": "Togo",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1776737461",
+    "city": "Nuku‘alofa",
+    "country": "Tonga",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1780670676",
+    "city": "Port of Spain",
+    "country": "Trinidad and Tobago",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1788742103",
+    "city": "Tunis",
+    "country": "Tunisia",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1792756324",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792572891",
+    "city": "Ankara",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792903330",
+    "city": "Bursa",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792725579",
+    "city": "İzmir",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792014004",
+    "city": "Konya",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792911843",
+    "city": "Gaziantep",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792536241",
+    "city": "Diyarbakır",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792783772",
+    "city": "Adana",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792945815",
+    "city": "Kayseri",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1792169057",
+    "city": "Samsun",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1795049992",
+    "city": "Ashgabat",
+    "country": "Turkmenistan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1796965313",
+    "city": "Grand Turk",
+    "country": "Turks and Caicos Islands",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1798251391",
+    "city": "Funafuti",
+    "country": "Tuvalu",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1850037473",
+    "city": "Charlotte Amalie",
+    "country": "U.S. Virgin Islands",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1800406299",
+    "city": "Kampala",
+    "country": "Uganda",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1800032516",
+    "city": "Nansana",
+    "country": "Uganda",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1804382913",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1804588111",
+    "city": "Kharkiv",
+    "country": "Ukraine",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1804178102",
+    "city": "Odesa",
+    "country": "Ukraine",
+    "region": "Europe",
+    "subRegion": "Eastern Europe"
+  },
+  {
+    "cityId": "1784736618",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1784176710",
+    "city": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1784152993",
+    "city": "Sharjah",
+    "country": "United Arab Emirates",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1784674685",
+    "city": "Al ‘Ayn",
+    "country": "United Arab Emirates",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1826645935",
+    "city": "London",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826423213",
+    "city": "Birmingham",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826964096",
+    "city": "Portsmouth",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826602892",
+    "city": "Southampton",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826921049",
+    "city": "Bristol",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826836462",
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826246335",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826343963",
+    "city": "Leeds",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826289852",
+    "city": "Sheffield",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1826558678",
+    "city": "Liverpool",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1840034016",
+    "city": "New York",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840020491",
+    "city": "Los Angeles",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840000494",
+    "city": "Chicago",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840015149",
+    "city": "Miami",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840020925",
+    "city": "Houston",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840019440",
+    "city": "Dallas",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840000673",
+    "city": "Philadelphia",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840013660",
+    "city": "Atlanta",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840006060",
+    "city": "Washington",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840000455",
+    "city": "Boston",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1858107000",
+    "city": "Montevideo",
+    "country": "Uruguay",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1860331871",
+    "city": "Tashkent",
+    "country": "Uzbekistan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1860894033",
+    "city": "Namangan",
+    "country": "Uzbekistan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1860445095",
+    "city": "Andijon",
+    "country": "Uzbekistan",
+    "region": "Asia",
+    "subRegion": "Central Asia"
+  },
+  {
+    "cityId": "1548805075",
+    "city": "Port-Vila",
+    "country": "Vanuatu",
+    "region": "Oceania",
+    "subRegion": "Melanesia"
+  },
+  {
+    "cityId": "1336000000",
+    "city": "Vatican City",
+    "country": "Vatican City",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1862748204",
+    "city": "Caracas",
+    "country": "Venezuela",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1862072711",
+    "city": "Maracaibo",
+    "country": "Venezuela",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1862309871",
+    "city": "Valencia",
+    "country": "Venezuela",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1704774326",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1704413791",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1704000623",
+    "city": "Haiphong",
+    "country": "Vietnam",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1704863046",
+    "city": "Biên Hòa",
+    "country": "Vietnam",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1704783472",
+    "city": "Cần Thơ",
+    "country": "Vietnam",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1092732412",
+    "city": "Road Town",
+    "country": "Virgin Islands, British",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1876784844",
+    "city": "Mata-Utu",
+    "country": "Wallis and Futuna",
+    "region": "Oceania",
+    "subRegion": "Polynesia"
+  },
+  {
+    "cityId": "1887750814",
+    "city": "Sanaa",
+    "country": "Yemen",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1887867886",
+    "city": "Aden",
+    "country": "Yemen",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1887202594",
+    "city": "Al Mukallā",
+    "country": "Yemen",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1894157390",
+    "city": "Lusaka",
+    "country": "Zambia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1894321752",
+    "city": "Kitwe",
+    "country": "Zambia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1894032745",
+    "city": "Ndola",
+    "country": "Zambia",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1716196799",
+    "city": "Harare",
+    "country": "Zimbabwe",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1716032632",
+    "city": "Bulawayo",
+    "country": "Zimbabwe",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
+  }
+]

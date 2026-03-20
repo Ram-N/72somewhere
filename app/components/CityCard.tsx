@@ -40,6 +40,7 @@ interface CityCardProps {
   userMaxTemp: number;
   searchMonths: number[];
   size?: "compact" | "large";
+  matchesTemp?: boolean;
 }
 
 const MONTH_LABELS = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
@@ -116,6 +117,7 @@ export default function CityCard({
   userMaxTemp,
   searchMonths,
   size = "compact",
+  matchesTemp,
 }: CityCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [yearData, setYearData] = useState<MonthRecord[] | null>(null);
@@ -184,7 +186,7 @@ export default function CityCard({
     >
       <div className="flip-card-inner">
         {/* FRONT FACE */}
-        <div className={`flip-card-front border border-gray-200 rounded-lg ${size === "compact" ? "p-3" : "p-4"} bg-white hover:shadow-md transition-shadow flex flex-col`}>
+        <div className={`flip-card-front border border-gray-200 rounded-lg ${size === "compact" ? "p-3" : "p-4"} bg-white hover:shadow-md transition-shadow flex flex-col ${matchesTemp === false ? "opacity-80" : ""}`}>
           {/* Header row */}
           <div className="flex justify-between items-start mb-1">
             <div>
@@ -193,12 +195,24 @@ export default function CityCard({
               </h3>
               <p className="text-sm text-gray-600">{destination.country}</p>
             </div>
-            {/* Match badge */}
-            {yearData && (
-              <span className={`text-xs px-2 py-1 rounded-full font-medium ${badge.color}`}>
-                {badge.count}/12 months
-              </span>
-            )}
+            {/* Match badges */}
+            <div className="flex flex-col items-end gap-1">
+              {matchesTemp === false && (
+                <span className="text-xs px-2 py-1 rounded-full font-medium bg-orange-100 text-orange-700">
+                  Outside range
+                </span>
+              )}
+              {matchesTemp === true && (
+                <span className="text-xs px-2 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                  Temp ✓
+                </span>
+              )}
+              {yearData && (
+                <span className={`text-xs px-2 py-1 rounded-full font-medium ${badge.color}`}>
+                  {badge.count}/12 months
+                </span>
+              )}
+            </div>
           </div>
 
           {/* Temp stats */}

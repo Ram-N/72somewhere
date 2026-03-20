@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useMemo } from "react";
 import CityCard from "./components/CityCard";
+import LocationSearch from "./components/LocationSearch";
+import type { LocationFilter } from "@/lib/types";
 
 type DurationOption = "1week" | "2weeks" | "3weeks" | "4weeks" | "1month";
 type StartOption = "m1" | "m2" | "m3" | "m4" | "custom";
@@ -14,7 +16,9 @@ export default function Home() {
   const [minTemp, setMinTemp] = useState(70);
   const [maxTemp, setMaxTemp] = useState(75);
   const [tempUnit, setTempUnit] = useState<"C" | "F">("F");
+  const [locationFilter, setLocationFilter] = useState<LocationFilter | null>(null);
   const [results, setResults] = useState<any[]>([]);
+  const [searchMeta, setSearchMeta] = useState<{ totalInArea?: number; matchedInArea?: number } | null>(null);
   const [loading, setLoading] = useState(false);
   const [viewMode, setViewMode] = useState<"all" | "one">("all");
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -116,61 +120,22 @@ export default function Home() {
   const handleSearch = async () => {
     setLoading(true);
     try {
+      const body: Record<string, unknown> = {
+        startDate,
+        endDate,
+        minTemp: toCelsius(minTemp),
+        maxTemp: toCelsius(maxTemp),
+      };
+      if (locationFilter) body.locationFilter = locationFilter;
+
       const response = await fetch("/api/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          startDate,
-          endDate,
-          minTemp: toCelsius(minTemp),
-          maxTemp: toCelsius(maxTemp),
-        }),
+        body: JSON.stringify(body),
       });
       const data = await response.json();
       setResults(data.destinations || []);
-    } catch (error) {
-      console.error("Search failed:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleSurpriseMe = async () => {
-    let randomMin: number;
-    let randomMax: number;
-    if (tempUnit === "F") {
-      randomMin = Math.floor(Math.random() * 50) + 50;
-      randomMax = randomMin + 10;
-    } else {
-      randomMin = Math.floor(Math.random() * 20) + 10;
-      randomMax = randomMin + 5;
-    }
-    setMinTemp(randomMin);
-    setMaxTemp(randomMax);
-
-    const today = new Date();
-    const randomDays = Math.floor(Math.random() * 180);
-    const start = new Date(today.getTime() + randomDays * 24 * 60 * 60 * 1000);
-    const startStr = start.toISOString().split("T")[0];
-    setStartDate(startStr);
-    setStartOffset("custom");
-    setDuration("2weeks");
-
-    setLoading(true);
-    try {
-      const calculatedEndDate = getEndDate(startStr, "2weeks");
-      const response = await fetch("/api/search", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          startDate: startStr,
-          endDate: calculatedEndDate,
-          minTemp: toCelsius(randomMin),
-          maxTemp: toCelsius(randomMax),
-        }),
-      });
-      const data = await response.json();
-      setResults(data.destinations || []);
+      setSearchMeta(locationFilter ? { totalInArea: data.totalInArea, matchedInArea: data.matchedInArea } : null);
     } catch (error) {
       console.error("Search failed:", error);
     } finally {
@@ -319,20 +284,14 @@ export default function Home() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 items-stretch">
+              <LocationSearch value={locationFilter} onChange={setLocationFilter} />
               <button
                 onClick={handleSearch}
                 disabled={!startDate || loading}
-                className="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-semibold py-2 px-4 rounded-md transition-colors"
+                className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-semibold py-2 px-5 rounded-md transition-colors whitespace-nowrap"
               >
-                {loading ? "Searching..." : "Find Places"}
-              </button>
-              <button
-                onClick={handleSurpriseMe}
-                disabled={loading}
-                className="flex-1 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 text-white font-semibold py-2 px-4 rounded-md transition-colors"
-              >
-                Surprise Me
+                {loading ? "Searching…" : "Find Places"}
               </button>
             </div>
           </div>
@@ -343,10 +302,17 @@ export default function Home() {
           <div className="bg-white rounded-lg shadow-lg p-5">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-base font-bold text-gray-900">
-                {startDate && endDate
-                  ? `${startDate} → ${endDate}`
-                  : "Date range"}{" "}
-                · {minTemp}°{tempUnit}–{maxTemp}°{tempUnit}
+                {searchMeta ? (
+                  <>
+                    {searchMeta.matchedInArea} of {searchMeta.totalInArea} cities in {locationFilter?.label}
+                    <span className="font-normal text-gray-500"> match your temp</span>
+                  </>
+                ) : (
+                  <>
+                    {startDate && endDate ? `${startDate} → ${endDate}` : "Date range"}{" "}
+                    · {minTemp}°{tempUnit}–{maxTemp}°{tempUnit}
+                  </>
+                )}
               </h2>
               <div className="flex gap-1">
                 <button
@@ -398,7 +364,7 @@ export default function Home() {
                 {/* Grouped by country */}
                 {groupedByCountry ? (
                   <div className="space-y-5">
-                    {Object.entries(groupedByCountry).map(([country, cities]) => (
+                    {Object.entries(groupedByCountry as Record<string, any[]>).map(([country, cities]) => (
                       <div key={country}>
                         <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2 pl-2 border-l-2 border-blue-400">
                           {country}
@@ -413,6 +379,7 @@ export default function Home() {
                               userMaxTemp={maxTemp}
                               searchMonths={searchMonths}
                               size="compact"
+                              matchesTemp={searchMeta ? destination.matches_temp : undefined}
                             />
                           ))}
                         </div>
@@ -430,6 +397,7 @@ export default function Home() {
                         userMaxTemp={maxTemp}
                         searchMonths={searchMonths}
                         size="compact"
+                        matchesTemp={searchMeta ? destination.matches_temp : undefined}
                       />
                     ))}
                   </div>
@@ -473,6 +441,7 @@ export default function Home() {
                     userMaxTemp={maxTemp}
                     searchMonths={searchMonths}
                     size="large"
+                    matchesTemp={searchMeta ? results[currentCardIndex].matches_temp : undefined}
                   />
                 </div>
                 <button

@@ -1,8 +1,8 @@
 {
   "created": "2026-03-15T16:02:33.343201",
-  "last_updated": "2026-03-18T23:26:29.265081",
+  "last_updated": "2026-03-19T09:38:28.554646",
   "total_cities": 510,
-  "completed_count": 160,
+  "completed_count": 500,
   "failed_count": 0,
   "cities": [
     {
@@ -1540,8 +1540,8 @@
       "city_id": "1288164978",
       "city_name": "Boankra",
       "country": "Ghana",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.287986",
       "attempt_count": 1
     },
     {
@@ -1549,8 +1549,8 @@
       "city_id": "1288299415",
       "city_name": "Accra",
       "country": "Ghana",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288017",
       "attempt_count": 1
     },
     {
@@ -1558,8 +1558,8 @@
       "city_id": "1292385245",
       "city_name": "Gibraltar",
       "country": "Gibraltar",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288021",
       "attempt_count": 1
     },
     {
@@ -1567,8 +1567,8 @@
       "city_id": "1300715560",
       "city_name": "Athens",
       "country": "Greece",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288023",
       "attempt_count": 1
     },
     {
@@ -1576,8 +1576,8 @@
       "city_id": "1300397999",
       "city_name": "Thessaloniki",
       "country": "Greece",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288025",
       "attempt_count": 1
     },
     {
@@ -1585,8 +1585,8 @@
       "city_id": "1304028354",
       "city_name": "Nuuk",
       "country": "Greenland",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288026",
       "attempt_count": 1
     },
     {
@@ -1594,8 +1594,8 @@
       "city_id": "1308891766",
       "city_name": "Saint George's",
       "country": "Grenada",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288028",
       "attempt_count": 1
     },
     {
@@ -1603,8 +1603,8 @@
       "city_id": "1312938008",
       "city_name": "Basse-Terre",
       "country": "Guadeloupe",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288029",
       "attempt_count": 1
     },
     {
@@ -1612,8 +1612,8 @@
       "city_id": "1316937540",
       "city_name": "Hagta",
       "country": "Guam",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288032",
       "attempt_count": 1
     },
     {
@@ -1621,8 +1621,8 @@
       "city_id": "1320197916",
       "city_name": "Guatemala City",
       "country": "Guatemala",
-      "status": "processing",
-      "completed_at": null,
+      "status": "completed",
+      "completed_at": "2026-03-18T23:38:43.288033",
       "attempt_count": 1
     },
     {
@@ -1630,2970 +1630,2970 @@
       "city_id": "1320420152",
       "city_name": "Mixco",
       "country": "Guatemala",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416051",
+      "attempt_count": 1
     },
     {
       "index": 181,
       "city_id": "1831991870",
       "city_name": "Saint Peter Port",
       "country": "Guernsey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416095",
+      "attempt_count": 1
     },
     {
       "index": 182,
       "city_id": "1324568159",
       "city_name": "Conakry",
       "country": "Guinea",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416100",
+      "attempt_count": 1
     },
     {
       "index": 183,
       "city_id": "1624168850",
       "city_name": "Bissau",
       "country": "Guinea-Bissau",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416106",
+      "attempt_count": 1
     },
     {
       "index": 184,
       "city_id": "1328160906",
       "city_name": "Georgetown",
       "country": "Guyana",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416109",
+      "attempt_count": 1
     },
     {
       "index": 185,
       "city_id": "1332401940",
       "city_name": "Port-au-Prince",
       "country": "Haiti",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416111",
+      "attempt_count": 1
     },
     {
       "index": 186,
       "city_id": "1332000098",
       "city_name": "Carrefour",
       "country": "Haiti",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416113",
+      "attempt_count": 1
     },
     {
       "index": 187,
       "city_id": "1340762485",
       "city_name": "Comayaguela",
       "country": "Honduras",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416114",
+      "attempt_count": 1
     },
     {
       "index": 188,
       "city_id": "1340344059",
       "city_name": "Tegucigalpa",
       "country": "Honduras",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416117",
+      "attempt_count": 1
     },
     {
       "index": 189,
       "city_id": "1340568412",
       "city_name": "San Pedro Sula",
       "country": "Honduras",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-18T23:51:08.416123",
+      "attempt_count": 1
     },
     {
       "index": 190,
       "city_id": "1344982653",
       "city_name": "Hong Kong",
       "country": "Hong Kong",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235883",
+      "attempt_count": 1
     },
     {
       "index": 191,
       "city_id": "1344538284",
       "city_name": "Kowloon",
       "country": "Hong Kong",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235931",
+      "attempt_count": 1
     },
     {
       "index": 192,
       "city_id": "1344745541",
       "city_name": "Sha Tin",
       "country": "Hong Kong",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235935",
+      "attempt_count": 1
     },
     {
       "index": 193,
       "city_id": "1348611435",
       "city_name": "Budapest",
       "country": "Hungary",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235937",
+      "attempt_count": 1
     },
     {
       "index": 194,
       "city_id": "1352327190",
       "city_name": "Reykjavik",
       "country": "Iceland",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235939",
+      "attempt_count": 1
     },
     {
       "index": 195,
       "city_id": "1356872604",
       "city_name": "Delhi",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235941",
+      "attempt_count": 1
     },
     {
       "index": 196,
       "city_id": "1356226629",
       "city_name": "Mumbai",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235942",
+      "attempt_count": 1
     },
     {
       "index": 197,
       "city_id": "1356060520",
       "city_name": "Kolkata",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235944",
+      "attempt_count": 1
     },
     {
       "index": 198,
       "city_id": "1356410365",
       "city_name": "Bangalore",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235945",
+      "attempt_count": 1
     },
     {
       "index": 199,
       "city_id": "1356374944",
       "city_name": "Chennai",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:33:46.235947",
+      "attempt_count": 1
     },
     {
       "index": 200,
       "city_id": "1356871768",
       "city_name": "Hyderabad",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488085",
+      "attempt_count": 1
     },
     {
       "index": 201,
       "city_id": "1356081074",
       "city_name": "Pune",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488135",
+      "attempt_count": 1
     },
     {
       "index": 202,
       "city_id": "1356304381",
       "city_name": "Ahmedabad",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488139",
+      "attempt_count": 1
     },
     {
       "index": 203,
       "city_id": "1356758738",
       "city_name": "Surat",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488141",
+      "attempt_count": 1
     },
     {
       "index": 204,
       "city_id": "1356215164",
       "city_name": "New Delhi",
       "country": "India",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488143",
+      "attempt_count": 1
     },
     {
       "index": 205,
       "city_id": "1360771077",
       "city_name": "Jakarta",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488144",
+      "attempt_count": 1
     },
     {
       "index": 206,
       "city_id": "1360484663",
       "city_name": "Surabaya",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488146",
+      "attempt_count": 1
     },
     {
       "index": 207,
       "city_id": "1360543171",
       "city_name": "Medan",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488149",
+      "attempt_count": 1
     },
     {
       "index": 208,
       "city_id": "1360141408",
       "city_name": "Malang",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488150",
+      "attempt_count": 1
     },
     {
       "index": 209,
       "city_id": "1360673840",
       "city_name": "Bekasi",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:46:14.488152",
+      "attempt_count": 1
     },
     {
       "index": 210,
       "city_id": "1360962899",
       "city_name": "Depok",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322850",
+      "attempt_count": 1
     },
     {
       "index": 211,
       "city_id": "1360002844",
       "city_name": "Tangerang",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322901",
+      "attempt_count": 1
     },
     {
       "index": 212,
       "city_id": "1360745537",
       "city_name": "Semarang",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322905",
+      "attempt_count": 1
     },
     {
       "index": 213,
       "city_id": "1360902897",
       "city_name": "Palembang",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322907",
+      "attempt_count": 1
     },
     {
       "index": 214,
       "city_id": "1360029147",
       "city_name": "Sangereng",
       "country": "Indonesia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322909",
+      "attempt_count": 1
     },
     {
       "index": 215,
       "city_id": "1364305026",
       "city_name": "Tehran",
       "country": "Iran",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322911",
+      "attempt_count": 1
     },
     {
       "index": 216,
       "city_id": "1364123206",
       "city_name": "Mashhad",
       "country": "Iran",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322912",
+      "attempt_count": 1
     },
     {
       "index": 217,
       "city_id": "1364023865",
       "city_name": "Esfahan",
       "country": "Iran",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322914",
+      "attempt_count": 1
     },
     {
       "index": 218,
       "city_id": "1368596238",
       "city_name": "Baghdad",
       "country": "Iraq",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322915",
+      "attempt_count": 1
     },
     {
       "index": 219,
       "city_id": "1368194914",
       "city_name": "Mosul",
       "country": "Iraq",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T01:58:38.322917",
+      "attempt_count": 1
     },
     {
       "index": 220,
       "city_id": "1368714645",
       "city_name": "Al Basrah",
       "country": "Iraq",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514807",
+      "attempt_count": 1
     },
     {
       "index": 221,
       "city_id": "1372595407",
       "city_name": "Dublin",
       "country": "Ireland",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514885",
+      "attempt_count": 1
     },
     {
       "index": 222,
       "city_id": "1833688345",
       "city_name": "Douglas",
       "country": "Isle of Man",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514889",
+      "attempt_count": 1
     },
     {
       "index": 223,
       "city_id": "1376261644",
       "city_name": "Jerusalem",
       "country": "Israel",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514892",
+      "attempt_count": 1
     },
     {
       "index": 224,
       "city_id": "1376133727",
       "city_name": "Haifa",
       "country": "Israel",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514893",
+      "attempt_count": 1
     },
     {
       "index": 225,
       "city_id": "1380382862",
       "city_name": "Rome",
       "country": "Italy",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514895",
+      "attempt_count": 1
     },
     {
       "index": 226,
       "city_id": "1380724377",
       "city_name": "Milan",
       "country": "Italy",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514899",
+      "attempt_count": 1
     },
     {
       "index": 227,
       "city_id": "1380646673",
       "city_name": "Naples",
       "country": "Italy",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514901",
+      "attempt_count": 1
     },
     {
       "index": 228,
       "city_id": "1380244627",
       "city_name": "Turin",
       "country": "Italy",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514902",
+      "attempt_count": 1
     },
     {
       "index": 229,
       "city_id": "1380428434",
       "city_name": "Palermo",
       "country": "Italy",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T02:11:06.514904",
+      "attempt_count": 1
     },
     {
       "index": 230,
       "city_id": "1380716540",
       "city_name": "Genoa",
       "country": "Italy",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420714",
+      "attempt_count": 1
     },
     {
       "index": 231,
       "city_id": "1388709177",
       "city_name": "Kingston",
       "country": "Jamaica",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420746",
+      "attempt_count": 1
     },
     {
       "index": 232,
       "city_id": "1392685764",
       "city_name": "Tokyo",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420750",
+      "attempt_count": 1
     },
     {
       "index": 233,
       "city_id": "1392419823",
       "city_name": "Osaka",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420752",
+      "attempt_count": 1
     },
     {
       "index": 234,
       "city_id": "1392407472",
       "city_name": "Nagoya",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420754",
+      "attempt_count": 1
     },
     {
       "index": 235,
       "city_id": "1392118339",
       "city_name": "Yokohama",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420756",
+      "attempt_count": 1
     },
     {
       "index": 236,
       "city_id": "1392576294",
       "city_name": "Fukuoka",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420758",
+      "attempt_count": 1
     },
     {
       "index": 237,
       "city_id": "1392000195",
       "city_name": "Sapporo",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420760",
+      "attempt_count": 1
     },
     {
       "index": 238,
       "city_id": "1392003356",
       "city_name": "Kawasaki",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420761",
+      "attempt_count": 1
     },
     {
       "index": 239,
       "city_id": "1392978082",
       "city_name": "Kobe",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T03:49:00.420763",
+      "attempt_count": 1
     },
     {
       "index": 240,
       "city_id": "1392622735",
       "city_name": "Kyoto",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945868",
+      "attempt_count": 1
     },
     {
       "index": 241,
       "city_id": "1392017719",
       "city_name": "Saitama",
       "country": "Japan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945899",
+      "attempt_count": 1
     },
     {
       "index": 242,
       "city_id": "1832490253",
       "city_name": "Saint Helier",
       "country": "Jersey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945902",
+      "attempt_count": 1
     },
     {
       "index": 243,
       "city_id": "1400522593",
       "city_name": "Amman",
       "country": "Jordan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945904",
+      "attempt_count": 1
     },
     {
       "index": 244,
       "city_id": "1400040712",
       "city_name": "Al Mafraq",
       "country": "Jordan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945906",
+      "attempt_count": 1
     },
     {
       "index": 245,
       "city_id": "1400221568",
       "city_name": "Irbid",
       "country": "Jordan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945907",
+      "attempt_count": 1
     },
     {
       "index": 246,
       "city_id": "1398351701",
       "city_name": "Almaty",
       "country": "Kazakhstan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945910",
+      "attempt_count": 1
     },
     {
       "index": 247,
       "city_id": "1398791401",
       "city_name": "Shymkent",
       "country": "Kazakhstan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945912",
+      "attempt_count": 1
     },
     {
       "index": 248,
       "city_id": "1398516045",
       "city_name": "Astana",
       "country": "Kazakhstan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945913",
+      "attempt_count": 1
     },
     {
       "index": 249,
       "city_id": "1404000661",
       "city_name": "Nairobi",
       "country": "Kenya",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:11:36.945916",
+      "attempt_count": 1
     },
     {
       "index": 250,
       "city_id": "1404512373",
       "city_name": "Mombasa",
       "country": "Kenya",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646838",
+      "attempt_count": 1
     },
     {
       "index": 251,
       "city_id": "1296152641",
       "city_name": "Tarawa",
       "country": "Kiribati",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646872",
+      "attempt_count": 1
     },
     {
       "index": 252,
       "city_id": "1408738594",
       "city_name": "Pyongyang",
       "country": "Korea, North",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646876",
+      "attempt_count": 1
     },
     {
       "index": 253,
       "city_id": "1408482040",
       "city_name": "Hamhung",
       "country": "Korea, North",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646878",
+      "attempt_count": 1
     },
     {
       "index": 254,
       "city_id": "1408358410",
       "city_name": "Nampo",
       "country": "Korea, North",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646880",
+      "attempt_count": 1
     },
     {
       "index": 255,
       "city_id": "1410836482",
       "city_name": "Seoul",
       "country": "Korea, South",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646881",
+      "attempt_count": 1
     },
     {
       "index": 256,
       "city_id": "1410601465",
       "city_name": "Busan",
       "country": "Korea, South",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646883",
+      "attempt_count": 1
     },
     {
       "index": 257,
       "city_id": "1410160313",
       "city_name": "Incheon",
       "country": "Korea, South",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646885",
+      "attempt_count": 1
     },
     {
       "index": 258,
       "city_id": "1901760068",
       "city_name": "Pristina",
       "country": "Kosovo",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646887",
+      "attempt_count": 1
     },
     {
       "index": 259,
       "city_id": "1414102075",
       "city_name": "Kuwait City",
       "country": "Kuwait",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T04:59:35.646888",
+      "attempt_count": 1
     },
     {
       "index": 260,
       "city_id": "1417191971",
       "city_name": "Bishkek",
       "country": "Kyrgyzstan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938344",
+      "attempt_count": 1
     },
     {
       "index": 261,
       "city_id": "1418732714",
       "city_name": "Vientiane",
       "country": "Laos",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938382",
+      "attempt_count": 1
     },
     {
       "index": 262,
       "city_id": "1428586192",
       "city_name": "Riga",
       "country": "Latvia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938386",
+      "attempt_count": 1
     },
     {
       "index": 263,
       "city_id": "1422847713",
       "city_name": "Beirut",
       "country": "Lebanon",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938388",
+      "attempt_count": 1
     },
     {
       "index": 264,
       "city_id": "1426977668",
       "city_name": "Maseru",
       "country": "Lesotho",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938391",
+      "attempt_count": 1
     },
     {
       "index": 265,
       "city_id": "1430477826",
       "city_name": "Monrovia",
       "country": "Liberia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938393",
+      "attempt_count": 1
     },
     {
       "index": 266,
       "city_id": "1434201852",
       "city_name": "Tripoli",
       "country": "Libya",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938396",
+      "attempt_count": 1
     },
     {
       "index": 267,
       "city_id": "1434915572",
       "city_name": "Benghazi",
       "country": "Libya",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938398",
+      "attempt_count": 1
     },
     {
       "index": 268,
       "city_id": "1438317747",
       "city_name": "Vaduz",
       "country": "Liechtenstein",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938400",
+      "attempt_count": 1
     },
     {
       "index": 269,
       "city_id": "1440887149",
       "city_name": "Vilnius",
       "country": "Lithuania",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:11:51.938402",
+      "attempt_count": 1
     },
     {
       "index": 270,
       "city_id": "1442262731",
       "city_name": "Luxembourg",
       "country": "Luxembourg",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350463",
+      "attempt_count": 1
     },
     {
       "index": 271,
       "city_id": "1446227359",
       "city_name": "Macau",
       "country": "Macau",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350496",
+      "attempt_count": 1
     },
     {
       "index": 272,
       "city_id": "1450978461",
       "city_name": "Antananarivo",
       "country": "Madagascar",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350502",
+      "attempt_count": 1
     },
     {
       "index": 273,
       "city_id": "1454688499",
       "city_name": "Lilongwe",
       "country": "Malawi",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350505",
+      "attempt_count": 1
     },
     {
       "index": 274,
       "city_id": "1454145012",
       "city_name": "Blantyre",
       "country": "Malawi",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350508",
+      "attempt_count": 1
     },
     {
       "index": 275,
       "city_id": "1458988644",
       "city_name": "Kuala Lumpur",
       "country": "Malaysia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350511",
+      "attempt_count": 1
     },
     {
       "index": 276,
       "city_id": "1458417183",
       "city_name": "Seberang Jaya",
       "country": "Malaysia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350513",
+      "attempt_count": 1
     },
     {
       "index": 277,
       "city_id": "1458509635",
       "city_name": "Klang",
       "country": "Malaysia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350515",
+      "attempt_count": 1
     },
     {
       "index": 278,
       "city_id": "1458423505",
       "city_name": "Ipoh",
       "country": "Malaysia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350518",
+      "attempt_count": 1
     },
     {
       "index": 279,
       "city_id": "1458000206",
       "city_name": "Putrajaya",
       "country": "Malaysia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:24:10.350521",
+      "attempt_count": 1
     },
     {
       "index": 280,
       "city_id": "1462441685",
       "city_name": "Male",
       "country": "Maldives",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502816",
+      "attempt_count": 1
     },
     {
       "index": 281,
       "city_id": "1466965925",
       "city_name": "Bamako",
       "country": "Mali",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502939",
+      "attempt_count": 1
     },
     {
       "index": 282,
       "city_id": "1470574399",
       "city_name": "Valletta",
       "country": "Malta",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502945",
+      "attempt_count": 1
     },
     {
       "index": 283,
       "city_id": "1584000000",
       "city_name": "Majuro",
       "country": "Marshall Islands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502947",
+      "attempt_count": 1
     },
     {
       "index": 284,
       "city_id": "1474969110",
       "city_name": "Fort-de-France",
       "country": "Martinique",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502949",
+      "attempt_count": 1
     },
     {
       "index": 285,
       "city_id": "1478414984",
       "city_name": "Nouakchott",
       "country": "Mauritania",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502952",
+      "attempt_count": 1
     },
     {
       "index": 286,
       "city_id": "1480131261",
       "city_name": "Port Louis",
       "country": "Mauritius",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502953",
+      "attempt_count": 1
     },
     {
       "index": 287,
       "city_id": "1175099654",
       "city_name": "Mamoudzou",
       "country": "Mayotte",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502955",
+      "attempt_count": 1
     },
     {
       "index": 288,
       "city_id": "1484247881",
       "city_name": "Mexico City",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502956",
+      "attempt_count": 1
     },
     {
       "index": 289,
       "city_id": "1484950208",
       "city_name": "Guadalajara",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:36:40.502958",
+      "attempt_count": 1
     },
     {
       "index": 290,
       "city_id": "1484559591",
       "city_name": "Monterrey",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351741",
+      "attempt_count": 1
     },
     {
       "index": 291,
       "city_id": "1484124846",
       "city_name": "Toluca",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351790",
+      "attempt_count": 1
     },
     {
       "index": 292,
       "city_id": "1484708778",
       "city_name": "Tijuana",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351796",
+      "attempt_count": 1
     },
     {
       "index": 293,
       "city_id": "1484003694",
       "city_name": "Ecatepec",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351798",
+      "attempt_count": 1
     },
     {
       "index": 294,
       "city_id": "1484811199",
       "city_name": "Leon de los Aldama",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351799",
+      "attempt_count": 1
     },
     {
       "index": 295,
       "city_id": "1484416394",
       "city_name": "Puebla",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351801",
+      "attempt_count": 1
     },
     {
       "index": 296,
       "city_id": "1484198680",
       "city_name": "Zapopan",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351803",
+      "attempt_count": 1
     },
     {
       "index": 297,
       "city_id": "1484840083",
       "city_name": "Juarez",
       "country": "Mexico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351804",
+      "attempt_count": 1
     },
     {
       "index": 298,
       "city_id": "1583008885",
       "city_name": "Palikir",
       "country": "Micronesia, Federated States of",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351805",
+      "attempt_count": 1
     },
     {
       "index": 299,
       "city_id": "1498011437",
       "city_name": "Chisinau",
       "country": "Moldova",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T05:48:58.351807",
+      "attempt_count": 1
     },
     {
       "index": 300,
       "city_id": "1492854256",
       "city_name": "Monaco",
       "country": "Monaco",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827036",
+      "attempt_count": 1
     },
     {
       "index": 301,
       "city_id": "1496024767",
       "city_name": "Ulaanbaatar",
       "country": "Mongolia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827067",
+      "attempt_count": 1
     },
     {
       "index": 302,
       "city_id": "1499454516",
       "city_name": "Podgorica",
       "country": "Montenegro",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827071",
+      "attempt_count": 1
     },
     {
       "index": 303,
       "city_id": "1500971198",
       "city_name": "Brades",
       "country": "Montserrat",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827073",
+      "attempt_count": 1
     },
     {
       "index": 304,
       "city_id": "1500711935",
       "city_name": "Plymouth",
       "country": "Montserrat",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827076",
+      "attempt_count": 1
     },
     {
       "index": 305,
       "city_id": "1504175315",
       "city_name": "Casablanca",
       "country": "Morocco",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827077",
+      "attempt_count": 1
     },
     {
       "index": 306,
       "city_id": "1504861504",
       "city_name": "Tangier",
       "country": "Morocco",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827079",
+      "attempt_count": 1
     },
     {
       "index": 307,
       "city_id": "1504861997",
       "city_name": "Fes",
       "country": "Morocco",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827080",
+      "attempt_count": 1
     },
     {
       "index": 308,
       "city_id": "1504023252",
       "city_name": "Rabat",
       "country": "Morocco",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827082",
+      "attempt_count": 1
     },
     {
       "index": 309,
       "city_id": "1504999990",
       "city_name": "Tifariti",
       "country": "Morocco",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T06:01:19.827083",
+      "attempt_count": 1
     },
     {
       "index": 310,
       "city_id": "1508074843",
       "city_name": "Maputo",
       "country": "Mozambique",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170647",
+      "attempt_count": 1
     },
     {
       "index": 311,
       "city_id": "1508768577",
       "city_name": "Matola",
       "country": "Mozambique",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170675",
+      "attempt_count": 1
     },
     {
       "index": 312,
       "city_id": "1508958445",
       "city_name": "Nampula",
       "country": "Mozambique",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170679",
+      "attempt_count": 1
     },
     {
       "index": 313,
       "city_id": "1516802003",
       "city_name": "Windhoek",
       "country": "Namibia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170681",
+      "attempt_count": 1
     },
     {
       "index": 314,
       "city_id": "1520790128",
       "city_name": "Yaren",
       "country": "Nauru",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170683",
+      "attempt_count": 1
     },
     {
       "index": 315,
       "city_id": "1524589448",
       "city_name": "Kathmandu",
       "country": "Nepal",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170685",
+      "attempt_count": 1
     },
     {
       "index": 316,
       "city_id": "1528817379",
       "city_name": "Tilburg",
       "country": "Netherlands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170687",
+      "attempt_count": 1
     },
     {
       "index": 317,
       "city_id": "1528355309",
       "city_name": "Amsterdam",
       "country": "Netherlands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170688",
+      "attempt_count": 1
     },
     {
       "index": 318,
       "city_id": "1528892850",
       "city_name": "Rotterdam",
       "country": "Netherlands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170690",
+      "attempt_count": 1
     },
     {
       "index": 319,
       "city_id": "1528799905",
       "city_name": "The Hague",
       "country": "Netherlands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:04:21.170691",
+      "attempt_count": 1
     },
     {
       "index": 320,
       "city_id": "1540958092",
       "city_name": "Noumea",
       "country": "New Caledonia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499205",
+      "attempt_count": 1
     },
     {
       "index": 321,
       "city_id": "1554435911",
       "city_name": "Auckland",
       "country": "New Zealand",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499236",
+      "attempt_count": 1
     },
     {
       "index": 322,
       "city_id": "1554772152",
       "city_name": "Wellington",
       "country": "New Zealand",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499239",
+      "attempt_count": 1
     },
     {
       "index": 323,
       "city_id": "1558296252",
       "city_name": "Managua",
       "country": "Nicaragua",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499241",
+      "attempt_count": 1
     },
     {
       "index": 324,
       "city_id": "1562932886",
       "city_name": "Niamey",
       "country": "Niger",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499244",
+      "attempt_count": 1
     },
     {
       "index": 325,
       "city_id": "1566593751",
       "city_name": "Lagos",
       "country": "Nigeria",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499246",
+      "attempt_count": 1
     },
     {
       "index": 326,
       "city_id": "1566422868",
       "city_name": "Kano",
       "country": "Nigeria",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499249",
+      "attempt_count": 1
     },
     {
       "index": 327,
       "city_id": "1566342270",
       "city_name": "Abuja",
       "country": "Nigeria",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499250",
+      "attempt_count": 1
     },
     {
       "index": 328,
       "city_id": "1570882835",
       "city_name": "Alofi",
       "country": "Niue",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499252",
+      "attempt_count": 1
     },
     {
       "index": 329,
       "city_id": "1574121434",
       "city_name": "Kingston",
       "country": "Norfolk Island",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:16:47.499253",
+      "attempt_count": 1
     },
     {
       "index": 330,
       "city_id": "1807600615",
       "city_name": "Skopje",
       "country": "North Macedonia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069618",
+      "attempt_count": 1
     },
     {
       "index": 331,
       "city_id": "1580556972",
       "city_name": "Capitol Hill",
       "country": "Northern Mariana Islands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069649",
+      "attempt_count": 1
     },
     {
       "index": 332,
       "city_id": "1578324706",
       "city_name": "Oslo",
       "country": "Norway",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069653",
+      "attempt_count": 1
     },
     {
       "index": 333,
       "city_id": "1512001294",
       "city_name": "Masqat",
       "country": "Oman",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069655",
+      "attempt_count": 1
     },
     {
       "index": 334,
       "city_id": "1512035506",
       "city_name": "Muscat",
       "country": "Oman",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069657",
+      "attempt_count": 1
     },
     {
       "index": 335,
       "city_id": "1586129469",
       "city_name": "Karachi",
       "country": "Pakistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069659",
+      "attempt_count": 1
     },
     {
       "index": 336,
       "city_id": "1586801463",
       "city_name": "Lahore",
       "country": "Pakistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069661",
+      "attempt_count": 1
     },
     {
       "index": 337,
       "city_id": "1586306717",
       "city_name": "Islamabad",
       "country": "Pakistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069663",
+      "attempt_count": 1
     },
     {
       "index": 338,
       "city_id": "1585525081",
       "city_name": "Ngerulmud",
       "country": "Palau",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069664",
+      "attempt_count": 1
     },
     {
       "index": 339,
       "city_id": "1591672475",
       "city_name": "Panama City",
       "country": "Panama",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069666",
+      "attempt_count": 1
     },
     {
       "index": 340,
       "city_id": "1598685395",
       "city_name": "Port Moresby",
       "country": "Papua New Guinea",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069667",
+      "attempt_count": 1
     },
     {
       "index": 341,
       "city_id": "1600057911",
       "city_name": "Asuncion",
       "country": "Paraguay",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069669",
+      "attempt_count": 1
     },
     {
       "index": 342,
       "city_id": "1604728603",
       "city_name": "Lima",
       "country": "Peru",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069670",
+      "attempt_count": 1
     },
     {
       "index": 343,
       "city_id": "1604723954",
       "city_name": "Arequipa",
       "country": "Peru",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069672",
+      "attempt_count": 1
     },
     {
       "index": 344,
       "city_id": "1604613706",
       "city_name": "Trujillo",
       "country": "Peru",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069674",
+      "attempt_count": 1
     },
     {
       "index": 345,
       "city_id": "1604799615",
       "city_name": "Chiclayo",
       "country": "Peru",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069677",
+      "attempt_count": 1
     },
     {
       "index": 346,
       "city_id": "1608618140",
       "city_name": "Manila",
       "country": "Philippines",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069678",
+      "attempt_count": 1
     },
     {
       "index": 347,
       "city_id": "1608974097",
       "city_name": "Quezon City",
       "country": "Philippines",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069680",
+      "attempt_count": 1
     },
     {
       "index": 348,
       "city_id": "1608189351",
       "city_name": "Zamboanga City",
       "country": "Philippines",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069681",
+      "attempt_count": 1
     },
     {
       "index": 349,
       "city_id": "1608906877",
       "city_name": "Davao",
       "country": "Philippines",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:29:00.069683",
+      "attempt_count": 1
     },
     {
       "index": 350,
       "city_id": "1608897690",
       "city_name": "Caloocan City",
       "country": "Philippines",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827089",
+      "attempt_count": 1
     },
     {
       "index": 351,
       "city_id": "1612000000",
       "city_name": "Adamstown",
       "country": "Pitcairn Islands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827118",
+      "attempt_count": 1
     },
     {
       "index": 352,
       "city_id": "1616024847",
       "city_name": "Warsaw",
       "country": "Poland",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827122",
+      "attempt_count": 1
     },
     {
       "index": 353,
       "city_id": "1616172264",
       "city_name": "Krakow",
       "country": "Poland",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827124",
+      "attempt_count": 1
     },
     {
       "index": 354,
       "city_id": "1616406372",
       "city_name": "Gdansk",
       "country": "Poland",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827126",
+      "attempt_count": 1
     },
     {
       "index": 355,
       "city_id": "1616108520",
       "city_name": "Wroclaw",
       "country": "Poland",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827127",
+      "attempt_count": 1
     },
     {
       "index": 356,
       "city_id": "1616832750",
       "city_name": "Lodz",
       "country": "Poland",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827129",
+      "attempt_count": 1
     },
     {
       "index": 357,
       "city_id": "1620619017",
       "city_name": "Lisbon",
       "country": "Portugal",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827130",
+      "attempt_count": 1
     },
     {
       "index": 358,
       "city_id": "1630035577",
       "city_name": "San Juan",
       "country": "Puerto Rico",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827132",
+      "attempt_count": 1
     },
     {
       "index": 359,
       "city_id": "1634459660",
       "city_name": "Doha",
       "country": "Qatar",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827133",
+      "attempt_count": 1
     },
     {
       "index": 360,
       "city_id": "1634097551",
       "city_name": "Ar Rayyan",
       "country": "Qatar",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827135",
+      "attempt_count": 1
     },
     {
       "index": 361,
       "city_id": "1638024662",
       "city_name": "Saint-Denis",
       "country": "Reunion",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827137",
+      "attempt_count": 1
     },
     {
       "index": 362,
       "city_id": "1642414442",
       "city_name": "Bucharest",
       "country": "Romania",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827139",
+      "attempt_count": 1
     },
     {
       "index": 363,
       "city_id": "1643318494",
       "city_name": "Moscow",
       "country": "Russia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827141",
+      "attempt_count": 1
     },
     {
       "index": 364,
       "city_id": "1643616350",
       "city_name": "Saint Petersburg",
       "country": "Russia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827143",
+      "attempt_count": 1
     },
     {
       "index": 365,
       "city_id": "1643399240",
       "city_name": "Novosibirsk",
       "country": "Russia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827144",
+      "attempt_count": 1
     },
     {
       "index": 366,
       "city_id": "1643582706",
       "city_name": "Yekaterinburg",
       "country": "Russia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827146",
+      "attempt_count": 1
     },
     {
       "index": 367,
       "city_id": "1643101260",
       "city_name": "Kazan",
       "country": "Russia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827148",
+      "attempt_count": 1
     },
     {
       "index": 368,
       "city_id": "1646923541",
       "city_name": "Kigali",
       "country": "Rwanda",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827149",
+      "attempt_count": 1
     },
     {
       "index": 369,
       "city_id": "1652681565",
       "city_name": "Gustavia",
       "country": "Saint Barthelemy",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:35:20.827151",
+      "attempt_count": 1
     },
     {
       "index": 370,
       "city_id": "1654761576",
       "city_name": "Jamestown",
       "country": "Saint Helena, Ascension, and Tristan da Cunha",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917949",
+      "attempt_count": 1
     },
     {
       "index": 371,
       "city_id": "1659198919",
       "city_name": "Basseterre",
       "country": "Saint Kitts and Nevis",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917980",
+      "attempt_count": 1
     },
     {
       "index": 372,
       "city_id": "1662922505",
       "city_name": "Castries",
       "country": "Saint Lucia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917983",
+      "attempt_count": 1
     },
     {
       "index": 373,
       "city_id": "1663133172",
       "city_name": "Marigot",
       "country": "Saint Martin",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917986",
+      "attempt_count": 1
     },
     {
       "index": 374,
       "city_id": "1666340272",
       "city_name": "Saint-Pierre",
       "country": "Saint Pierre and Miquelon",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917987",
+      "attempt_count": 1
     },
     {
       "index": 375,
       "city_id": "1670376659",
       "city_name": "Kingstown",
       "country": "Saint Vincent and the Grenadines",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917989",
+      "attempt_count": 1
     },
     {
       "index": 376,
       "city_id": "1882489296",
       "city_name": "Apia",
       "country": "Samoa",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917990",
+      "attempt_count": 1
     },
     {
       "index": 377,
       "city_id": "1674741947",
       "city_name": "San Marino",
       "country": "San Marino",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917992",
+      "attempt_count": 1
     },
     {
       "index": 378,
       "city_id": "1678301324",
       "city_name": "Sao Tome",
       "country": "Sao Tome and Principe",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917994",
+      "attempt_count": 1
     },
     {
       "index": 379,
       "city_id": "1682999334",
       "city_name": "Riyadh",
       "country": "Saudi Arabia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917996",
+      "attempt_count": 1
     },
     {
       "index": 380,
       "city_id": "1682926944",
       "city_name": "Jeddah",
       "country": "Saudi Arabia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.917997",
+      "attempt_count": 1
     },
     {
       "index": 381,
       "city_id": "1682169241",
       "city_name": "Mecca",
       "country": "Saudi Arabia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918028",
+      "attempt_count": 1
     },
     {
       "index": 382,
       "city_id": "1682345785",
       "city_name": "Medina",
       "country": "Saudi Arabia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918033",
+      "attempt_count": 1
     },
     {
       "index": 383,
       "city_id": "1682452296",
       "city_name": "Ad Dammam",
       "country": "Saudi Arabia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918036",
+      "attempt_count": 1
     },
     {
       "index": 384,
       "city_id": "1686604760",
       "city_name": "Dakar",
       "country": "Senegal",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918037",
+      "attempt_count": 1
     },
     {
       "index": 385,
       "city_id": "1686165071",
       "city_name": "Pikine",
       "country": "Senegal",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918039",
+      "attempt_count": 1
     },
     {
       "index": 386,
       "city_id": "1686956738",
       "city_name": "Touba",
       "country": "Senegal",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918041",
+      "attempt_count": 1
     },
     {
       "index": 387,
       "city_id": "1688374696",
       "city_name": "Belgrade",
       "country": "Serbia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918042",
+      "attempt_count": 1
     },
     {
       "index": 388,
       "city_id": "1690193579",
       "city_name": "Victoria",
       "country": "Seychelles",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918044",
+      "attempt_count": 1
     },
     {
       "index": 389,
       "city_id": "1694085071",
       "city_name": "Freetown",
       "country": "Sierra Leone",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T08:53:28.918045",
+      "attempt_count": 1
     },
     {
       "index": 390,
       "city_id": "1702341327",
       "city_name": "Singapore",
       "country": "Singapore",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445211",
+      "attempt_count": 1
     },
     {
       "index": 391,
       "city_id": "1534859858",
       "city_name": "Philipsburg",
       "country": "Sint Maarten",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445252",
+      "attempt_count": 1
     },
     {
       "index": 392,
       "city_id": "1703195001",
       "city_name": "Bratislava",
       "country": "Slovakia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445257",
+      "attempt_count": 1
     },
     {
       "index": 393,
       "city_id": "1705917455",
       "city_name": "Ljubljana",
       "country": "Slovenia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445260",
+      "attempt_count": 1
     },
     {
       "index": 394,
       "city_id": "1090737486",
       "city_name": "Honiara",
       "country": "Solomon Islands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445263",
+      "attempt_count": 1
     },
     {
       "index": 395,
       "city_id": "1706893395",
       "city_name": "Mogadishu",
       "country": "Somalia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445266",
+      "attempt_count": 1
     },
     {
       "index": 396,
       "city_id": "1706832021",
       "city_name": "Hargeysa",
       "country": "Somalia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445268",
+      "attempt_count": 1
     },
     {
       "index": 397,
       "city_id": "1706563100",
       "city_name": "Baidoa",
       "country": "Somalia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445271",
+      "attempt_count": 1
     },
     {
       "index": 398,
       "city_id": "1710550792",
       "city_name": "Johannesburg",
       "country": "South Africa",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445273",
+      "attempt_count": 1
     },
     {
       "index": 399,
       "city_id": "1710680650",
       "city_name": "Cape Town",
       "country": "South Africa",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445276",
+      "attempt_count": 1
     },
     {
       "index": 400,
       "city_id": "1710176249",
       "city_name": "Pretoria",
       "country": "South Africa",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445278",
+      "attempt_count": 1
     },
     {
       "index": 401,
       "city_id": "1710627007",
       "city_name": "Soweto",
       "country": "South Africa",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445280",
+      "attempt_count": 1
     },
     {
       "index": 402,
       "city_id": "1710495933",
       "city_name": "Bloemfontein",
       "country": "South Africa",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445284",
+      "attempt_count": 1
     },
     {
       "index": 403,
       "city_id": "1239048838",
       "city_name": "King Edward Point",
       "country": "South Georgia And South Sandwich Islands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445286",
+      "attempt_count": 1
     },
     {
       "index": 404,
       "city_id": "1728444337",
       "city_name": "Juba",
       "country": "South Sudan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445288",
+      "attempt_count": 1
     },
     {
       "index": 405,
       "city_id": "1724616994",
       "city_name": "Madrid",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445291",
+      "attempt_count": 1
     },
     {
       "index": 406,
       "city_id": "1724594040",
       "city_name": "Barcelona",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445293",
+      "attempt_count": 1
     },
     {
       "index": 407,
       "city_id": "1724981666",
       "city_name": "Valencia",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445296",
+      "attempt_count": 1
     },
     {
       "index": 408,
       "city_id": "1724991838",
       "city_name": "Sevilla",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445299",
+      "attempt_count": 1
     },
     {
       "index": 409,
       "city_id": "1724397372",
       "city_name": "Malaga",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:00:02.445301",
+      "attempt_count": 1
     },
     {
       "index": 410,
       "city_id": "1724331267",
       "city_name": "Bilbao",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518151",
+      "attempt_count": 1
     },
     {
       "index": 411,
       "city_id": "1724907391",
       "city_name": "Zaragoza",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518180",
+      "attempt_count": 1
     },
     {
       "index": 412,
       "city_id": "1724107739",
       "city_name": "Murcia",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518183",
+      "attempt_count": 1
     },
     {
       "index": 413,
       "city_id": "1724501748",
       "city_name": "Las Palmas",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518185",
+      "attempt_count": 1
     },
     {
       "index": 414,
       "city_id": "1724728111",
       "city_name": "Palma",
       "country": "Spain",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518187",
+      "attempt_count": 1
     },
     {
       "index": 415,
       "city_id": "1144251314",
       "city_name": "Colombo",
       "country": "Sri Lanka",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518189",
+      "attempt_count": 1
     },
     {
       "index": 416,
       "city_id": "1144239330",
       "city_name": "Sri Jayewardenepura Kotte",
       "country": "Sri Lanka",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518190",
+      "attempt_count": 1
     },
     {
       "index": 417,
       "city_id": "1729268475",
       "city_name": "Khartoum",
       "country": "Sudan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518192",
+      "attempt_count": 1
     },
     {
       "index": 418,
       "city_id": "1729912179",
       "city_name": "Omdurman",
       "country": "Sudan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518193",
+      "attempt_count": 1
     },
     {
       "index": 419,
       "city_id": "1729318628",
       "city_name": "Khartoum North",
       "country": "Sudan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518195",
+      "attempt_count": 1
     },
     {
       "index": 420,
       "city_id": "1740518660",
       "city_name": "Paramaribo",
       "country": "Suriname",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518197",
+      "attempt_count": 1
     },
     {
       "index": 421,
       "city_id": "1930654114",
       "city_name": "Longyearbyen",
       "country": "Svalbard",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518198",
+      "attempt_count": 1
     },
     {
       "index": 422,
       "city_id": "1752425602",
       "city_name": "Stockholm",
       "country": "Sweden",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518200",
+      "attempt_count": 1
     },
     {
       "index": 423,
       "city_id": "1752059374",
       "city_name": "Gothenburg",
       "country": "Sweden",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518202",
+      "attempt_count": 1
     },
     {
       "index": 424,
       "city_id": "1756374318",
       "city_name": "Bern",
       "country": "Switzerland",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518203",
+      "attempt_count": 1
     },
     {
       "index": 425,
       "city_id": "1760685964",
       "city_name": "Damascus",
       "country": "Syria",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518205",
+      "attempt_count": 1
     },
     {
       "index": 426,
       "city_id": "1760366651",
       "city_name": "Aleppo",
       "country": "Syria",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518207",
+      "attempt_count": 1
     },
     {
       "index": 427,
       "city_id": "1760013934",
       "city_name": "Homs",
       "country": "Syria",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518209",
+      "attempt_count": 1
     },
     {
       "index": 428,
       "city_id": "1158689622",
       "city_name": "Taichung",
       "country": "Taiwan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518210",
+      "attempt_count": 1
     },
     {
       "index": 429,
       "city_id": "1158331334",
       "city_name": "Kaohsiung",
       "country": "Taiwan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:09:19.518211",
+      "attempt_count": 1
     },
     {
       "index": 430,
       "city_id": "1158881289",
       "city_name": "Taipei",
       "country": "Taiwan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490106",
+      "attempt_count": 1
     },
     {
       "index": 431,
       "city_id": "1762930616",
       "city_name": "Dushanbe",
       "country": "Tajikistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490138",
+      "attempt_count": 1
     },
     {
       "index": 432,
       "city_id": "1762372787",
       "city_name": "Khujand",
       "country": "Tajikistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490142",
+      "attempt_count": 1
     },
     {
       "index": 433,
       "city_id": "1834843853",
       "city_name": "Dar es Salaam",
       "country": "Tanzania",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490144",
+      "attempt_count": 1
     },
     {
       "index": 434,
       "city_id": "1834011288",
       "city_name": "Mwanza",
       "country": "Tanzania",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490146",
+      "attempt_count": 1
     },
     {
       "index": 435,
       "city_id": "1834288497",
       "city_name": "Dodoma",
       "country": "Tanzania",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490148",
+      "attempt_count": 1
     },
     {
       "index": 436,
       "city_id": "1764068610",
       "city_name": "Bangkok",
       "country": "Thailand",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490149",
+      "attempt_count": 1
     },
     {
       "index": 437,
       "city_id": "1764662886",
       "city_name": "Chiang Mai",
       "country": "Thailand",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490174",
+      "attempt_count": 1
     },
     {
       "index": 438,
       "city_id": "1626308942",
       "city_name": "Dili",
       "country": "Timor-Leste",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490178",
+      "attempt_count": 1
     },
     {
       "index": 439,
       "city_id": "1768409132",
       "city_name": "Lome",
       "country": "Togo",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490182",
+      "attempt_count": 1
     },
     {
       "index": 440,
       "city_id": "1776737461",
       "city_name": "Nuku`alofa",
       "country": "Tonga",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490184",
+      "attempt_count": 1
     },
     {
       "index": 441,
       "city_id": "1780670676",
       "city_name": "Port of Spain",
       "country": "Trinidad and Tobago",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490186",
+      "attempt_count": 1
     },
     {
       "index": 442,
       "city_id": "1788742103",
       "city_name": "Tunis",
       "country": "Tunisia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490188",
+      "attempt_count": 1
     },
     {
       "index": 443,
       "city_id": "1792756324",
       "city_name": "Istanbul",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490190",
+      "attempt_count": 1
     },
     {
       "index": 444,
       "city_id": "1792572891",
       "city_name": "Ankara",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490191",
+      "attempt_count": 1
     },
     {
       "index": 445,
       "city_id": "1792903330",
       "city_name": "Bursa",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490193",
+      "attempt_count": 1
     },
     {
       "index": 446,
       "city_id": "1792725579",
       "city_name": "Izmir",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490194",
+      "attempt_count": 1
     },
     {
       "index": 447,
       "city_id": "1792014004",
       "city_name": "Konya",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490196",
+      "attempt_count": 1
     },
     {
       "index": 448,
       "city_id": "1792911843",
       "city_name": "Gaziantep",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490197",
+      "attempt_count": 1
     },
     {
       "index": 449,
       "city_id": "1792536241",
       "city_name": "Diyarbakir",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:19:53.490199",
+      "attempt_count": 1
     },
     {
       "index": 450,
       "city_id": "1792783772",
       "city_name": "Adana",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669771",
+      "attempt_count": 1
     },
     {
       "index": 451,
       "city_id": "1792945815",
       "city_name": "Kayseri",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669800",
+      "attempt_count": 1
     },
     {
       "index": 452,
       "city_id": "1792169057",
       "city_name": "Samsun",
       "country": "Turkey",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669803",
+      "attempt_count": 1
     },
     {
       "index": 453,
       "city_id": "1795049992",
       "city_name": "Ashgabat",
       "country": "Turkmenistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669805",
+      "attempt_count": 1
     },
     {
       "index": 454,
       "city_id": "1796965313",
       "city_name": "Grand Turk",
       "country": "Turks and Caicos Islands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669807",
+      "attempt_count": 1
     },
     {
       "index": 455,
       "city_id": "1798251391",
       "city_name": "Funafuti",
       "country": "Tuvalu",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669809",
+      "attempt_count": 1
     },
     {
       "index": 456,
       "city_id": "1850037473",
       "city_name": "Charlotte Amalie",
       "country": "U.S. Virgin Islands",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669810",
+      "attempt_count": 1
     },
     {
       "index": 457,
       "city_id": "1800406299",
       "city_name": "Kampala",
       "country": "Uganda",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669812",
+      "attempt_count": 1
     },
     {
       "index": 458,
       "city_id": "1800032516",
       "city_name": "Nansana",
       "country": "Uganda",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669814",
+      "attempt_count": 1
     },
     {
       "index": 459,
       "city_id": "1804382913",
       "city_name": "Kyiv",
       "country": "Ukraine",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669815",
+      "attempt_count": 1
     },
     {
       "index": 460,
       "city_id": "1804588111",
       "city_name": "Kharkiv",
       "country": "Ukraine",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669817",
+      "attempt_count": 1
     },
     {
       "index": 461,
       "city_id": "1804178102",
       "city_name": "Odesa",
       "country": "Ukraine",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669819",
+      "attempt_count": 1
     },
     {
       "index": 462,
       "city_id": "1784736618",
       "city_name": "Dubai",
       "country": "United Arab Emirates",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669821",
+      "attempt_count": 1
     },
     {
       "index": 463,
       "city_id": "1784176710",
       "city_name": "Abu Dhabi",
       "country": "United Arab Emirates",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669822",
+      "attempt_count": 1
     },
     {
       "index": 464,
       "city_id": "1784152993",
       "city_name": "Sharjah",
       "country": "United Arab Emirates",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669824",
+      "attempt_count": 1
     },
     {
       "index": 465,
       "city_id": "1784674685",
       "city_name": "Al `Ayn",
       "country": "United Arab Emirates",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669825",
+      "attempt_count": 1
     },
     {
       "index": 466,
       "city_id": "1826645935",
       "city_name": "London",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669826",
+      "attempt_count": 1
     },
     {
       "index": 467,
       "city_id": "1826423213",
       "city_name": "Birmingham",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669828",
+      "attempt_count": 1
     },
     {
       "index": 468,
       "city_id": "1826964096",
       "city_name": "Portsmouth",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669829",
+      "attempt_count": 1
     },
     {
       "index": 469,
       "city_id": "1826602892",
       "city_name": "Southampton",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:25:12.669831",
+      "attempt_count": 1
     },
     {
       "index": 470,
       "city_id": "1826921049",
       "city_name": "Bristol",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009240",
+      "attempt_count": 1
     },
     {
       "index": 471,
       "city_id": "1826836462",
       "city_name": "Glasgow",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009272",
+      "attempt_count": 1
     },
     {
       "index": 472,
       "city_id": "1826246335",
       "city_name": "Manchester",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009276",
+      "attempt_count": 1
     },
     {
       "index": 473,
       "city_id": "1826343963",
       "city_name": "Leeds",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009278",
+      "attempt_count": 1
     },
     {
       "index": 474,
       "city_id": "1826289852",
       "city_name": "Sheffield",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009280",
+      "attempt_count": 1
     },
     {
       "index": 475,
       "city_id": "1826558678",
       "city_name": "Liverpool",
       "country": "United Kingdom",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009282",
+      "attempt_count": 1
     },
     {
       "index": 476,
       "city_id": "1840034016",
       "city_name": "New York",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009284",
+      "attempt_count": 1
     },
     {
       "index": 477,
       "city_id": "1840020491",
       "city_name": "Los Angeles",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009285",
+      "attempt_count": 1
     },
     {
       "index": 478,
       "city_id": "1840000494",
       "city_name": "Chicago",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009287",
+      "attempt_count": 1
     },
     {
       "index": 479,
       "city_id": "1840015149",
       "city_name": "Miami",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009288",
+      "attempt_count": 1
     },
     {
       "index": 480,
       "city_id": "1840020925",
       "city_name": "Houston",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009291",
+      "attempt_count": 1
     },
     {
       "index": 481,
       "city_id": "1840019440",
       "city_name": "Dallas",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009293",
+      "attempt_count": 1
     },
     {
       "index": 482,
       "city_id": "1840000673",
       "city_name": "Philadelphia",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009294",
+      "attempt_count": 1
     },
     {
       "index": 483,
       "city_id": "1840013660",
       "city_name": "Atlanta",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009296",
+      "attempt_count": 1
     },
     {
       "index": 484,
       "city_id": "1840006060",
       "city_name": "Washington",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009297",
+      "attempt_count": 1
     },
     {
       "index": 485,
       "city_id": "1840000455",
       "city_name": "Boston",
       "country": "United States",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009299",
+      "attempt_count": 1
     },
     {
       "index": 486,
       "city_id": "1858107000",
       "city_name": "Montevideo",
       "country": "Uruguay",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009301",
+      "attempt_count": 1
     },
     {
       "index": 487,
       "city_id": "1860331871",
       "city_name": "Tashkent",
       "country": "Uzbekistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009302",
+      "attempt_count": 1
     },
     {
       "index": 488,
       "city_id": "1860894033",
       "city_name": "Namangan",
       "country": "Uzbekistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009305",
+      "attempt_count": 1
     },
     {
       "index": 489,
       "city_id": "1860445095",
       "city_name": "Andijon",
       "country": "Uzbekistan",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:32:42.009306",
+      "attempt_count": 1
     },
     {
       "index": 490,
       "city_id": "1548805075",
       "city_name": "Port-Vila",
       "country": "Vanuatu",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554100",
+      "attempt_count": 1
     },
     {
       "index": 491,
       "city_id": "1336000000",
       "city_name": "Vatican City",
       "country": "Vatican City",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554241",
+      "attempt_count": 1
     },
     {
       "index": 492,
       "city_id": "1862748204",
       "city_name": "Caracas",
       "country": "Venezuela",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554252",
+      "attempt_count": 1
     },
     {
       "index": 493,
       "city_id": "1862072711",
       "city_name": "Maracaibo",
       "country": "Venezuela",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554255",
+      "attempt_count": 1
     },
     {
       "index": 494,
       "city_id": "1862309871",
       "city_name": "Valencia",
       "country": "Venezuela",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554258",
+      "attempt_count": 1
     },
     {
       "index": 495,
       "city_id": "1704774326",
       "city_name": "Ho Chi Minh City",
       "country": "Vietnam",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554261",
+      "attempt_count": 1
     },
     {
       "index": 496,
       "city_id": "1704413791",
       "city_name": "Hanoi",
       "country": "Vietnam",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554264",
+      "attempt_count": 1
     },
     {
       "index": 497,
       "city_id": "1704000623",
       "city_name": "Haiphong",
       "country": "Vietnam",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554266",
+      "attempt_count": 1
     },
     {
       "index": 498,
       "city_id": "1704863046",
       "city_name": "Bien Hoa",
       "country": "Vietnam",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554269",
+      "attempt_count": 1
     },
     {
       "index": 499,
       "city_id": "1704783472",
       "city_name": "Can Tho",
       "country": "Vietnam",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554271",
+      "attempt_count": 1
     },
     {
       "index": 500,
       "city_id": "1092732412",
       "city_name": "Road Town",
       "country": "Virgin Islands, British",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554274",
+      "attempt_count": 1
     },
     {
       "index": 501,
       "city_id": "1876784844",
       "city_name": "Mata-Utu",
       "country": "Wallis and Futuna",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554277",
+      "attempt_count": 1
     },
     {
       "index": 502,
       "city_id": "1887750814",
       "city_name": "Sanaa",
       "country": "Yemen",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554279",
+      "attempt_count": 1
     },
     {
       "index": 503,
       "city_id": "1887867886",
       "city_name": "Aden",
       "country": "Yemen",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554282",
+      "attempt_count": 1
     },
     {
       "index": 504,
       "city_id": "1887202594",
       "city_name": "Al Mukalla",
       "country": "Yemen",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554345",
+      "attempt_count": 1
     },
     {
       "index": 505,
       "city_id": "1894157390",
       "city_name": "Lusaka",
       "country": "Zambia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554352",
+      "attempt_count": 1
     },
     {
       "index": 506,
       "city_id": "1894321752",
       "city_name": "Kitwe",
       "country": "Zambia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554354",
+      "attempt_count": 1
     },
     {
       "index": 507,
       "city_id": "1894032745",
       "city_name": "Ndola",
       "country": "Zambia",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554355",
+      "attempt_count": 1
     },
     {
       "index": 508,
       "city_id": "1716196799",
       "city_name": "Harare",
       "country": "Zimbabwe",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554357",
+      "attempt_count": 1
     },
     {
       "index": 509,
       "city_id": "1716032632",
       "city_name": "Bulawayo",
       "country": "Zimbabwe",
-      "status": "pending",
-      "completed_at": null,
-      "attempt_count": 0
+      "status": "completed",
+      "completed_at": "2026-03-19T09:38:28.554358",
+      "attempt_count": 1
     }
   ]
 }

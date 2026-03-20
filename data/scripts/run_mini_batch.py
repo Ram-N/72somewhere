@@ -2,7 +2,7 @@
 """
 Mini-Batch Climate Data Fetcher
 
-Processes cities in small batches of 10 with an index tracker.
+Processes cities in small batches of 20 with an index tracker.
 Tracks which cities are done, which are in progress, and which are next.
 
 Usage:
@@ -172,8 +172,8 @@ def run_fetch_script(cities_file: Path, start_row: int, end_row: int, batch_size
     print()
 
     # Estimate completion time
-    estimated_minutes = batch_size * 80 / 60
-    estimated_completion = datetime.now().timestamp() + (batch_size * 80)
+    estimated_minutes = batch_size * 15 / 60
+    estimated_completion = datetime.now().timestamp() + (batch_size * 15)
     completion_time = datetime.fromtimestamp(estimated_completion).strftime('%I:%M %p')
 
     print(f"⏱️  Estimated completion: ~{completion_time} (in {estimated_minutes:.0f} minutes)")
@@ -191,8 +191,8 @@ def run_fetch_script(cities_file: Path, start_row: int, end_row: int, batch_size
 
 def main():
     parser = argparse.ArgumentParser(description='Mini-batch climate data fetcher with index tracking')
-    parser.add_argument('--batch-size', type=int, default=10,
-                        help='Number of cities to process in this batch (default: 10)')
+    parser.add_argument('--batch-size', type=int, default=20,
+                        help='Number of cities to process in this batch (default: 20)')
     parser.add_argument('--status', action='store_true',
                         help='Show current status and exit')
     parser.add_argument('--reset', action='store_true',
@@ -251,7 +251,7 @@ def main():
     for city in batch:
         print(f"  {city['index']:3d}. {city['city_name']}, {city['country']}")
     print()
-    print(f"Estimated time: ~{len(batch) * 80 / 60:.1f} minutes")
+    print(f"Estimated time: ~{len(batch) * 15 / 60:.1f} minutes")
     print(f"API calls: ~{len(batch) * 78}")
     print("=" * 60)
 
