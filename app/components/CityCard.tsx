@@ -119,9 +119,10 @@ export default function CityCard({
 }: CityCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [yearData, setYearData] = useState<MonthRecord[] | null>(null);
-  const [showPrecip, setShowPrecip] = useState(false);
+  const [showPrecip, setShowPrecip] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [hasFlipped, setHasFlipped] = useState(false);
+  const [hoveredMatch, setHoveredMatch] = useState<{ index: number; x: number } | null>(null);
 
   // Convert user temps to Celsius for internal comparisons
   const userMinC = tempUnit === "F" ? (userMinTemp - 32) * (5 / 9) : userMinTemp;
@@ -153,15 +154,17 @@ export default function CityCard({
     yearData?.map((m) => {
       const highTemp = convertTemp(m.avg_high_temp_c, tempUnit);
       const lowTemp = convertTemp(m.avg_low_temp_c, tempUnit);
+      const avgTemp = (highTemp + lowTemp) / 2;
       return {
         label: MONTH_LABELS[m.month - 1],
         high: highTemp,
         low: lowTemp,
-        avg: convertTemp((m.avg_high_temp_c + m.avg_low_temp_c) / 2, tempUnit),
+        avg: avgTemp,
         precip: m.avg_precip_mm,
         bandLow: lowTemp,
         bandRange: highTemp - lowTemp,
         inSearch: searchMonths.includes(m.month),
+        isMatch: avgTemp >= userMinTemp && avgTemp <= userMaxTemp,
       };
     }) ?? [];
 
@@ -170,8 +173,8 @@ export default function CityCard({
 
   const bestMonths = yearData ? getBestMonths(yearData, userMinC, userMaxC) : "";
 
-  const containerHeight = size === "large" ? 340 : 148;
-  const chartHeight = size === "large" ? 200 : 65;
+  const containerHeight = size === "large" ? 340 : 185;
+  const chartHeight = size === "large" ? 200 : 95;
 
   return (
     <div
@@ -278,17 +281,65 @@ export default function CityCard({
               Loading…
             </div>
           ) : yearData && yearData.length > 0 ? (
+            <div className="relative">
+            {hoveredMatch !== null && (() => {
+              const d = chartData[hoveredMatch.index];
+              if (!d) return null;
+              const monthName = MONTH_NAMES[hoveredMatch.index];
+              return (
+                <div
+                  className="absolute z-20 bg-gray-900 text-white text-xs rounded-md px-2 py-1.5 pointer-events-none shadow-lg whitespace-nowrap"
+                  style={{ left: hoveredMatch.x, bottom: 20, transform: "translateX(-50%)" }}
+                >
+                  <div className="font-semibold text-green-400 mb-0.5">✓ {monthName} matches your range</div>
+                  <div>High: {d.high}° / Low: {d.low}°{tempUnit}</div>
+                  <div>Rain: {d.precip.toFixed(1)} mm</div>
+                  <div className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-900" />
+                </div>
+              );
+            })()}
             <ResponsiveContainer width="100%" height={chartHeight}>
               <ComposedChart
                 data={chartData}
-                margin={{ top: 8, right: showPrecip ? 50 : 16, left: 4, bottom: 4 }}
+                margin={{ top: 8, right: showPrecip ? 8 : 8, left: 4, bottom: 4 }}
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
                 <XAxis
                   dataKey="label"
-                  tick={{ fontSize: 10, fill: "#6b7280" }}
                   axisLine={{ stroke: "#e5e7eb" }}
                   tickLine={false}
+                  interval={0}
+                  height={22}
+                  tick={(tickProps: any) => {
+                    const { x, y, payload, index } = tickProps;
+                    const match = chartData[index]?.isMatch;
+                    return (
+                      <g key={index} transform={`translate(${x},${y})`}>
+                        {match && (
+                          <rect x={-7} y={0} width={14} height={14} rx={3} fill="#16a34a" fillOpacity={0.15} />
+                        )}
+                        <text
+                          x={0} y={11}
+                          textAnchor="middle"
+                          fontSize={match ? 10 : 9}
+                          fontWeight={match ? "700" : "400"}
+                          fill={match ? "#16a34a" : "#9ca3af"}
+                        >
+                          {payload.value}
+                        </text>
+                        {/* Transparent hit area for tooltip hover */}
+                        {match && (
+                          <rect
+                            x={-10} y={-2} width={20} height={18}
+                            fill="transparent"
+                            style={{ cursor: "default" }}
+                            onMouseEnter={() => setHoveredMatch({ index, x })}
+                            onMouseLeave={() => setHoveredMatch(null)}
+                          />
+                        )}
+                      </g>
+                    );
+                  }}
                 />
                 <YAxis
                   yAxisId="temp"
@@ -303,11 +354,12 @@ export default function CityCard({
                   <YAxis
                     yAxisId="precip"
                     orientation="right"
-                    width={40}
-                    tick={{ fontSize: 10, fill: "#6b7280" }}
+                    width={28}
+                    tick={{ fontSize: 9, fill: "#6b7280" }}
                     axisLine={false}
                     tickLine={false}
-                    tickFormatter={(v) => `${v}mm`}
+                    tickCount={3}
+                    tickFormatter={(v) => `${v}`}
                   />
                 )}
                 <Tooltip
@@ -327,9 +379,11 @@ export default function CityCard({
                   yAxisId="temp"
                   y1={userMinDisplay}
                   y2={userMaxDisplay}
-                  fill="#86efac"
-                  fillOpacity={0.3}
-                  strokeOpacity={0}
+                  fill="#4ade80"
+                  fillOpacity={0.25}
+                  stroke="#16a34a"
+                  strokeOpacity={0.5}
+                  strokeDasharray="4 3"
                 />
 
                 {/* High-low band using stackId (avoids white-fill covering axes) */}
@@ -360,7 +414,11 @@ export default function CityCard({
                   dataKey="high"
                   stroke="#f97316"
                   strokeWidth={2}
-                  dot={false}
+                  dot={(dotProps: any) => {
+                    const { cx, cy, index } = dotProps;
+                    if (!chartData[index]?.isMatch) return <g key={index} />;
+                    return <circle key={index} cx={cx} cy={cy} r={4} fill="#f97316" stroke="white" strokeWidth={1.5} />;
+                  }}
                   name="high"
                 />
                 <Line
@@ -369,7 +427,11 @@ export default function CityCard({
                   dataKey="low"
                   stroke="#3b82f6"
                   strokeWidth={2}
-                  dot={false}
+                  dot={(dotProps: any) => {
+                    const { cx, cy, index } = dotProps;
+                    if (!chartData[index]?.isMatch) return <g key={index} />;
+                    return <circle key={index} cx={cx} cy={cy} r={4} fill="#3b82f6" stroke="white" strokeWidth={1.5} />;
+                  }}
                   name="low"
                 />
 
@@ -385,6 +447,7 @@ export default function CityCard({
                 )}
               </ComposedChart>
             </ResponsiveContainer>
+            </div>
           ) : (
             <div className="flex-1 flex items-center justify-center text-gray-400 text-sm">
               No data available
@@ -400,7 +463,7 @@ export default function CityCard({
               <span className="w-3 h-0.5 bg-blue-500 inline-block" /> Low
             </span>
             <span className="flex items-center gap-1">
-              <span className="w-3 h-2 bg-green-200 inline-block rounded-sm" /> Your range
+              <span className="w-3 h-2 bg-green-300 border border-green-600 border-dashed inline-block rounded-sm" /> Your range
             </span>
           </div>
         </div>

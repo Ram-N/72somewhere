@@ -5,6 +5,7 @@ import CityCard from "./components/CityCard";
 
 type DurationOption = "1week" | "2weeks" | "3weeks" | "4weeks" | "1month";
 type StartOption = "m1" | "m2" | "m3" | "m4" | "custom";
+type SortOption = "score" | "country" | "temp" | "precip";
 
 export default function Home() {
   const [startDate, setStartDate] = useState("");
@@ -17,6 +18,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [viewMode, setViewMode] = useState<"all" | "one">("all");
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [sortBy, setSortBy] = useState<SortOption>("score");
 
   // Compute next 4 month options (e.g. Apr, May, Jun, Jul when in March)
   const nextMonths = useMemo(() => {
@@ -73,6 +75,22 @@ export default function Home() {
   };
 
   const searchMonths = getSearchMonths(startDate, endDate);
+
+  const sortedResults = useMemo(() => {
+    const s = [...results];
+    if (sortBy === "country") s.sort((a, b) => a.country.localeCompare(b.country) || a.city_name.localeCompare(b.city_name));
+    else if (sortBy === "temp") s.sort((a, b) => b.avg_temp - a.avg_temp);
+    else if (sortBy === "precip") s.sort((a, b) => a.avg_precip - b.avg_precip);
+    return s;
+  }, [results, sortBy]);
+
+  const groupedByCountry = useMemo(() => {
+    if (sortBy !== "country") return null;
+    return sortedResults.reduce((acc, dest) => {
+      (acc[dest.country] = acc[dest.country] || []).push(dest);
+      return acc;
+    }, {} as Record<string, typeof results>);
+  }, [sortedResults, sortBy]);
 
   const celsiusToFahrenheit = (c: number): number => Math.round((c * 9) / 5 + 32);
   const fahrenheitToCelsius = (f: number): number => Math.round((f - 32) * (5 / 9));
@@ -182,7 +200,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <main className="container mx-auto px-4 py-6 max-w-3xl">
+      <main className="container mx-auto px-4 py-6 max-w-4xl">
         <header className="text-center mb-5">
           <h1 className="text-4xl font-bold text-gray-900 mb-1">72 Somewhere</h1>
           <p className="text-base text-gray-600">
@@ -353,19 +371,70 @@ export default function Home() {
             </div>
 
             {viewMode === "all" && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-                {results.map((destination, index) => (
-                  <CityCard
-                    key={destination.city_id || index}
-                    destination={destination}
-                    tempUnit={tempUnit}
-                    userMinTemp={minTemp}
-                    userMaxTemp={maxTemp}
-                    searchMonths={searchMonths}
-                    size="compact"
-                  />
-                ))}
-              </div>
+              <>
+                {/* Sort controls */}
+                <div className="flex items-center gap-2 mb-3 flex-wrap">
+                  <span className="text-xs text-gray-500 font-medium">Sort:</span>
+                  {([
+                    { key: "score", label: "Best Match" },
+                    { key: "country", label: "Country" },
+                    { key: "temp", label: "Temp ↓" },
+                    { key: "precip", label: "Rain ↑" },
+                  ] as { key: SortOption; label: string }[]).map(({ key, label }) => (
+                    <button
+                      key={key}
+                      onClick={() => setSortBy(key)}
+                      className={`px-2 py-0.5 rounded-full text-xs font-medium transition-colors ${
+                        sortBy === key
+                          ? "bg-blue-600 text-white"
+                          : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Grouped by country */}
+                {groupedByCountry ? (
+                  <div className="space-y-5">
+                    {Object.entries(groupedByCountry).map(([country, cities]) => (
+                      <div key={country}>
+                        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2 pl-2 border-l-2 border-blue-400">
+                          {country}
+                        </h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          {cities.map((destination, index) => (
+                            <CityCard
+                              key={destination.city_id || index}
+                              destination={destination}
+                              tempUnit={tempUnit}
+                              userMinTemp={minTemp}
+                              userMaxTemp={maxTemp}
+                              searchMonths={searchMonths}
+                              size="compact"
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {sortedResults.map((destination, index) => (
+                      <CityCard
+                        key={destination.city_id || index}
+                        destination={destination}
+                        tempUnit={tempUnit}
+                        userMinTemp={minTemp}
+                        userMaxTemp={maxTemp}
+                        searchMonths={searchMonths}
+                        size="compact"
+                      />
+                    ))}
+                  </div>
+                )}
+              </>
             )}
 
             {viewMode === "one" && results.length > 0 && (
