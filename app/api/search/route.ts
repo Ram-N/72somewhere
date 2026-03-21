@@ -92,16 +92,27 @@ export async function POST(request: NextRequest) {
       city.precip.push(record.avg_precip_mm * DAYS_IN_MONTH[record.month - 1]);
     });
 
-    const targetTemp = (minTemp + maxTemp) / 2;
-
-    // Calculate averages and score cities
+    // Calculate averages and score cities (0-100, higher = better)
     const allDestinations = Array.from(cityMap.values()).map((city) => {
       const avgHigh = city.highTemps.reduce((a, b) => a + b, 0) / city.highTemps.length;
       const avgLow = city.lowTemps.reduce((a, b) => a + b, 0) / city.lowTemps.length;
       const avgTemp = (avgHigh + avgLow) / 2;
       const avgPrecip = city.precip.reduce((a, b) => a + b, 0) / city.precip.length;
-      const tempDiff = Math.abs(avgTemp - targetTemp);
       const matchesTemp = avgHigh >= minTemp && avgLow <= maxTemp;
+
+      // Temperature score (0-70): perfect if city fully within user range
+      const fullyInRange = avgLow >= minTemp && avgHigh <= maxTemp;
+      const tempDiff = fullyInRange
+        ? 0
+        : (Math.abs(avgLow - minTemp) + Math.abs(avgHigh - maxTemp)) / 2;
+      const tempScore = Math.max(0, 70 - 3.5 * tempDiff);
+
+      // Rain score (0-30): full points if user didn't set maxPrecip
+      const rainScore = maxPrecip == null
+        ? 30
+        : Math.max(0, 30 - 6 * Math.max(0, avgPrecip - maxPrecip));
+
+      const score = Math.round(tempScore + rainScore);
 
       return {
         city_id: city.city_id,
@@ -111,7 +122,9 @@ export async function POST(request: NextRequest) {
         avg_low: Math.round(avgLow * 10) / 10,
         avg_temp: Math.round(avgTemp * 10) / 10,
         avg_precip: Math.round(avgPrecip * 10) / 10,
-        score: tempDiff,
+        score,
+        score_temp: Math.round(tempScore),
+        score_rain: Math.round(rainScore),
         matches_temp: matchesTemp,
       };
     });
@@ -124,12 +137,12 @@ export async function POST(request: NextRequest) {
     let destinations;
     if (locationFilter) {
       // Show all cities in area: matched first, then unmatched, each group sorted by score
-      const matched = filteredDestinations.filter((d) => d.matches_temp).sort((a, b) => a.score - b.score);
-      const unmatched = filteredDestinations.filter((d) => !d.matches_temp).sort((a, b) => a.score - b.score);
+      const matched = filteredDestinations.filter((d) => d.matches_temp).sort((a, b) => b.score - a.score);
+      const unmatched = filteredDestinations.filter((d) => !d.matches_temp).sort((a, b) => b.score - a.score);
       // Cap at 30 to avoid overwhelming results for large regions
       destinations = [...matched, ...unmatched].slice(0, 30);
     } else {
-      destinations = filteredDestinations.sort((a, b) => a.score - b.score).slice(0, 10);
+      destinations = filteredDestinations.sort((a, b) => b.score - a.score).slice(0, 10);
     }
 
     return NextResponse.json({

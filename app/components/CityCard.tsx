@@ -32,6 +32,8 @@ interface Destination {
   avg_temp: number;
   avg_precip: number;
   score: number;
+  score_temp: number;
+  score_rain: number;
 }
 
 interface CityCardProps {
@@ -200,14 +202,16 @@ export default function CityCard({
               <p className="text-xs text-gray-500">{destination.country}</p>
             </div>
             <div className="flex flex-col items-end gap-1">
+              <span className={`text-xs px-2 py-1 rounded-full font-semibold ${
+                destination.score >= 80 ? "bg-green-100 text-green-700"
+                : destination.score >= 55 ? "bg-yellow-100 text-yellow-700"
+                : "bg-orange-100 text-orange-700"
+              }`}>
+                {destination.score}% match
+              </span>
               {matchesTemp === false && (
                 <span className="text-xs px-2 py-1 rounded-full font-medium bg-orange-100 text-orange-700">
                   Outside range
-                </span>
-              )}
-              {matchesTemp === true && (
-                <span className="text-xs px-2 py-1 rounded-full font-medium bg-green-100 text-green-700">
-                  Temp ✓
                 </span>
               )}
               <button
@@ -330,7 +334,6 @@ export default function CityCard({
         {/* BACK FACE — stats */}
         <div
           className={`flip-card-back border border-gray-200 rounded-lg ${size === "compact" ? "p-3" : "p-4"} bg-white flex flex-col`}
-          onClick={(e) => e.stopPropagation()}
         >
           {/* Stats header */}
           <div className="flex justify-between items-start mb-2">
@@ -366,6 +369,9 @@ export default function CityCard({
               {" "}/ Low:{" "}{tempUnit === "F" ? toF(destination.avg_low) : destination.avg_low}°{tempUnit}
             </p>
             <p className="text-gray-700">🌧️ Precip: {destination.avg_precip?.toFixed(1)} mm/month</p>
+            <div className="mt-1.5 pt-1.5 border-t border-gray-100">
+              <p className="text-gray-500">Match score: 🌡️ {destination.score_temp}/70 · 🌧️ {destination.score_rain}/30 = <span className="font-semibold text-gray-700">{destination.score}%</span></p>
+            </div>
           </div>
 
           {/* Sparkline */}

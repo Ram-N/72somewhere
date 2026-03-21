@@ -31,7 +31,7 @@ export default function Home() {
   const [viewMode, setViewMode] = useState<"all" | "one">("all");
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [sortBy, setSortBy] = useState<SortOption>("score");
-  const [maxPrecip, setMaxPrecip] = useState<PrecipOption>("any");
+  const [maxPrecip, setMaxPrecip] = useState<PrecipOption>("low");
 
   // Compute next 4 month options (e.g. Apr, May, Jun, Jul when in March)
   const nextMonths = useMemo(() => {
@@ -372,7 +372,7 @@ export default function Home() {
                 <div className="flex items-center gap-2 mb-3 flex-wrap">
                   <span className="text-xs text-gray-500 font-medium">Sort:</span>
                   {([
-                    { key: "score", label: "Best Match" },
+                    { key: "score", label: "Match % ↓" },
                     { key: "country", label: "Country" },
                     { key: "temp", label: "Temp ↓" },
                     { key: "precip", label: "Rain ↑" },
