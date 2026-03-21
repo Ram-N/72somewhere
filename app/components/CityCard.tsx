@@ -252,6 +252,9 @@ export default function CityCard({
                   <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
                   <XAxis
                     dataKey="month"
+                    type="number"
+                    domain={[0.5, 12.5]}
+                    ticks={[1,2,3,4,5,6,7,8,9,10,11,12]}
                     axisLine={{ stroke: "#e5e7eb" }}
                     tickLine={false}
                     interval={0}
@@ -291,8 +294,8 @@ export default function CityCard({
                     <ReferenceArea
                       key={`search-${m}`}
                       yAxisId="temp"
-                      x1={m}
-                      x2={m}
+                      x1={m - 0.5}
+                      x2={m + 0.5}
                       fill="#bbf7d0"
                       fillOpacity={0.55}
                       stroke="none"
@@ -336,7 +339,7 @@ export default function CityCard({
                       stroke="#9ca3af"
                       strokeDasharray="4 3"
                       strokeWidth={1.5}
-                      label={{ value: "☔", position: "right", fontSize: 10, dy: 3 }}
+                      label={{ value: "☔", position: "insideRight", fontSize: 10, dy: -6, dx: -2 }}
                     />
                   )}
                 </ComposedChart>

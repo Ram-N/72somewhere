@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import CityCard from "./components/CityCard";
 import LocationSearch from "./components/LocationSearch";
 import type { LocationFilter } from "@/lib/types";
@@ -127,18 +127,14 @@ export default function Home() {
     setTempUnit(newUnit);
   };
 
-  const handleSearch = async () => {
+  const runSearch = useCallback(async (sd: string, ed: string, minC: number, maxC: number, precip: PrecipOption, loc: LocationFilter | null) => {
+    if (!sd) return;
     setLoading(true);
     try {
-      const selectedMm = precipOptions.find((o) => o.key === maxPrecip)?.mm ?? null;
-      const body: Record<string, unknown> = {
-        startDate,
-        endDate,
-        minTemp: toCelsius(minTemp),
-        maxTemp: toCelsius(maxTemp),
-      };
+      const selectedMm = precipOptions.find((o) => o.key === precip)?.mm ?? null;
+      const body: Record<string, unknown> = { startDate: sd, endDate: ed, minTemp: minC, maxTemp: maxC };
       if (selectedMm !== null) body.maxPrecip = selectedMm;
-      if (locationFilter) body.locationFilter = locationFilter;
+      if (loc) body.locationFilter = loc;
 
       const response = await fetch("/api/search", {
         method: "POST",
@@ -148,13 +144,35 @@ export default function Home() {
       const data = await response.json();
       setResults(data.destinations || []);
       setHasSearched(true);
-      setSearchMeta(locationFilter ? { totalInArea: data.totalInArea, matchedInArea: data.matchedInArea } : null);
+      setSearchMeta(loc ? { totalInArea: data.totalInArea, matchedInArea: data.matchedInArea } : null);
     } catch (error) {
       console.error("Search failed:", error);
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
+
+  // Debounced auto-search — fires 600ms after any filter change
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isFirstRender = useRef(true);
+
+  useEffect(() => {
+    // Skip the very first render (startDate initialises async via useEffect)
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    if (!startDate) return;
+
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      runSearch(startDate, endDate, toCelsius(minTemp), toCelsius(maxTemp), maxPrecip, locationFilter);
+    }, 600);
+
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+    };
+  }, [startDate, endDate, minTemp, maxTemp, maxPrecip, locationFilter]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handlePrevCard = () =>
     setCurrentCardIndex((prev) => (prev > 0 ? prev - 1 : results.length - 1));
@@ -315,22 +333,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Action Buttons */}
-            <div className="flex gap-3 items-stretch">
-              <LocationSearch value={locationFilter} onChange={setLocationFilter} />
-              <button
-                onClick={handleSearch}
-                disabled={!startDate || loading}
-                className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-semibold py-2 px-5 rounded-md transition-colors whitespace-nowrap"
-              >
-                {loading ? "Searching…" : "Find Places"}
-              </button>
-            </div>
+            {/* Location filter */}
+            <LocationSearch value={locationFilter} onChange={setLocationFilter} />
           </div>
         </div>
 
         {/* Results */}
-        {results.length > 0 && (
+        {results.length > 0 && !loading && (
           <div className="bg-white rounded-lg shadow-lg p-5">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-base font-bold text-gray-900">
@@ -504,6 +513,15 @@ export default function Home() {
           </div>
         )}
 
+        {loading && (
+          <div className="text-center text-gray-400 py-8">
+            <svg className="animate-spin h-6 w-6 mx-auto mb-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+            </svg>
+            <p className="text-sm">Searching…</p>
+          </div>
+        )}
         {results.length === 0 && !loading && !hasSearched && (
           <div className="text-center text-gray-500 py-8">
             <p>Select your dates and temperature preference to find destinations</p>
