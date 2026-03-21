@@ -122,6 +122,7 @@ export default function CityCard({
   const [showPrecip, setShowPrecip] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [hasFlipped, setHasFlipped] = useState(false);
+  const [hoveredMatch, setHoveredMatch] = useState<{ index: number; x: number } | null>(null);
 
   // Convert user temps to Celsius for internal comparisons
   const userMinC = tempUnit === "F" ? (userMinTemp - 32) * (5 / 9) : userMinTemp;
@@ -159,6 +160,7 @@ export default function CityCard({
       const avgTemp = (highTemp + lowTemp) / 2;
       return {
         label: MONTH_LABELS[m.month - 1],
+        month: m.month,
         high: highTemp,
         low: lowTemp,
         avg: avgTemp,
@@ -220,11 +222,27 @@ export default function CityCard({
             <div className="flex-1 flex items-center justify-center text-gray-400 text-sm">Loading…</div>
           ) : yearData && yearData.length > 0 ? (
             <div className="relative flex-1">
+              {hoveredMatch !== null && (() => {
+                const d = chartData[hoveredMatch.index];
+                if (!d) return null;
+                const monthName = MONTH_NAMES[hoveredMatch.index];
+                return (
+                  <div
+                    className="absolute z-20 bg-gray-900 text-white text-xs rounded-md px-2 py-1.5 pointer-events-none shadow-lg whitespace-nowrap"
+                    style={{ left: hoveredMatch.x, bottom: 20, transform: "translateX(-50%)" }}
+                  >
+                    <div className="font-semibold text-green-400 mb-0.5">✓ {monthName} matches your range</div>
+                    <div>High: {d.high}° / Low: {d.low}°{tempUnit}</div>
+                    <div>Rain: {d.precip.toFixed(1)} mm</div>
+                    <div className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-900" />
+                  </div>
+                );
+              })()}
               <ResponsiveContainer width="100%" height={chartHeight}>
                 <ComposedChart data={chartData} margin={{ top: 8, right: showPrecip ? 8 : 8, left: 4, bottom: 4 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
                   <XAxis
-                    dataKey="label"
+                    dataKey="month"
                     axisLine={{ stroke: "#e5e7eb" }}
                     tickLine={false}
                     interval={0}
@@ -236,8 +254,14 @@ export default function CityCard({
                         <g key={index} transform={`translate(${x},${y})`}>
                           {match && <rect x={-7} y={0} width={14} height={14} rx={3} fill="#16a34a" fillOpacity={0.15} />}
                           <text x={0} y={11} textAnchor="middle" fontSize={match ? 10 : 9} fontWeight={match ? "700" : "400"} fill={match ? "#16a34a" : "#9ca3af"}>
-                            {payload.value}
+                            {MONTH_LABELS[payload.value - 1]}
                           </text>
+                          {match && (
+                            <rect x={-10} y={-2} width={20} height={18} fill="transparent" style={{ cursor: "default" }}
+                              onMouseEnter={() => setHoveredMatch({ index, x })}
+                              onMouseLeave={() => setHoveredMatch(null)}
+                            />
+                          )}
                         </g>
                       );
                     }}
