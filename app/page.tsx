@@ -8,6 +8,14 @@ import type { LocationFilter } from "@/lib/types";
 type DurationOption = "1week" | "2weeks" | "3weeks" | "4weeks" | "1month";
 type StartOption = "m1" | "m2" | "m3" | "m4" | "custom";
 type SortOption = "score" | "country" | "temp" | "precip";
+type PrecipOption = "any" | "dry" | "low" | "some";
+
+const precipOptions: { key: PrecipOption; label: string; mm: number | null; tooltip: string }[] = [
+  { key: "any", label: "Any", mm: null, tooltip: "Show all destinations" },
+  { key: "dry", label: "Dry", mm: 30, tooltip: "≤ 30mm/month — desert, Mediterranean summer" },
+  { key: "low", label: "Low Rain", mm: 60, tooltip: "≤ 60mm/month — occasional showers" },
+  { key: "some", label: "Some Rain", mm: 120, tooltip: "≤ 120mm/month — excludes monsoon & tropical wet" },
+];
 
 export default function Home() {
   const [startDate, setStartDate] = useState("");
@@ -23,6 +31,7 @@ export default function Home() {
   const [viewMode, setViewMode] = useState<"all" | "one">("all");
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [sortBy, setSortBy] = useState<SortOption>("score");
+  const [maxPrecip, setMaxPrecip] = useState<PrecipOption>("any");
 
   // Compute next 4 month options (e.g. Apr, May, Jun, Jul when in March)
   const nextMonths = useMemo(() => {
@@ -120,12 +129,14 @@ export default function Home() {
   const handleSearch = async () => {
     setLoading(true);
     try {
+      const selectedMm = precipOptions.find((o) => o.key === maxPrecip)?.mm ?? null;
       const body: Record<string, unknown> = {
         startDate,
         endDate,
         minTemp: toCelsius(minTemp),
         maxTemp: toCelsius(maxTemp),
       };
+      if (selectedMm !== null) body.maxPrecip = selectedMm;
       if (locationFilter) body.locationFilter = locationFilter;
 
       const response = await fetch("/api/search", {
@@ -283,6 +294,25 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Rain Preference */}
+            <div>
+              <label className="block text-xs font-medium text-gray-500 mb-1">
+                Rain
+              </label>
+              <div className="flex flex-wrap gap-1">
+                {precipOptions.map(({ key, label, tooltip }) => (
+                  <button
+                    key={key}
+                    onClick={() => setMaxPrecip(key)}
+                    title={tooltip}
+                    className={pillClass(maxPrecip === key)}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
             {/* Action Buttons */}
             <div className="flex gap-3 items-stretch">
               <LocationSearch value={locationFilter} onChange={setLocationFilter} />
@@ -305,7 +335,7 @@ export default function Home() {
                 {searchMeta ? (
                   <>
                     {searchMeta.matchedInArea} of {searchMeta.totalInArea} cities in {locationFilter?.label}
-                    <span className="font-normal text-gray-500"> match your temp</span>
+                    <span className="font-normal text-gray-500"> match your temp{maxPrecip !== "any" ? " & rain" : ""}</span>
                   </>
                 ) : (
                   <>

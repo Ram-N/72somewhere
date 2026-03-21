@@ -4,12 +4,13 @@ import type { LocationFilter } from '@/lib/types';
 
 export async function POST(request: NextRequest) {
   try {
-    const { startDate, endDate, minTemp, maxTemp, locationFilter } = await request.json() as {
+    const { startDate, endDate, minTemp, maxTemp, locationFilter, maxPrecip } = await request.json() as {
       startDate: string;
       endDate: string;
       minTemp: number;
       maxTemp: number;
       locationFilter?: LocationFilter;
+      maxPrecip?: number;
     };
 
     if (!startDate || !endDate) {
@@ -33,7 +34,7 @@ export async function POST(request: NextRequest) {
 
     const monthArray = Array.from(months);
 
-    console.log('Searching for:', { months: monthArray, minTemp, maxTemp, locationFilter });
+    console.log('Searching for:', { months: monthArray, minTemp, maxTemp, locationFilter, maxPrecip });
 
     // Build base query
     let query = supabase.from('climate').select('*').in('month', monthArray);
@@ -70,6 +71,8 @@ export async function POST(request: NextRequest) {
       precip: number[];
     }>();
 
+    const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
     climateData.forEach((record: any) => {
       const cityId = record.city_id;
       if (!cityMap.has(cityId)) {
@@ -85,7 +88,8 @@ export async function POST(request: NextRequest) {
       const city = cityMap.get(cityId)!;
       city.highTemps.push(record.avg_high_temp_c);
       city.lowTemps.push(record.avg_low_temp_c);
-      city.precip.push(record.avg_precip_mm);
+      // Convert daily average precip to monthly total
+      city.precip.push(record.avg_precip_mm * DAYS_IN_MONTH[record.month - 1]);
     });
 
     const targetTemp = (minTemp + maxTemp) / 2;
@@ -112,21 +116,26 @@ export async function POST(request: NextRequest) {
       };
     });
 
+    // Apply precipitation filter (post-aggregation — avg_precip is across travel months)
+    const filteredDestinations = maxPrecip != null
+      ? allDestinations.filter((d) => d.avg_precip <= maxPrecip)
+      : allDestinations;
+
     let destinations;
     if (locationFilter) {
       // Show all cities in area: matched first, then unmatched, each group sorted by score
-      const matched = allDestinations.filter((d) => d.matches_temp).sort((a, b) => a.score - b.score);
-      const unmatched = allDestinations.filter((d) => !d.matches_temp).sort((a, b) => a.score - b.score);
+      const matched = filteredDestinations.filter((d) => d.matches_temp).sort((a, b) => a.score - b.score);
+      const unmatched = filteredDestinations.filter((d) => !d.matches_temp).sort((a, b) => a.score - b.score);
       // Cap at 30 to avoid overwhelming results for large regions
       destinations = [...matched, ...unmatched].slice(0, 30);
     } else {
-      destinations = allDestinations.sort((a, b) => a.score - b.score).slice(0, 10);
+      destinations = filteredDestinations.sort((a, b) => a.score - b.score).slice(0, 10);
     }
 
     return NextResponse.json({
       destinations,
-      totalInArea: locationFilter ? allDestinations.length : undefined,
-      matchedInArea: locationFilter ? allDestinations.filter((d) => d.matches_temp).length : undefined,
+      totalInArea: locationFilter ? filteredDestinations.length : undefined,
+      matchedInArea: locationFilter ? filteredDestinations.filter((d) => d.matches_temp).length : undefined,
     });
 
   } catch (error: any) {
