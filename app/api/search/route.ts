@@ -4,13 +4,16 @@ import type { LocationFilter } from '@/lib/types';
 
 export async function POST(request: NextRequest) {
   try {
-    const { startDate, endDate, minTemp, maxTemp, locationFilter, maxPrecip } = await request.json() as {
+    const { startDate, endDate, minTemp, maxTemp, locationFilter, maxPrecip, minLowTemp, maxHighTemp, advancedMaxPrecip } = await request.json() as {
       startDate: string;
       endDate: string;
       minTemp: number;
       maxTemp: number;
       locationFilter?: LocationFilter;
       maxPrecip?: number;
+      minLowTemp?: number;
+      maxHighTemp?: number;
+      advancedMaxPrecip?: number;
     };
 
     if (!startDate || !endDate) {
@@ -34,7 +37,7 @@ export async function POST(request: NextRequest) {
 
     const monthArray = Array.from(months);
 
-    console.log('Searching for:', { months: monthArray, minTemp, maxTemp, locationFilter, maxPrecip });
+    console.log('Searching for:', { months: monthArray, minTemp, maxTemp, locationFilter, maxPrecip, minLowTemp, maxHighTemp, advancedMaxPrecip });
 
     // Build base query
     let query = supabase.from('climate').select('*').in('month', monthArray);
@@ -129,10 +132,12 @@ export async function POST(request: NextRequest) {
       };
     });
 
-    // Apply precipitation filter (post-aggregation — avg_precip is across travel months)
-    const filteredDestinations = maxPrecip != null
-      ? allDestinations.filter((d) => d.avg_precip <= maxPrecip)
-      : allDestinations;
+    // Apply precipitation filter — advancedMaxPrecip overrides basic preset when set
+    const effectiveMaxPrecip = advancedMaxPrecip ?? maxPrecip ?? null;
+    const filteredDestinations = allDestinations
+      .filter((d) => effectiveMaxPrecip == null || d.avg_precip <= effectiveMaxPrecip)
+      .filter((d) => minLowTemp == null || d.avg_low >= minLowTemp)
+      .filter((d) => maxHighTemp == null || d.avg_high <= maxHighTemp);
 
     let destinations;
     if (locationFilter) {

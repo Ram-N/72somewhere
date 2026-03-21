@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import CityCard from "./components/CityCard";
 import LocationSearch from "./components/LocationSearch";
+import AdvancedSearchModal from "./components/AdvancedSearchModal";
 import type { LocationFilter } from "@/lib/types";
 
 type DurationOption = "1week" | "2weeks" | "3weeks" | "4weeks" | "1month";
@@ -33,6 +34,12 @@ export default function Home() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [sortBy, setSortBy] = useState<SortOption>("score");
   const [maxPrecip, setMaxPrecip] = useState<PrecipOption>("low");
+  const [showAdvanced, setShowAdvanced] = useState(false);
+  const [minLowTemp, setMinLowTemp] = useState<number | null>(null);
+  const [maxHighTemp, setMaxHighTemp] = useState<number | null>(null);
+  const [advancedMaxPrecip, setAdvancedMaxPrecip] = useState<number | null>(null);
+
+  const hasAdvancedFilters = minLowTemp !== null || maxHighTemp !== null || advancedMaxPrecip !== null;
 
   // Compute next 4 month options (e.g. Apr, May, Jun, Jul when in March)
   const nextMonths = useMemo(() => {
@@ -120,14 +127,21 @@ export default function Home() {
     if (newUnit === "F") {
       setMinTemp(celsiusToFahrenheit(minTemp));
       setMaxTemp(celsiusToFahrenheit(maxTemp));
+      if (minLowTemp !== null) setMinLowTemp(celsiusToFahrenheit(minLowTemp));
+      if (maxHighTemp !== null) setMaxHighTemp(celsiusToFahrenheit(maxHighTemp));
     } else {
       setMinTemp(fahrenheitToCelsius(minTemp));
       setMaxTemp(fahrenheitToCelsius(maxTemp));
+      if (minLowTemp !== null) setMinLowTemp(fahrenheitToCelsius(minLowTemp));
+      if (maxHighTemp !== null) setMaxHighTemp(fahrenheitToCelsius(maxHighTemp));
     }
     setTempUnit(newUnit);
   };
 
-  const runSearch = useCallback(async (sd: string, ed: string, minC: number, maxC: number, precip: PrecipOption, loc: LocationFilter | null) => {
+  const runSearch = useCallback(async (
+    sd: string, ed: string, minC: number, maxC: number, precip: PrecipOption, loc: LocationFilter | null,
+    minLowC: number | null, maxHighC: number | null, advPrecip: number | null
+  ) => {
     if (!sd) return;
     setLoading(true);
     try {
@@ -135,6 +149,9 @@ export default function Home() {
       const body: Record<string, unknown> = { startDate: sd, endDate: ed, minTemp: minC, maxTemp: maxC };
       if (selectedMm !== null) body.maxPrecip = selectedMm;
       if (loc) body.locationFilter = loc;
+      if (minLowC !== null) body.minLowTemp = minLowC;
+      if (maxHighC !== null) body.maxHighTemp = maxHighC;
+      if (advPrecip !== null) body.advancedMaxPrecip = advPrecip;
 
       const response = await fetch("/api/search", {
         method: "POST",
@@ -166,13 +183,18 @@ export default function Home() {
 
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
-      runSearch(startDate, endDate, toCelsius(minTemp), toCelsius(maxTemp), maxPrecip, locationFilter);
+      runSearch(
+        startDate, endDate, toCelsius(minTemp), toCelsius(maxTemp), maxPrecip, locationFilter,
+        minLowTemp !== null ? toCelsius(minLowTemp) : null,
+        maxHighTemp !== null ? toCelsius(maxHighTemp) : null,
+        advancedMaxPrecip
+      );
     }, 600);
 
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-  }, [startDate, endDate, minTemp, maxTemp, maxPrecip, locationFilter]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [startDate, endDate, minTemp, maxTemp, maxPrecip, locationFilter, minLowTemp, maxHighTemp, advancedMaxPrecip]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handlePrevCard = () =>
     setCurrentCardIndex((prev) => (prev > 0 ? prev - 1 : results.length - 1));
@@ -335,8 +357,40 @@ export default function Home() {
 
             {/* Location filter */}
             <LocationSearch value={locationFilter} onChange={setLocationFilter} />
+
+            {/* Advanced filters trigger */}
+            <div className="flex justify-end pt-1">
+              <button
+                onClick={() => setShowAdvanced(true)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full transition-colors ${
+                  hasAdvancedFilters
+                    ? "bg-blue-50 text-blue-700 border border-blue-300 hover:bg-blue-100"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                }`}
+              >
+                Advanced
+                {hasAdvancedFilters && (
+                  <span className="h-2 w-2 rounded-full bg-blue-500" />
+                )}
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+
+        <AdvancedSearchModal
+          show={showAdvanced}
+          onClose={() => setShowAdvanced(false)}
+          tempUnit={tempUnit}
+          minLowTemp={minLowTemp}
+          setMinLowTemp={setMinLowTemp}
+          maxHighTemp={maxHighTemp}
+          setMaxHighTemp={setMaxHighTemp}
+          advancedMaxPrecip={advancedMaxPrecip}
+          setAdvancedMaxPrecip={setAdvancedMaxPrecip}
+        />
 
         {/* Results */}
         {results.length > 0 && !loading && (
