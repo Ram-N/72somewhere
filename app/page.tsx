@@ -28,6 +28,7 @@ export default function Home() {
   const [results, setResults] = useState<any[]>([]);
   const [searchMeta, setSearchMeta] = useState<{ totalInArea?: number; matchedInArea?: number } | null>(null);
   const [loading, setLoading] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
   const [viewMode, setViewMode] = useState<"all" | "one">("all");
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [sortBy, setSortBy] = useState<SortOption>("score");
@@ -146,6 +147,7 @@ export default function Home() {
       });
       const data = await response.json();
       setResults(data.destinations || []);
+      setHasSearched(true);
       setSearchMeta(locationFilter ? { totalInArea: data.totalInArea, matchedInArea: data.matchedInArea } : null);
     } catch (error) {
       console.error("Search failed:", error);
@@ -410,6 +412,7 @@ export default function Home() {
                               searchMonths={searchMonths}
                               size="compact"
                               matchesTemp={searchMeta ? destination.matches_temp : undefined}
+                              precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
                             />
                           ))}
                         </div>
@@ -428,6 +431,7 @@ export default function Home() {
                         searchMonths={searchMonths}
                         size="compact"
                         matchesTemp={searchMeta ? destination.matches_temp : undefined}
+                        precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
                       />
                     ))}
                   </div>
@@ -472,6 +476,7 @@ export default function Home() {
                     searchMonths={searchMonths}
                     size="large"
                     matchesTemp={searchMeta ? results[currentCardIndex].matches_temp : undefined}
+                    precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
                   />
                 </div>
                 <button
@@ -499,9 +504,15 @@ export default function Home() {
           </div>
         )}
 
-        {results.length === 0 && !loading && (
+        {results.length === 0 && !loading && !hasSearched && (
           <div className="text-center text-gray-500 py-8">
             <p>Select your dates and temperature preference to find destinations</p>
+          </div>
+        )}
+        {results.length === 0 && !loading && hasSearched && (
+          <div className="text-center py-8">
+            <p className="text-lg font-medium text-gray-700 mb-1">No destinations match your filters</p>
+            <p className="text-sm text-gray-500">Try widening your temperature range, relaxing the rain limit, or choosing different dates</p>
           </div>
         )}
       </main>

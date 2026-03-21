@@ -12,6 +12,7 @@ import {
   CartesianGrid,
   Tooltip,
   ReferenceArea,
+  ReferenceLine,
   ResponsiveContainer,
   LineChart,
 } from "recharts";
@@ -44,6 +45,7 @@ interface CityCardProps {
   searchMonths: number[];
   size?: "compact" | "large";
   matchesTemp?: boolean;
+  precipThresholdMm?: number | null;
 }
 
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -120,6 +122,7 @@ export default function CityCard({
   searchMonths,
   size = "compact",
   matchesTemp,
+  precipThresholdMm,
 }: CityCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [yearData, setYearData] = useState<MonthRecord[] | null>(null);
@@ -284,6 +287,17 @@ export default function CityCard({
                       return [`${value}°${tempUnit}`, name === "high" ? "High" : name === "low" ? "Low" : "Avg"];
                     }}
                   />
+                  {searchMonths.map((m) => (
+                    <ReferenceArea
+                      key={`search-${m}`}
+                      yAxisId="temp"
+                      x1={m}
+                      x2={m}
+                      fill="#bbf7d0"
+                      fillOpacity={0.55}
+                      stroke="none"
+                    />
+                  ))}
                   <ReferenceArea yAxisId="temp" y1={userMinDisplay} y2={userMaxDisplay} fill="#4ade80" fillOpacity={0.25} stroke="#16a34a" strokeOpacity={0.5} strokeDasharray="4 3" />
                   <Area yAxisId="temp" type="monotone" dataKey="bandLow" stackId="band" stroke="none" fill="transparent" legendType="none" />
                   <Area yAxisId="temp" type="monotone" dataKey="bandRange" stackId="band" stroke="none" fill="#fbbf24" fillOpacity={0.22} legendType="none" />
@@ -315,6 +329,16 @@ export default function CityCard({
                       ))}
                     </Bar>
                   )}
+                  {showPrecip && precipThresholdMm != null && (
+                    <ReferenceLine
+                      yAxisId="precip"
+                      y={precipThresholdMm}
+                      stroke="#9ca3af"
+                      strokeDasharray="4 3"
+                      strokeWidth={1.5}
+                      label={{ value: "☔", position: "right", fontSize: 10, dy: 3 }}
+                    />
+                  )}
                 </ComposedChart>
               </ResponsiveContainer>
             </div>
@@ -327,6 +351,12 @@ export default function CityCard({
             <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-orange-400 inline-block" /> High</span>
             <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-blue-500 inline-block" /> Low</span>
             <span className="flex items-center gap-1"><span className="w-3 h-2 bg-green-300 border border-green-600 border-dashed inline-block rounded-sm" /> Your range</span>
+            {searchMonths.length > 0 && (
+              <span className="flex items-center gap-1">
+                <span className="w-3 h-2 bg-green-200 inline-block rounded-sm" />
+                Trip window
+              </span>
+            )}
             {!hasFlipped && <span className="ml-auto text-blue-400">↻ details</span>}
           </div>
         </div>
