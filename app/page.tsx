@@ -252,6 +252,22 @@ export default function Home() {
                   }}
                   className="ml-1 px-2 py-1 text-sm border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-transparent text-gray-900 w-36"
                 />
+                <button
+                  onClick={() => setShowAdvanced(true)}
+                  className={`ml-auto flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full transition-colors ${
+                    hasAdvancedFilters
+                      ? "bg-blue-50 text-blue-700 border border-blue-300 hover:bg-blue-100"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                >
+                  Advanced
+                  {hasAdvancedFilters && (
+                    <span className="h-2 w-2 rounded-full bg-blue-500" />
+                  )}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
             </div>
 
@@ -358,25 +374,6 @@ export default function Home() {
             {/* Location filter */}
             <LocationSearch value={locationFilter} onChange={setLocationFilter} />
 
-            {/* Advanced filters trigger */}
-            <div className="flex justify-end pt-1">
-              <button
-                onClick={() => setShowAdvanced(true)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full transition-colors ${
-                  hasAdvancedFilters
-                    ? "bg-blue-50 text-blue-700 border border-blue-300 hover:bg-blue-100"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
-              >
-                Advanced
-                {hasAdvancedFilters && (
-                  <span className="h-2 w-2 rounded-full bg-blue-500" />
-                )}
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
 
