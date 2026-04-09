@@ -9,6 +9,7 @@ export async function GET(
     const { cityId } = await params;
 
     const { data, error } = await supabase
+      .schema('seventy_two')
       .from('climate')
       .select('month, avg_high_temp_c, avg_low_temp_c, avg_precip_mm')
       .eq('city_id', cityId)

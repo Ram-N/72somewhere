@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
     console.log('Searching for:', { months: monthArray, minTemp, maxTemp, locationFilter, maxPrecip, minLowTemp, maxHighTemp, advancedMaxPrecip });
 
     // Build base query
-    let query = supabase.from('climate').select('*').in('month', monthArray);
+    let query = supabase.schema('seventy_two').from('climate').select('*').in('month', monthArray);
 
     if (locationFilter) {
       // With location filter: fetch ALL cities in the area (no temp filter in DB)
