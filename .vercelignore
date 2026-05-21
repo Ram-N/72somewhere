@@ -1,22 +1,24 @@
-# Data files (not needed for deployment) - parent directory
-../data/
-../*.csv
-../*.zip
-../*.xlsx
+# Data files (not needed for deployment)
+data/*.csv
+data/*.json
+data/scripts/
+data/sql/
+# Keep data/location_index.json — it is imported at build time
+!data/location_index.json
 
 # Python virtual environments
-../venv/
-../env/
-../*.pyc
-../__pycache__/
+venv/
+env/
+*.pyc
+__pycache__/
 
 # Scripts (backend processing, not for frontend)
-../data/scripts/
+data/scripts/
 
 # Progress tracking files
-../*_progress*.json
+*_progress*.json
 
 # Development files
-../TODO.md
-../.DS_Store
-../*.Zone.Identifier
+TODO.md
+.DS_Store
+*.Zone.Identifier
