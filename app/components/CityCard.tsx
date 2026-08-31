@@ -290,17 +290,16 @@ export default function CityCard({
                       return [`${value}°${tempUnit}`, name === "high" ? "High" : name === "low" ? "Low" : "Avg"];
                     }}
                   />
-                  {searchMonths.map((m) => (
+                  {searchMonths.length > 0 && (
                     <ReferenceArea
-                      key={`search-${m}`}
                       yAxisId="temp"
-                      x1={m - 0.5}
-                      x2={m + 0.5}
-                      fill="#bbf7d0"
-                      fillOpacity={0.55}
-                      stroke="none"
+                      x1={Math.min(...searchMonths) - 0.5}
+                      x2={Math.max(...searchMonths) + 0.5}
+                      fill="transparent"
+                      stroke="#2563eb"
+                      strokeWidth={3}
                     />
-                  ))}
+                  )}
                   <ReferenceArea yAxisId="temp" y1={userMinDisplay} y2={userMaxDisplay} fill="#4ade80" fillOpacity={0.25} stroke="#16a34a" strokeOpacity={0.5} strokeDasharray="4 3" />
                   <Area yAxisId="temp" type="monotone" dataKey="bandLow" stackId="band" stroke="none" fill="transparent" legendType="none" />
                   <Area yAxisId="temp" type="monotone" dataKey="bandRange" stackId="band" stroke="none" fill="#fbbf24" fillOpacity={0.22} legendType="none" />
@@ -356,7 +355,7 @@ export default function CityCard({
             <span className="flex items-center gap-1"><span className="w-3 h-2 bg-green-300 border border-green-600 border-dashed inline-block rounded-sm" /> Your range</span>
             {searchMonths.length > 0 && (
               <span className="flex items-center gap-1">
-                <span className="w-3 h-2 bg-green-200 inline-block rounded-sm" />
+                <span className="w-3 h-2 border-2 border-blue-600 inline-block rounded-sm" />
                 Trip window
               </span>
             )}
