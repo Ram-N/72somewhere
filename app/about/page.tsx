@@ -12,6 +12,18 @@ const CONTRIBUTORS = [
   { name: "Kshitij", idea: "Suggested incorporating the US Dept of State Travel Advisory into the database" },
 ];
 
+// Newest first; keep each line a one-sentence headline
+const RELEASE_NOTES = [
+  {
+    month: "Nov 2026",
+    items: [
+      "US State Department travel advisories on every destination, with an optional filter",
+      "Countries first: results group by country, with cities one tap away",
+      "30 popular travel cities added, including Cancún, Phuket, Bali, Honolulu and Venice",
+    ],
+  },
+];
+
 const DATA_SOURCES = [
   { name: "Open-Meteo", url: "https://open-meteo.com/", use: "Historical weather data (CC BY 4.0)" },
   { name: "SimpleMaps World Cities", url: "https://simplemaps.com/data/world-cities", use: "City locations (CC BY 4.0)" },
@@ -38,9 +50,25 @@ export default function AboutPage() {
         <section className="bg-white rounded-lg shadow-lg p-5 mb-5">
           <h2 className="text-base font-bold text-gray-900 mb-2">What it does</h2>
           <p className="text-sm text-gray-700">
-            Choose your travel dates and a temperature range, and 72 Somewhere suggests cities whose
+            Choose your travel dates and a temperature range, and 72 Somewhere suggests countries and cities whose
             historical weather matches. Results are based on long-term monthly averages, not live forecasts.
           </p>
+        </section>
+
+        <section className="bg-white rounded-lg shadow-lg p-5 mb-5">
+          <h2 className="text-base font-bold text-gray-900 mb-2">What&apos;s new</h2>
+          <div className="space-y-3">
+            {RELEASE_NOTES.map(({ month, items }) => (
+              <div key={month}>
+                <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">{month}</p>
+                <ul className="list-disc pl-5 space-y-0.5 text-sm text-gray-700">
+                  {items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="bg-white rounded-lg shadow-lg p-5 mb-5">
