@@ -22,16 +22,19 @@ interface Suggestion {
   secondary?: string;
 }
 
+// Lowercase and strip accents so "cancun" matches "Cancún" and "da nang" matches "Đà Nẵng"
+const fold = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/gi, "d").toLowerCase();
+
 function buildSuggestions(input: string): Suggestion[] {
   if (!input.trim()) return [];
-  const q = input.toLowerCase();
+  const q = fold(input);
 
   const suggestions: Suggestion[] = [];
 
   // Regions (deduplicated)
   const seenRegions = new Set<string>();
   for (const e of entries) {
-    if (e.region && !seenRegions.has(e.region) && e.region.toLowerCase().includes(q)) {
+    if (e.region && !seenRegions.has(e.region) && fold(e.region).includes(q)) {
       seenRegions.add(e.region);
       suggestions.push({ type: "region", label: e.region, filterField: "region", filterValue: e.region });
     }
@@ -40,7 +43,7 @@ function buildSuggestions(input: string): Suggestion[] {
   // Sub-regions
   const seenSubRegions = new Set<string>();
   for (const e of entries) {
-    if (e.subRegion && !seenSubRegions.has(e.subRegion) && e.subRegion.toLowerCase().includes(q)) {
+    if (e.subRegion && !seenSubRegions.has(e.subRegion) && fold(e.subRegion).includes(q)) {
       seenSubRegions.add(e.subRegion);
       suggestions.push({ type: "subRegion", label: e.subRegion, filterField: "sub_region", filterValue: e.subRegion, secondary: e.region });
     }
@@ -49,7 +52,7 @@ function buildSuggestions(input: string): Suggestion[] {
   // Countries
   const seenCountries = new Set<string>();
   for (const e of entries) {
-    if (e.country && !seenCountries.has(e.country) && e.country.toLowerCase().includes(q)) {
+    if (e.country && !seenCountries.has(e.country) && fold(e.country).includes(q)) {
       seenCountries.add(e.country);
       suggestions.push({ type: "country", label: e.country, filterField: "country", filterValue: e.country, secondary: e.region });
     }
@@ -59,7 +62,7 @@ function buildSuggestions(input: string): Suggestion[] {
   let cityCount = 0;
   for (const e of entries) {
     if (cityCount >= 5) break;
-    if (e.city && e.city.toLowerCase().includes(q)) {
+    if (e.city && fold(e.city).includes(q)) {
       suggestions.push({ type: "city", label: `${e.city}, ${e.country}`, filterField: "city_id", filterValue: e.cityId, secondary: e.subRegion || e.region });
       cityCount++;
     }
