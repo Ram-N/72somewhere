@@ -21,6 +21,7 @@ interface CountryCardProps {
   searchMonths: number[];
   precipThresholdMm: number | null;
   showMatchesOnly: boolean;
+  showTotal: boolean; // only area searches fetch non-matching cities, so only they have a real total
 }
 
 const MAX_PILLS = 4;
@@ -33,6 +34,7 @@ export default function CountryCard({
   searchMonths,
   precipThresholdMm,
   showMatchesOnly,
+  showTotal,
 }: CountryCardProps) {
   const [expanded, setExpanded] = useState(false);
   const { country, advisory, total_cities, matched_cities, best_score, cities } = summary;
@@ -59,7 +61,9 @@ export default function CountryCard({
               {getFlag(country)} {country}
             </h3>
             <p className="text-xs text-gray-500 flex flex-wrap items-center gap-x-1.5">
-              {matched_cities} of {total_cities} {total_cities === 1 ? "city matches" : "cities match"}
+              {showTotal
+                ? `${matched_cities} of ${total_cities} ${total_cities === 1 ? "city matches" : "cities match"}`
+                : `${matched_cities} matching ${matched_cities === 1 ? "city" : "cities"}`}
               {advisory && advisory.level >= 2 && (
                 <span
                   className={`px-1.5 rounded-full font-medium ${ADVISORY_LEVELS[advisory.level].color}`}

@@ -531,6 +531,7 @@ export default function Home() {
                         searchMonths={searchMonths}
                         precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
                         showMatchesOnly={showMatchesOnly}
+                        showTotal={searchMeta !== null}
                       />
                     </Fragment>
                   ))}
