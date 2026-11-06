@@ -1,6 +1,7 @@
 "use client";
 
 import { Fragment, useState, useEffect, useMemo, useCallback, useRef } from "react";
+import Link from "next/link";
 import CityCard from "./components/CityCard";
 import LocationSearch from "./components/LocationSearch";
 import AdvancedSearchModal from "./components/AdvancedSearchModal";
@@ -233,7 +234,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <main className="container mx-auto px-4 py-6 max-w-4xl">
-        <header className="text-center mb-5">
+        <header className="relative text-center mb-5">
+          <Link href="/about" className="absolute right-0 top-0 text-sm text-blue-600 hover:underline">
+            About
+          </Link>
           <h1 className="text-4xl font-bold text-gray-900 mb-1">72 Somewhere</h1>
           <p className="text-base text-gray-600">
             Find your perfect destination based on weather
