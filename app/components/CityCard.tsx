@@ -210,7 +210,7 @@ export default function CityCard({
                 : destination.score >= 55 ? "bg-yellow-100 text-yellow-700"
                 : "bg-orange-100 text-orange-700"
               }`}>
-                {destination.score}% match
+                Score {destination.score}
               </span>
               {matchesTemp === false && (
                 <span className="text-xs px-2 py-1 rounded-full font-medium bg-orange-100 text-orange-700">
@@ -402,7 +402,7 @@ export default function CityCard({
             </p>
             <p className="text-gray-700">🌧️ Precip: {destination.avg_precip?.toFixed(1)} mm/month</p>
             <div className="mt-1.5 pt-1.5 border-t border-gray-100">
-              <p className="text-gray-500">Match score: 🌡️ {destination.score_temp}/70 · 🌧️ {destination.score_rain}/30 = <span className="font-semibold text-gray-700">{destination.score}%</span></p>
+              <p className="text-gray-500">Score: 🌡️ {destination.score_temp}/70 · 🌧️ {destination.score_rain}/30 = <span className="font-semibold text-gray-700">{destination.score}</span></p>
             </div>
           </div>
 

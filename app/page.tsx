@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo, useCallback, useRef } from "react";
+import { Fragment, useState, useEffect, useMemo, useCallback, useRef } from "react";
 import CityCard from "./components/CityCard";
 import LocationSearch from "./components/LocationSearch";
 import AdvancedSearchModal from "./components/AdvancedSearchModal";
@@ -37,6 +37,7 @@ export default function Home() {
   const [viewMode, setViewMode] = useState<"all" | "one">("all");
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [sortBy, setSortBy] = useState<SortOption>("score");
+  const [showMatchesOnly, setShowMatchesOnly] = useState(false);
   const [maxPrecip, setMaxPrecip] = useState<PrecipOption>("low");
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [minLowTemp, setMinLowTemp] = useState<number | null>(null);
@@ -100,13 +101,19 @@ export default function Home() {
 
   const searchMonths = getSearchMonths(startDate, endDate);
 
+  // Matches-only toggle applies to area searches, where results include non-matching cities
+  const visibleResults = useMemo(
+    () => (searchMeta && showMatchesOnly ? results.filter((d) => d.matches_temp) : results),
+    [results, searchMeta, showMatchesOnly]
+  );
+
   const sortedResults = useMemo(() => {
-    const s = [...results];
+    const s = [...visibleResults];
     if (sortBy === "country") s.sort((a, b) => a.country.localeCompare(b.country) || a.city_name.localeCompare(b.city_name));
     else if (sortBy === "temp") s.sort((a, b) => b.avg_temp - a.avg_temp);
     else if (sortBy === "precip") s.sort((a, b) => a.avg_precip - b.avg_precip);
     return s;
-  }, [results, sortBy]);
+  }, [visibleResults, sortBy]);
 
   const groupedByCountry = useMemo(() => {
     if (sortBy !== "country") return null;
@@ -200,9 +207,9 @@ export default function Home() {
   }, [startDate, endDate, minTemp, maxTemp, maxPrecip, locationFilter, minLowTemp, maxHighTemp, advancedMaxPrecip]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handlePrevCard = () =>
-    setCurrentCardIndex((prev) => (prev > 0 ? prev - 1 : results.length - 1));
+    setCurrentCardIndex((prev) => (prev > 0 ? prev - 1 : visibleResults.length - 1));
   const handleNextCard = () =>
-    setCurrentCardIndex((prev) => (prev < results.length - 1 ? prev + 1 : 0));
+    setCurrentCardIndex((prev) => (prev < visibleResults.length - 1 ? prev + 1 : 0));
 
   const durationOptions: { key: DurationOption; label: string }[] = [
     { key: "1week", label: "1 Wk" },
@@ -410,6 +417,17 @@ export default function Home() {
                 )}
               </h2>
               <div className="flex gap-1">
+                {searchMeta && (
+                  <button
+                    onClick={() => {
+                      setShowMatchesOnly((v) => !v);
+                      setCurrentCardIndex(0);
+                    }}
+                    className={pillClass(showMatchesOnly)}
+                  >
+                    Show matches only
+                  </button>
+                )}
                 <button
                   onClick={() => {
                     setViewMode("all");
@@ -437,7 +455,7 @@ export default function Home() {
                 <div className="flex items-center gap-2 mb-3 flex-wrap">
                   <span className="text-xs text-gray-500 font-medium">Sort:</span>
                   {([
-                    { key: "score", label: "Match % ↓" },
+                    { key: "score", label: "Score ↓" },
                     { key: "country", label: "Country" },
                     { key: "temp", label: "Temp ↓" },
                     { key: "precip", label: "Rain ↑" },
@@ -485,6 +503,15 @@ export default function Home() {
                 ) : (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {sortedResults.map((destination, index) => (
+                      <Fragment key={destination.city_id || index}>
+                      {/* Results come matched-first, so divide at the first non-match when sorted by score */}
+                      {searchMeta && sortBy === "score" && index > 0 && !destination.matches_temp && sortedResults[index - 1].matches_temp && (
+                        <div className="sm:col-span-2 flex items-center gap-3 text-xs font-medium text-gray-400 uppercase tracking-wide my-1">
+                          <div className="flex-1 border-t border-gray-200" />
+                          Outside your range
+                          <div className="flex-1 border-t border-gray-200" />
+                        </div>
+                      )}
                       <CityCard
                         key={destination.city_id || index}
                         destination={destination}
@@ -496,13 +523,14 @@ export default function Home() {
                         matchesTemp={searchMeta ? destination.matches_temp : undefined}
                         precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
                       />
+                      </Fragment>
                     ))}
                   </div>
                 )}
               </>
             )}
 
-            {viewMode === "one" && results.length > 0 && (
+            {viewMode === "one" && visibleResults.length > 0 && (
               <div className="flex items-center justify-center gap-4">
                 <button
                   onClick={handlePrevCard}
@@ -527,18 +555,18 @@ export default function Home() {
                 <div className="flex-1 max-w-md">
                   <div className="text-center mb-2">
                     <span className="text-sm text-gray-500">
-                      {currentCardIndex + 1} of {results.length}
+                      {currentCardIndex + 1} of {visibleResults.length}
                     </span>
                   </div>
                   <CityCard
-                    key={results[currentCardIndex].city_id || currentCardIndex}
-                    destination={results[currentCardIndex]}
+                    key={visibleResults[currentCardIndex].city_id || currentCardIndex}
+                    destination={visibleResults[currentCardIndex]}
                     tempUnit={tempUnit}
                     userMinTemp={minTemp}
                     userMaxTemp={maxTemp}
                     searchMonths={searchMonths}
                     size="large"
-                    matchesTemp={searchMeta ? results[currentCardIndex].matches_temp : undefined}
+                    matchesTemp={searchMeta ? visibleResults[currentCardIndex].matches_temp : undefined}
                     precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
                   />
                 </div>
