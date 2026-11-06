@@ -5,6 +5,8 @@ Reads the newest us_state_department_travel_advisories_*.csv and outputs
 data/travel_advisories.json, keyed by the country names used in the app's
 climate data, for the CityCard travel advisory chip.
 
+Also outputs data/country_codes.json (country name -> ISO2) for flag emoji.
+
 USAGE:
   cd /home/ram/projects/72somewhere
   uv run data/scripts/generate_advisories.py
@@ -19,6 +21,8 @@ import re
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..")
 CLIMATE_PATH = os.path.join(DATA_DIR, "climate_all_500.csv")
 OUTPUT_PATH = os.path.join(DATA_DIR, "travel_advisories.json")
+CITIES_PATH = os.path.join(DATA_DIR, "worldcities_enriched.csv")
+CODES_PATH = os.path.join(DATA_DIR, "country_codes.json")
 
 # App country name -> State Dept destination name, where they differ
 ALIASES = {
@@ -77,6 +81,17 @@ def main():
 
     print(f"Wrote {len(output)} of {len(app_countries)} countries to {OUTPUT_PATH}")
     print(f"No advisory for {len(unmatched)}: {', '.join(unmatched)}")
+
+    with open(CITIES_PATH, encoding="utf-8") as f:
+        iso2 = {row["country"]: row["iso2"] for row in csv.DictReader(f) if row["iso2"]}
+    # Namibia's code "NA" was written as blank (read as a missing value upstream)
+    iso2.setdefault("Namibia", "NA")
+    codes = {country: iso2[country] for country in app_countries if country in iso2}
+    with open(CODES_PATH, "w", encoding="utf-8") as f:
+        json.dump(codes, f, ensure_ascii=False, indent=2)
+
+    missing = [c for c in app_countries if c not in codes]
+    print(f"Wrote {len(codes)} country codes to {CODES_PATH}; missing: {', '.join(missing) or 'none'}")
 
 
 if __name__ == "__main__":

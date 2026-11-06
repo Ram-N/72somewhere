@@ -25,7 +25,7 @@ interface MonthRecord {
   avg_precip_mm: number;
 }
 
-interface Destination {
+export interface Destination {
   city_id: string;
   city_name: string;
   country: string;
@@ -48,6 +48,7 @@ interface CityCardProps {
   size?: "compact" | "large";
   matchesTemp?: boolean;
   precipThresholdMm?: number | null;
+  showCountry?: boolean; // false inside a CountryCard, which already shows it
 }
 
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -125,6 +126,7 @@ export default function CityCard({
   size = "compact",
   matchesTemp,
   precipThresholdMm,
+  showCountry = true,
 }: CityCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [yearData, setYearData] = useState<MonthRecord[] | null>(null);
@@ -204,18 +206,20 @@ export default function CityCard({
               <h3 className={`font-semibold text-gray-900 ${size === "large" ? "text-2xl" : "text-base"}`}>
                 {destination.city_name}
               </h3>
-              <p className="text-xs text-gray-500 flex flex-wrap items-center gap-x-1.5">
-                {destination.country}
-                {/* Level 1 is the norm, so only flag Level 2+ on the front */}
-                {destination.advisory && destination.advisory.level >= 2 && (
-                  <span
-                    className={`px-1.5 rounded-full font-medium ${ADVISORY_LEVELS[destination.advisory.level].color}`}
-                    title="US State Dept travel advisory — flip card for details"
-                  >
-                    ⚠ L{destination.advisory.level} · {ADVISORY_LEVELS[destination.advisory.level].short}
-                  </span>
-                )}
-              </p>
+              {showCountry && (
+                <p className="text-xs text-gray-500 flex flex-wrap items-center gap-x-1.5">
+                  {destination.country}
+                  {/* Level 1 is the norm, so only flag Level 2+ on the front */}
+                  {destination.advisory && destination.advisory.level >= 2 && (
+                    <span
+                      className={`px-1.5 rounded-full font-medium ${ADVISORY_LEVELS[destination.advisory.level].color}`}
+                      title="US State Dept travel advisory — flip card for details"
+                    >
+                      ⚠ L{destination.advisory.level} · {ADVISORY_LEVELS[destination.advisory.level].short}
+                    </span>
+                  )}
+                </p>
+              )}
             </div>
             <div className="flex flex-col items-end gap-1">
               <span className={`text-xs px-2 py-1 rounded-full font-semibold ${

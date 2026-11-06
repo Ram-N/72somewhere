@@ -6,6 +6,7 @@ data/sql/
 # Keep data/location_index.json — it is imported at build time
 !data/location_index.json
 !data/travel_advisories.json
+!data/country_codes.json
 
 # Python virtual environments
 venv/

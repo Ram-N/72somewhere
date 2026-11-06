@@ -155,8 +155,33 @@ export async function POST(request: NextRequest) {
       destinations = filteredDestinations.sort((a, b) => b.score - a.score).slice(0, 10);
     }
 
+    // Group by country: no country-wide average, just a summary of its cities
+    const byCountry = new Map<string, typeof filteredDestinations>();
+    for (const d of filteredDestinations) {
+      byCountry.set(d.country, [...(byCountry.get(d.country) ?? []), d]);
+    }
+    const countries = Array.from(byCountry, ([country, cities]) => {
+      const sorted = [...cities].sort((a, b) => Number(b.matches_temp) - Number(a.matches_temp) || b.score - a.score);
+      return {
+        country,
+        advisory: getAdvisory(country),
+        total_cities: cities.length,
+        matched_cities: cities.filter((d) => d.matches_temp).length,
+        best_score: Math.max(...cities.map((d) => d.score)),
+        cities: sorted,
+      };
+    })
+      .sort((a, b) =>
+        Number(b.matched_cities > 0) - Number(a.matched_cities > 0) ||
+        b.best_score - a.best_score ||
+        b.matched_cities - a.matched_cities
+      )
+      // Every country in an area search; otherwise just the top ones
+      .slice(0, locationFilter ? undefined : 15);
+
     return NextResponse.json({
       destinations,
+      countries,
       totalInArea: locationFilter ? filteredDestinations.length : undefined,
       matchedInArea: locationFilter ? filteredDestinations.filter((d) => d.matches_temp).length : undefined,
     });

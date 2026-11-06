@@ -3,6 +3,7 @@
 import { Fragment, useState, useEffect, useMemo, useCallback, useRef } from "react";
 import Link from "next/link";
 import CityCard from "./components/CityCard";
+import CountryCard, { type CountrySummary } from "./components/CountryCard";
 import LocationSearch from "./components/LocationSearch";
 import AdvancedSearchModal from "./components/AdvancedSearchModal";
 import type { LocationFilter } from "@/lib/types";
@@ -13,7 +14,7 @@ type StartOption = "m1" | "m2" | "m3" | "m4" | "custom";
 // YYYY-MM-DD in local time (toISOString shifts to UTC and can change the day)
 const toLocalDateString = (d: Date) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-type SortOption = "score" | "country" | "temp" | "precip";
+type SortOption = "score" | "temp" | "precip";
 type PrecipOption = "any" | "dry" | "low" | "some";
 
 const precipOptions: { key: PrecipOption; label: string; mm: number | null; tooltip: string }[] = [
@@ -32,6 +33,9 @@ export default function Home() {
   const [tempUnit, setTempUnit] = useState<"C" | "F">("F");
   const [locationFilter, setLocationFilter] = useState<LocationFilter | null>(null);
   const [results, setResults] = useState<any[]>([]);
+  const [countries, setCountries] = useState<CountrySummary[]>([]);
+  const [resultsView, setResultsView] = useState<"countries" | "cities">("countries");
+  const [countrySort, setCountrySort] = useState<"score" | "name">("score");
   const [searchMeta, setSearchMeta] = useState<{ totalInArea?: number; matchedInArea?: number } | null>(null);
   const [loading, setLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
@@ -111,19 +115,19 @@ export default function Home() {
 
   const sortedResults = useMemo(() => {
     const s = [...visibleResults];
-    if (sortBy === "country") s.sort((a, b) => a.country.localeCompare(b.country) || a.city_name.localeCompare(b.city_name));
-    else if (sortBy === "temp") s.sort((a, b) => b.avg_temp - a.avg_temp);
+    if (sortBy === "temp") s.sort((a, b) => b.avg_temp - a.avg_temp);
     else if (sortBy === "precip") s.sort((a, b) => a.avg_precip - b.avg_precip);
     return s;
   }, [visibleResults, sortBy]);
 
-  const groupedByCountry = useMemo(() => {
-    if (sortBy !== "country") return null;
-    return sortedResults.reduce((acc, dest) => {
-      (acc[dest.country] = acc[dest.country] || []).push(dest);
-      return acc;
-    }, {} as Record<string, typeof results>);
-  }, [sortedResults, sortBy]);
+  // A single-city search has nothing to group, so it always uses the Cities view
+  const effectiveView = locationFilter?.type === "city" ? "cities" : resultsView;
+
+  const sortedCountries = useMemo(() => {
+    const s = showMatchesOnly ? countries.filter((c) => c.matched_cities > 0) : [...countries];
+    if (countrySort === "name") s.sort((a, b) => a.country.localeCompare(b.country));
+    return s;
+  }, [countries, showMatchesOnly, countrySort]);
 
   const celsiusToFahrenheit = (c: number): number => Math.round((c * 9) / 5 + 32);
   const fahrenheitToCelsius = (f: number): number => Math.round((f - 32) * (5 / 9));
@@ -174,6 +178,7 @@ export default function Home() {
       });
       const data = await response.json();
       setResults(data.destinations || []);
+      setCountries(data.countries || []);
       setHasSearched(true);
       setSearchMeta(loc ? { totalInArea: data.totalInArea, matchedInArea: data.matchedInArea } : null);
     } catch (error) {
@@ -411,10 +416,22 @@ export default function Home() {
 
         {/* Results */}
         {results.length > 0 && !loading && (
-          <div className="bg-white rounded-lg shadow-lg p-5">
-            <div className="flex items-center justify-between mb-4">
+          <div className="bg-white rounded-lg shadow-lg p-3 sm:p-5">
+            <div className="flex items-center justify-between flex-wrap gap-2 mb-4">
               <h2 className="text-base font-bold text-gray-900">
-                {searchMeta ? (
+                {effectiveView === "countries" ? (
+                  searchMeta ? (
+                    <>
+                      {countries.filter((c) => c.matched_cities > 0).length} of {countries.length} countries in {locationFilter?.label}
+                      <span className="font-normal text-gray-500"> have matching cities</span>
+                    </>
+                  ) : (
+                    <>
+                      Top countries for your weather
+                      <span className="font-normal text-gray-500"> · {minTemp}°{tempUnit}–{maxTemp}°{tempUnit}</span>
+                    </>
+                  )
+                ) : searchMeta ? (
                   <>
                     {searchMeta.matchedInArea} of {searchMeta.totalInArea} cities in {locationFilter?.label}
                     <span className="font-normal text-gray-500"> match your temp{maxPrecip !== "any" ? " & rain" : ""}</span>
@@ -426,8 +443,19 @@ export default function Home() {
                   </>
                 )}
               </h2>
-              <div className="flex gap-1">
-                {searchMeta && (
+              <div className="flex gap-1 flex-wrap">
+                {locationFilter?.type !== "city" && (
+                  <>
+                    <button onClick={() => setResultsView("countries")} className={pillClass(effectiveView === "countries")}>
+                      Countries
+                    </button>
+                    <button onClick={() => setResultsView("cities")} className={pillClass(effectiveView === "cities")}>
+                      Cities
+                    </button>
+                    <span className="w-2" />
+                  </>
+                )}
+                {(searchMeta || effectiveView === "countries") && (
                   <button
                     onClick={() => {
                       setShowMatchesOnly((v) => !v);
@@ -438,35 +466,88 @@ export default function Home() {
                     Show matches only
                   </button>
                 )}
-                <button
-                  onClick={() => {
-                    setViewMode("all");
-                    setCurrentCardIndex(0);
-                  }}
-                  className={pillClass(viewMode === "all")}
-                >
-                  All
-                </button>
-                <button
-                  onClick={() => {
-                    setViewMode("one");
-                    setCurrentCardIndex(0);
-                  }}
-                  className={pillClass(viewMode === "one")}
-                >
-                  One at a Time
-                </button>
+                {effectiveView === "cities" && (
+                  <>
+                    <button
+                      onClick={() => {
+                        setViewMode("all");
+                        setCurrentCardIndex(0);
+                      }}
+                      className={pillClass(viewMode === "all")}
+                    >
+                      All
+                    </button>
+                    <button
+                      onClick={() => {
+                        setViewMode("one");
+                        setCurrentCardIndex(0);
+                      }}
+                      className={pillClass(viewMode === "one")}
+                    >
+                      One at a Time
+                    </button>
+                  </>
+                )}
               </div>
             </div>
 
-            {viewMode === "all" && (
+            {effectiveView === "countries" && (
+              <>
+                <div className="flex items-center gap-2 mb-3 flex-wrap">
+                  <span className="text-xs text-gray-500 font-medium">Sort:</span>
+                  {([
+                    { key: "score", label: "Best score ↓" },
+                    { key: "name", label: "A–Z" },
+                  ] as const).map(({ key, label }) => (
+                    <button
+                      key={key}
+                      onClick={() => setCountrySort(key)}
+                      className={`px-2 py-0.5 rounded-full text-xs font-medium transition-colors ${
+                        countrySort === key
+                          ? "bg-blue-600 text-white"
+                          : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+                <div className="space-y-3">
+                  {sortedCountries.map((summary, index) => (
+                    <Fragment key={summary.country}>
+                      {/* Countries come matched-first, so divide at the first one without matches */}
+                      {countrySort === "score" && index > 0 && summary.matched_cities === 0 && sortedCountries[index - 1].matched_cities > 0 && (
+                        <div className="flex items-center gap-3 text-xs font-medium text-gray-400 uppercase tracking-wide my-1">
+                          <div className="flex-1 border-t border-gray-200" />
+                          No cities in your range
+                          <div className="flex-1 border-t border-gray-200" />
+                        </div>
+                      )}
+                      <CountryCard
+                        summary={summary}
+                        tempUnit={tempUnit}
+                        userMinTemp={minTemp}
+                        userMaxTemp={maxTemp}
+                        searchMonths={searchMonths}
+                        precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
+                        showMatchesOnly={showMatchesOnly}
+                      />
+                    </Fragment>
+                  ))}
+                  {sortedCountries.length === 0 && (
+                    <p className="text-sm text-gray-500 text-center py-4">No countries have cities in your range.</p>
+                  )}
+                </div>
+              </>
+            )}
+
+            {effectiveView === "cities" && viewMode === "all" && (
               <>
                 {/* Sort controls */}
                 <div className="flex items-center gap-2 mb-3 flex-wrap">
                   <span className="text-xs text-gray-500 font-medium">Sort:</span>
                   {([
                     { key: "score", label: "Score ↓" },
-                    { key: "country", label: "Country" },
                     { key: "temp", label: "Temp ↓" },
                     { key: "precip", label: "Rain ↑" },
                   ] as { key: SortOption; label: string }[]).map(({ key, label }) => (
@@ -484,63 +565,35 @@ export default function Home() {
                   ))}
                 </div>
 
-                {/* Grouped by country */}
-                {groupedByCountry ? (
-                  <div className="space-y-5">
-                    {Object.entries(groupedByCountry as Record<string, any[]>).map(([country, cities]) => (
-                      <div key={country}>
-                        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2 pl-2 border-l-2 border-blue-400">
-                          {country}
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          {cities.map((destination, index) => (
-                            <CityCard
-                              key={destination.city_id || index}
-                              destination={destination}
-                              tempUnit={tempUnit}
-                              userMinTemp={minTemp}
-                              userMaxTemp={maxTemp}
-                              searchMonths={searchMonths}
-                              size="compact"
-                              matchesTemp={searchMeta ? destination.matches_temp : undefined}
-                              precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
-                            />
-                          ))}
-                        </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {sortedResults.map((destination, index) => (
+                    <Fragment key={destination.city_id || index}>
+                    {/* Results come matched-first, so divide at the first non-match when sorted by score */}
+                    {searchMeta && sortBy === "score" && index > 0 && !destination.matches_temp && sortedResults[index - 1].matches_temp && (
+                      <div className="sm:col-span-2 flex items-center gap-3 text-xs font-medium text-gray-400 uppercase tracking-wide my-1">
+                        <div className="flex-1 border-t border-gray-200" />
+                        Outside your range
+                        <div className="flex-1 border-t border-gray-200" />
                       </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {sortedResults.map((destination, index) => (
-                      <Fragment key={destination.city_id || index}>
-                      {/* Results come matched-first, so divide at the first non-match when sorted by score */}
-                      {searchMeta && sortBy === "score" && index > 0 && !destination.matches_temp && sortedResults[index - 1].matches_temp && (
-                        <div className="sm:col-span-2 flex items-center gap-3 text-xs font-medium text-gray-400 uppercase tracking-wide my-1">
-                          <div className="flex-1 border-t border-gray-200" />
-                          Outside your range
-                          <div className="flex-1 border-t border-gray-200" />
-                        </div>
-                      )}
-                      <CityCard
-                        key={destination.city_id || index}
-                        destination={destination}
-                        tempUnit={tempUnit}
-                        userMinTemp={minTemp}
-                        userMaxTemp={maxTemp}
-                        searchMonths={searchMonths}
-                        size="compact"
-                        matchesTemp={searchMeta ? destination.matches_temp : undefined}
-                        precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
-                      />
-                      </Fragment>
-                    ))}
-                  </div>
-                )}
+                    )}
+                    <CityCard
+                      key={destination.city_id || index}
+                      destination={destination}
+                      tempUnit={tempUnit}
+                      userMinTemp={minTemp}
+                      userMaxTemp={maxTemp}
+                      searchMonths={searchMonths}
+                      size="compact"
+                      matchesTemp={searchMeta ? destination.matches_temp : undefined}
+                      precipThresholdMm={precipOptions.find(o => o.key === maxPrecip)?.mm ?? null}
+                    />
+                    </Fragment>
+                  ))}
+                </div>
               </>
             )}
 
-            {viewMode === "one" && visibleResults.length > 0 && (
+            {effectiveView === "cities" && viewMode === "one" && visibleResults.length > 0 && (
               <div className="flex items-center justify-center gap-4">
                 <button
                   onClick={handlePrevCard}
