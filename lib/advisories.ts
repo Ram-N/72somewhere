@@ -16,10 +16,11 @@ export const ADVISORY_URL = "https://travel.state.gov/en/international-travel/tr
 
 export const getAdvisory = (country: string): Advisory | null => advisories[country] ?? null;
 
-// ISO2 code -> flag emoji via regional indicator symbols ("ES" -> 🇪🇸)
-export const getFlag = (country: string): string => {
+// Flag image URL from the ISO2 code. Images, not emoji: Windows has no flag emoji
+// and shows the bare letters ("ES") instead.
+export const getFlagUrl = (country: string, size: "20x15" | "40x30" = "20x15"): string | null => {
   const code = (countryCodes as Record<string, string>)[country];
-  return code ? String.fromCodePoint(...[...code.toUpperCase()].map((c) => 0x1f1a5 + c.charCodeAt(0))) : "";
+  return code ? `https://flagcdn.com/${size}/${code.toLowerCase()}.png` : null;
 };
 
 export const ADVISORY_LEVELS: Record<Advisory["level"], { short: string; color: string }> = {

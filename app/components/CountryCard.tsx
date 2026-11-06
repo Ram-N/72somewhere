@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import CityCard, { type Destination } from "./CityCard";
-import { ADVISORY_LEVELS, getFlag, type Advisory } from "@/lib/advisories";
+import { ADVISORY_LEVELS, getFlagUrl, type Advisory } from "@/lib/advisories";
 
 export interface CountrySummary {
   country: string;
@@ -45,6 +45,8 @@ export default function CountryCard({
   const extra = (matchedCities.length > 0 ? matchedCities.length : cities.length) - pillCities.length;
   const shownCities = showMatchesOnly ? matchedCities : cities;
 
+  const flagUrl = getFlagUrl(country);
+
   const formatHigh = (c: number) => (tempUnit === "F" ? Math.round((c * 9) / 5 + 32) : Math.round(c));
 
   return (
@@ -58,7 +60,18 @@ export default function CountryCard({
           <div className="min-w-0">
             <h3 className="font-semibold text-gray-900 text-base">
               <span className="text-gray-400 text-sm mr-1">{expanded ? "▾" : "▸"}</span>
-              {getFlag(country)} {country}
+              {flagUrl && (
+                // eslint-disable-next-line @next/next/no-img-element -- tiny fixed-size icon; next/image adds nothing here
+                <img
+                  src={flagUrl}
+                  srcSet={`${getFlagUrl(country, "40x30")} 2x`}
+                  width={20}
+                  height={15}
+                  alt=""
+                  className="inline-block mr-1.5 align-[-1px] rounded-sm shadow-[0_0_0_1px_rgba(0,0,0,0.08)]"
+                />
+              )}
+              {country}
             </h3>
             <p className="text-xs text-gray-500 flex flex-wrap items-center gap-x-1.5">
               {showTotal

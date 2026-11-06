@@ -86,6 +86,8 @@ def main():
         iso2 = {row["country"]: row["iso2"] for row in csv.DictReader(f) if row["iso2"]}
     # Namibia's code "NA" was written as blank (read as a missing value upstream)
     iso2.setdefault("Namibia", "NA")
+    # SimpleMaps uses non-ISO placeholder codes for these; flag images need the ISO ones
+    iso2.update({"Gaza Strip": "PS", "Svalbard": "SJ"})
     codes = {country: iso2[country] for country in app_countries if country in iso2}
     with open(CODES_PATH, "w", encoding="utf-8") as f:
         json.dump(codes, f, ensure_ascii=False, indent=2)
