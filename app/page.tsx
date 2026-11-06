@@ -8,6 +8,10 @@ import type { LocationFilter } from "@/lib/types";
 
 type DurationOption = "1week" | "2weeks" | "3weeks" | "4weeks" | "1month";
 type StartOption = "m1" | "m2" | "m3" | "m4" | "custom";
+
+// YYYY-MM-DD in local time (toISOString shifts to UTC and can change the day)
+const toLocalDateString = (d: Date) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 type SortOption = "score" | "country" | "temp" | "precip";
 type PrecipOption = "any" | "dry" | "low" | "some";
 
@@ -41,24 +45,23 @@ export default function Home() {
 
   const hasAdvancedFilters = minLowTemp !== null || maxHighTemp !== null || advancedMaxPrecip !== null;
 
-  // Compute next 4 month options (e.g. Apr, May, Jun, Jul when in March)
+  // Compute current + next 3 month options (e.g. Mar, Apr, May, Jun when in March).
+  // Current month starts today; later months start on the 1st.
   const nextMonths = useMemo(() => {
     const today = new Date();
-    return ([1, 2, 3, 4] as const).map((i) => {
-      const d = new Date(today.getFullYear(), today.getMonth() + i, 1);
+    return ([0, 1, 2, 3] as const).map((i) => {
+      const d = i === 0 ? today : new Date(today.getFullYear(), today.getMonth() + i, 1);
       return {
-        key: `m${i}` as StartOption,
+        key: `m${i + 1}` as StartOption,
         label: d.toLocaleString("default", { month: "short" }),
-        date: d.toISOString().split("T")[0],
+        date: toLocalDateString(d),
       };
     });
   }, []);
 
-  // Default to first of next month to avoid hydration mismatch
+  // Default to today (set in effect to avoid hydration mismatch)
   useEffect(() => {
-    const today = new Date();
-    const nextMonth = new Date(today.getFullYear(), today.getMonth() + 1, 1);
-    setStartDate(nextMonth.toISOString().split("T")[0]);
+    setStartDate(toLocalDateString(new Date()));
   }, []);
 
   const handleStartOffset = (key: StartOption, date: string) => {
