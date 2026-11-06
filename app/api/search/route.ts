@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
 import type { LocationFilter } from '@/lib/types';
+import { getAdvisory } from '@/lib/advisories';
 
 export async function POST(request: NextRequest) {
   try {
-    const { startDate, endDate, minTemp, maxTemp, locationFilter, maxPrecip, minLowTemp, maxHighTemp, advancedMaxPrecip } = await request.json() as {
+    const { startDate, endDate, minTemp, maxTemp, locationFilter, maxPrecip, minLowTemp, maxHighTemp, advancedMaxPrecip, maxAdvisoryLevel } = await request.json() as {
       startDate: string;
       endDate: string;
       minTemp: number;
@@ -14,6 +15,7 @@ export async function POST(request: NextRequest) {
       minLowTemp?: number;
       maxHighTemp?: number;
       advancedMaxPrecip?: number;
+      maxAdvisoryLevel?: number;
     };
 
     if (!startDate || !endDate) {
@@ -129,6 +131,7 @@ export async function POST(request: NextRequest) {
         score_temp: Math.round(tempScore),
         score_rain: Math.round(rainScore),
         matches_temp: matchesTemp,
+        advisory: getAdvisory(city.country),
       };
     });
 
@@ -137,7 +140,9 @@ export async function POST(request: NextRequest) {
     const filteredDestinations = allDestinations
       .filter((d) => effectiveMaxPrecip == null || d.avg_precip <= effectiveMaxPrecip)
       .filter((d) => minLowTemp == null || d.avg_low >= minLowTemp)
-      .filter((d) => maxHighTemp == null || d.avg_high <= maxHighTemp);
+      .filter((d) => maxHighTemp == null || d.avg_high <= maxHighTemp)
+      // Countries without an advisory (e.g. US, territories) are kept
+      .filter((d) => maxAdvisoryLevel == null || d.advisory == null || d.advisory.level <= maxAdvisoryLevel);
 
     let destinations;
     if (locationFilter) {

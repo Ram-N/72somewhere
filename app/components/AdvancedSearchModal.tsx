@@ -1,5 +1,7 @@
 "use client";
 
+import { ADVISORY_LEVELS } from "@/lib/advisories";
+
 interface AdvancedSearchModalProps {
   show: boolean;
   onClose: () => void;
@@ -10,6 +12,8 @@ interface AdvancedSearchModalProps {
   setMaxHighTemp: (v: number | null) => void;
   advancedMaxPrecip: number | null;
   setAdvancedMaxPrecip: (v: number | null) => void;
+  maxAdvisoryLevel: number | null;
+  setMaxAdvisoryLevel: (v: number | null) => void;
 }
 
 export default function AdvancedSearchModal({
@@ -22,6 +26,8 @@ export default function AdvancedSearchModal({
   setMaxHighTemp,
   advancedMaxPrecip,
   setAdvancedMaxPrecip,
+  maxAdvisoryLevel,
+  setMaxAdvisoryLevel,
 }: AdvancedSearchModalProps) {
   const lowMin = tempUnit === "F" ? 32 : 0;
   const lowMax = tempUnit === "F" ? 80 : 27;
@@ -169,6 +175,38 @@ export default function AdvancedSearchModal({
                 </>
               )}
             </div>
+
+            {/* Max US State Dept travel advisory level */}
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <label className="text-sm font-medium text-gray-700">
+                  Max travel advisory
+                  {maxAdvisoryLevel !== null && (
+                    <span className="ml-2 text-blue-600 font-semibold">Level {maxAdvisoryLevel} or lower</span>
+                  )}
+                </label>
+                <Toggle
+                  active={maxAdvisoryLevel !== null}
+                  onToggle={() => setMaxAdvisoryLevel(maxAdvisoryLevel === null ? 2 : null)}
+                />
+              </div>
+              {maxAdvisoryLevel !== null && (
+                <div className="flex gap-2 flex-wrap">
+                  {([1, 2, 3] as const).map((level) => (
+                    <button
+                      key={level}
+                      onClick={() => setMaxAdvisoryLevel(level)}
+                      className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
+                        maxAdvisoryLevel === level ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                      }`}
+                    >
+                      ≤ L{level} · {ADVISORY_LEVELS[level].short}
+                    </button>
+                  ))}
+                </div>
+              )}
+              <p className="text-xs text-gray-400 mt-1">US State Dept, country-level. Places without an advisory are kept.</p>
+            </div>
           </div>
 
           <div className="flex justify-between mt-6">
@@ -177,6 +215,7 @@ export default function AdvancedSearchModal({
                 setMinLowTemp(null);
                 setMaxHighTemp(null);
                 setAdvancedMaxPrecip(null);
+                setMaxAdvisoryLevel(null);
               }}
               className="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
             >

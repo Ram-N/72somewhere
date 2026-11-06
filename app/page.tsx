@@ -43,8 +43,9 @@ export default function Home() {
   const [minLowTemp, setMinLowTemp] = useState<number | null>(null);
   const [maxHighTemp, setMaxHighTemp] = useState<number | null>(null);
   const [advancedMaxPrecip, setAdvancedMaxPrecip] = useState<number | null>(null);
+  const [maxAdvisoryLevel, setMaxAdvisoryLevel] = useState<number | null>(null);
 
-  const hasAdvancedFilters = minLowTemp !== null || maxHighTemp !== null || advancedMaxPrecip !== null;
+  const hasAdvancedFilters = minLowTemp !== null || maxHighTemp !== null || advancedMaxPrecip !== null || maxAdvisoryLevel !== null;
 
   // Compute current + next 3 month options (e.g. Mar, Apr, May, Jun when in March).
   // Current month starts today; later months start on the 1st.
@@ -150,7 +151,8 @@ export default function Home() {
 
   const runSearch = useCallback(async (
     sd: string, ed: string, minC: number, maxC: number, precip: PrecipOption, loc: LocationFilter | null,
-    minLowC: number | null, maxHighC: number | null, advPrecip: number | null
+    minLowC: number | null, maxHighC: number | null, advPrecip: number | null,
+    maxAdvisory: number | null
   ) => {
     if (!sd) return;
     setLoading(true);
@@ -162,6 +164,7 @@ export default function Home() {
       if (minLowC !== null) body.minLowTemp = minLowC;
       if (maxHighC !== null) body.maxHighTemp = maxHighC;
       if (advPrecip !== null) body.advancedMaxPrecip = advPrecip;
+      if (maxAdvisory !== null) body.maxAdvisoryLevel = maxAdvisory;
 
       const response = await fetch("/api/search", {
         method: "POST",
@@ -197,14 +200,15 @@ export default function Home() {
         startDate, endDate, toCelsius(minTemp), toCelsius(maxTemp), maxPrecip, locationFilter,
         minLowTemp !== null ? toCelsius(minLowTemp) : null,
         maxHighTemp !== null ? toCelsius(maxHighTemp) : null,
-        advancedMaxPrecip
+        advancedMaxPrecip,
+        maxAdvisoryLevel
       );
     }, 600);
 
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-  }, [startDate, endDate, minTemp, maxTemp, maxPrecip, locationFilter, minLowTemp, maxHighTemp, advancedMaxPrecip]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [startDate, endDate, minTemp, maxTemp, maxPrecip, locationFilter, minLowTemp, maxHighTemp, advancedMaxPrecip, maxAdvisoryLevel]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handlePrevCard = () =>
     setCurrentCardIndex((prev) => (prev > 0 ? prev - 1 : visibleResults.length - 1));
@@ -397,6 +401,8 @@ export default function Home() {
           setMaxHighTemp={setMaxHighTemp}
           advancedMaxPrecip={advancedMaxPrecip}
           setAdvancedMaxPrecip={setAdvancedMaxPrecip}
+          maxAdvisoryLevel={maxAdvisoryLevel}
+          setMaxAdvisoryLevel={setMaxAdvisoryLevel}
         />
 
         {/* Results */}

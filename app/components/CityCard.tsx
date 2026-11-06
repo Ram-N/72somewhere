@@ -16,6 +16,7 @@ import {
   ResponsiveContainer,
   LineChart,
 } from "recharts";
+import { ADVISORY_LEVELS, ADVISORY_URL, RISK_LABELS, type Advisory } from "@/lib/advisories";
 
 interface MonthRecord {
   month: number;
@@ -35,6 +36,7 @@ interface Destination {
   score: number;
   score_temp: number;
   score_rain: number;
+  advisory?: Advisory | null;
 }
 
 interface CityCardProps {
@@ -202,7 +204,18 @@ export default function CityCard({
               <h3 className={`font-semibold text-gray-900 ${size === "large" ? "text-2xl" : "text-base"}`}>
                 {destination.city_name}
               </h3>
-              <p className="text-xs text-gray-500">{destination.country}</p>
+              <p className="text-xs text-gray-500 flex flex-wrap items-center gap-x-1.5">
+                {destination.country}
+                {/* Level 1 is the norm, so only flag Level 2+ on the front */}
+                {destination.advisory && destination.advisory.level >= 2 && (
+                  <span
+                    className={`px-1.5 rounded-full font-medium ${ADVISORY_LEVELS[destination.advisory.level].color}`}
+                    title="US State Dept travel advisory — flip card for details"
+                  >
+                    ⚠ L{destination.advisory.level} · {ADVISORY_LEVELS[destination.advisory.level].short}
+                  </span>
+                )}
+              </p>
             </div>
             <div className="flex flex-col items-end gap-1">
               <span className={`text-xs px-2 py-1 rounded-full font-semibold ${
@@ -406,8 +419,37 @@ export default function CityCard({
             </div>
           </div>
 
-          {/* Sparkline */}
-          {yearData && yearData.length > 0 && (
+          {/* Travel advisory takes the sparkline's spot — compact cards have no room for both */}
+          {destination.advisory ? (
+            <div className={`${size === "compact" ? "text-xs" : "text-sm"} mt-1 pt-1 border-t border-gray-100 space-y-0.5`}>
+              <p className="flex items-center gap-1.5 whitespace-nowrap">
+                <span className={`px-1.5 rounded font-medium ${ADVISORY_LEVELS[destination.advisory.level].color}`}>
+                  L{destination.advisory.level} · {destination.advisory.description}
+                </span>
+                {size === "compact" && destination.advisory.risks.map((r) => (
+                  <span key={r} title={RISK_LABELS[r]?.label ?? r}>{RISK_LABELS[r]?.icon ?? r}</span>
+                ))}
+                <a
+                  href={ADVISORY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="ml-auto text-blue-600 hover:underline"
+                  title={`US State Dept advisory issued ${destination.advisory.issued}. Country-level; regional advisories may differ.`}
+                >
+                  {size === "large" ? `Issued ${destination.advisory.issued} ↗` : "↗"}
+                </a>
+              </p>
+              {size === "large" && destination.advisory.risks.length > 0 && (
+                <p className="text-gray-600">
+                  {destination.advisory.risks.map((r) => `${RISK_LABELS[r]?.icon ?? ""} ${RISK_LABELS[r]?.label ?? r}`).join(" · ")}
+                </p>
+              )}
+              {size === "large" && (
+                <p className="text-xs text-gray-400">US State Dept, country-level; regional advisories may differ.</p>
+              )}
+            </div>
+          ) : yearData && yearData.length > 0 && (
             <div className="mt-2 opacity-60">
               <LineChart width={200} height={40} data={chartData}>
                 <Line type="monotone" dataKey="avg" stroke="#6b7280" strokeWidth={1.5} dot={false} />

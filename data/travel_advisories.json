@@ -1,0 +1,2060 @@
+{
+  "Afghanistan": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "T",
+      "D",
+      "N"
+    ],
+    "issued": "2026-02-20",
+    "snapshot": "2026-11-06"
+  },
+  "Albania": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-08-26",
+    "snapshot": "2026-11-06"
+  },
+  "Algeria": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "K",
+      "T"
+    ],
+    "issued": "2026-08-25",
+    "snapshot": "2026-11-06"
+  },
+  "Andorra": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-21",
+    "snapshot": "2026-11-06"
+  },
+  "Angola": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "H",
+      "O"
+    ],
+    "issued": "2026-03-05",
+    "snapshot": "2026-11-06"
+  },
+  "Anguilla": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-22",
+    "snapshot": "2026-11-06"
+  },
+  "Antigua and Barbuda": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-20",
+    "snapshot": "2026-11-06"
+  },
+  "Argentina": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-10",
+    "snapshot": "2026-11-06"
+  },
+  "Armenia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "O"
+    ],
+    "issued": "2025-09-05",
+    "snapshot": "2026-11-06"
+  },
+  "Aruba": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-20",
+    "snapshot": "2026-11-06"
+  },
+  "Australia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-18",
+    "snapshot": "2026-11-06"
+  },
+  "Austria": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-21",
+    "snapshot": "2026-11-06"
+  },
+  "Azerbaijan": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2026-04-28",
+    "snapshot": "2026-11-06"
+  },
+  "Bahamas, The": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-07-28",
+    "snapshot": "2026-11-06"
+  },
+  "Bahrain": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Bangladesh": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T"
+    ],
+    "issued": "2026-07-30",
+    "snapshot": "2026-11-06"
+  },
+  "Barbados": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-04-10",
+    "snapshot": "2026-11-06"
+  },
+  "Belarus": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "O"
+    ],
+    "issued": "2025-12-29",
+    "snapshot": "2026-11-06"
+  },
+  "Belgium": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T",
+      "U",
+      "C"
+    ],
+    "issued": "2026-07-23",
+    "snapshot": "2026-11-06"
+  },
+  "Belize": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-03-12",
+    "snapshot": "2026-11-06"
+  },
+  "Benin": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "K",
+      "T",
+      "U"
+    ],
+    "issued": "2026-01-07",
+    "snapshot": "2026-11-06"
+  },
+  "Bermuda": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-04-10",
+    "snapshot": "2026-11-06"
+  },
+  "Bhutan": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-09-04",
+    "snapshot": "2026-11-06"
+  },
+  "Bolivia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "U"
+    ],
+    "issued": "2026-08-18",
+    "snapshot": "2026-11-06"
+  },
+  "Bosnia and Herzegovina": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "T",
+      "O"
+    ],
+    "issued": "2026-08-27",
+    "snapshot": "2026-11-06"
+  },
+  "Botswana": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-06-17",
+    "snapshot": "2026-11-06"
+  },
+  "Brazil": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "K"
+    ],
+    "issued": "2026-08-31",
+    "snapshot": "2026-11-06"
+  },
+  "Brunei": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-14",
+    "snapshot": "2026-11-06"
+  },
+  "Bulgaria": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-10-09",
+    "snapshot": "2026-11-06"
+  },
+  "Burkina Faso": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "C",
+      "K",
+      "T",
+      "H"
+    ],
+    "issued": "2026-05-04",
+    "snapshot": "2026-11-06"
+  },
+  "Burma": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "O"
+    ],
+    "issued": "2026-05-08",
+    "snapshot": "2026-11-06"
+  },
+  "Burundi": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "U",
+      "C",
+      "H"
+    ],
+    "issued": "2025-04-29",
+    "snapshot": "2026-11-06"
+  },
+  "Cabo Verde": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "C"
+    ],
+    "issued": "2025-12-18",
+    "snapshot": "2026-11-06"
+  },
+  "Cambodia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "O",
+      "U"
+    ],
+    "issued": "2026-09-15",
+    "snapshot": "2026-11-06"
+  },
+  "Cameroon": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O",
+      "H"
+    ],
+    "issued": "2026-05-15",
+    "snapshot": "2026-11-06"
+  },
+  "Canada": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-06-05",
+    "snapshot": "2026-11-06"
+  },
+  "Cayman Islands": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-21",
+    "snapshot": "2026-11-06"
+  },
+  "Central African Republic": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "O",
+      "T"
+    ],
+    "issued": "2026-01-15",
+    "snapshot": "2026-11-06"
+  },
+  "Chad": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O",
+      "H"
+    ],
+    "issued": "2026-04-28",
+    "snapshot": "2026-11-06"
+  },
+  "Chile": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H"
+    ],
+    "issued": "2026-08-19",
+    "snapshot": "2026-11-06"
+  },
+  "China": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "O",
+      "D"
+    ],
+    "issued": "2026-10-19",
+    "snapshot": "2026-11-06"
+  },
+  "Colombia": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "N"
+    ],
+    "issued": "2026-03-31",
+    "snapshot": "2026-11-06"
+  },
+  "Comoros": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H"
+    ],
+    "issued": "2026-01-12",
+    "snapshot": "2026-11-06"
+  },
+  "Congo (Brazzaville)": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2024-10-02",
+    "snapshot": "2026-11-06"
+  },
+  "Congo (Kinshasa)": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "H"
+    ],
+    "issued": "2026-07-15",
+    "snapshot": "2026-11-06"
+  },
+  "Costa Rica": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-04-02",
+    "snapshot": "2026-11-06"
+  },
+  "Croatia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-18",
+    "snapshot": "2026-11-06"
+  },
+  "Cuba": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "O"
+    ],
+    "issued": "2025-05-07",
+    "snapshot": "2026-11-06"
+  },
+  "Curaçao": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-09-09",
+    "snapshot": "2026-11-06"
+  },
+  "Cyprus": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "O"
+    ],
+    "issued": "2026-03-03",
+    "snapshot": "2026-11-06"
+  },
+  "Czechia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-01-08",
+    "snapshot": "2026-11-06"
+  },
+  "Côte d’Ivoire": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "T",
+      "O"
+    ],
+    "issued": "2026-02-18",
+    "snapshot": "2026-11-06"
+  },
+  "Denmark": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2024-09-17",
+    "snapshot": "2026-11-06"
+  },
+  "Djibouti": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2025-03-06",
+    "snapshot": "2026-11-06"
+  },
+  "Dominica": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-20",
+    "snapshot": "2026-11-06"
+  },
+  "Dominican Republic": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2025-06-12",
+    "snapshot": "2026-11-06"
+  },
+  "Ecuador": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "T",
+      "U",
+      "K"
+    ],
+    "issued": "2026-08-18",
+    "snapshot": "2026-11-06"
+  },
+  "Egypt": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T",
+      "O",
+      "C",
+      "H"
+    ],
+    "issued": "2025-07-15",
+    "snapshot": "2026-11-06"
+  },
+  "El Salvador": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-06-25",
+    "snapshot": "2026-11-06"
+  },
+  "Equatorial Guinea": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "H",
+      "O"
+    ],
+    "issued": "2025-10-27",
+    "snapshot": "2026-11-06"
+  },
+  "Eritrea": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "D",
+      "O"
+    ],
+    "issued": "2023-07-31",
+    "snapshot": "2026-11-06"
+  },
+  "Estonia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-03-31",
+    "snapshot": "2026-11-06"
+  },
+  "Eswatini": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C"
+    ],
+    "issued": "2026-07-10",
+    "snapshot": "2026-11-06"
+  },
+  "Ethiopia": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O"
+    ],
+    "issued": "2026-08-27",
+    "snapshot": "2026-11-06"
+  },
+  "Fiji": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2024-12-02",
+    "snapshot": "2026-11-06"
+  },
+  "Finland": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-03-13",
+    "snapshot": "2026-11-06"
+  },
+  "France": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "T"
+    ],
+    "issued": "2026-10-21",
+    "snapshot": "2026-11-06"
+  },
+  "French Guiana": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-08",
+    "snapshot": "2026-11-06"
+  },
+  "French Polynesia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2024-12-02",
+    "snapshot": "2026-11-06"
+  },
+  "Gabon": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H"
+    ],
+    "issued": "2026-03-30",
+    "snapshot": "2026-11-06"
+  },
+  "Gambia, The": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "H",
+      "O"
+    ],
+    "issued": "2026-01-16",
+    "snapshot": "2026-11-06"
+  },
+  "Gaza Strip": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "T",
+      "U",
+      "H"
+    ],
+    "issued": "2026-08-26",
+    "snapshot": "2026-11-06"
+  },
+  "Georgia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "U",
+      "C",
+      "O"
+    ],
+    "issued": "2025-03-13",
+    "snapshot": "2026-11-06"
+  },
+  "Germany": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2025-05-13",
+    "snapshot": "2026-11-06"
+  },
+  "Ghana": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "O",
+      "H"
+    ],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Gibraltar": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2026-09-09",
+    "snapshot": "2026-11-06"
+  },
+  "Greece": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Greenland": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "N",
+      "O"
+    ],
+    "issued": "2024-10-29",
+    "snapshot": "2026-11-06"
+  },
+  "Grenada": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-01-05",
+    "snapshot": "2026-11-06"
+  },
+  "Guadeloupe": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2024-08-22",
+    "snapshot": "2026-11-06"
+  },
+  "Guatemala": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C",
+      "T"
+    ],
+    "issued": "2026-03-12",
+    "snapshot": "2026-11-06"
+  },
+  "Guinea": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H"
+    ],
+    "issued": "2026-02-25",
+    "snapshot": "2026-11-06"
+  },
+  "Guinea-Bissau": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "U",
+      "H",
+      "O"
+    ],
+    "issued": "2025-12-11",
+    "snapshot": "2026-11-06"
+  },
+  "Guyana": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-08-26",
+    "snapshot": "2026-11-06"
+  },
+  "Haiti": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "T"
+    ],
+    "issued": "2026-07-10",
+    "snapshot": "2026-11-06"
+  },
+  "Honduras": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C",
+      "T"
+    ],
+    "issued": "2026-08-25",
+    "snapshot": "2026-11-06"
+  },
+  "Hong Kong": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "O"
+    ],
+    "issued": "2026-09-04",
+    "snapshot": "2026-11-06"
+  },
+  "Hungary": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-04-15",
+    "snapshot": "2026-11-06"
+  },
+  "Iceland": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-05",
+    "snapshot": "2026-11-06"
+  },
+  "India": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "T",
+      "O"
+    ],
+    "issued": "2025-06-16",
+    "snapshot": "2026-11-06"
+  },
+  "Indonesia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "N",
+      "T"
+    ],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Iran": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "K",
+      "T",
+      "D",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Iraq": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Ireland": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-03-20",
+    "snapshot": "2026-11-06"
+  },
+  "Isle of Man": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2026-09-10",
+    "snapshot": "2026-11-06"
+  },
+  "Israel": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "T",
+      "U"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Italy": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2026-09-10",
+    "snapshot": "2026-11-06"
+  },
+  "Jamaica": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "H"
+    ],
+    "issued": "2026-06-23",
+    "snapshot": "2026-11-06"
+  },
+  "Japan": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-05-15",
+    "snapshot": "2026-11-06"
+  },
+  "Jordan": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Kazakhstan": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-18",
+    "snapshot": "2026-11-06"
+  },
+  "Kenya": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-19",
+    "snapshot": "2026-11-06"
+  },
+  "Kiribati": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2024-12-02",
+    "snapshot": "2026-11-06"
+  },
+  "Korea, North": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "D",
+      "O"
+    ],
+    "issued": "2025-04-29",
+    "snapshot": "2026-11-06"
+  },
+  "Korea, South": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-05-28",
+    "snapshot": "2026-11-06"
+  },
+  "Kosovo": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "T"
+    ],
+    "issued": "2026-08-25",
+    "snapshot": "2026-11-06"
+  },
+  "Kuwait": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Kyrgyzstan": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "U"
+    ],
+    "issued": "2026-02-10",
+    "snapshot": "2026-11-06"
+  },
+  "Laos": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "O"
+    ],
+    "issued": "2026-07-28",
+    "snapshot": "2026-11-06"
+  },
+  "Latvia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-04-01",
+    "snapshot": "2026-11-06"
+  },
+  "Lebanon": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Lesotho": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "H"
+    ],
+    "issued": "2026-06-17",
+    "snapshot": "2026-11-06"
+  },
+  "Liberia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H"
+    ],
+    "issued": "2025-12-11",
+    "snapshot": "2026-11-06"
+  },
+  "Libya": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O",
+      "H"
+    ],
+    "issued": "2026-08-31",
+    "snapshot": "2026-11-06"
+  },
+  "Liechtenstein": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-18",
+    "snapshot": "2026-11-06"
+  },
+  "Lithuania": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-04-28",
+    "snapshot": "2026-11-06"
+  },
+  "Luxembourg": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-04-08",
+    "snapshot": "2026-11-06"
+  },
+  "Macau": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "O"
+    ],
+    "issued": "2026-09-04",
+    "snapshot": "2026-11-06"
+  },
+  "Madagascar": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H"
+    ],
+    "issued": "2025-12-04",
+    "snapshot": "2026-11-06"
+  },
+  "Malawi": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C"
+    ],
+    "issued": "2026-05-14",
+    "snapshot": "2026-11-06"
+  },
+  "Malaysia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "K"
+    ],
+    "issued": "2026-02-22",
+    "snapshot": "2026-11-06"
+  },
+  "Maldives": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2025-10-07",
+    "snapshot": "2026-11-06"
+  },
+  "Mali": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "C",
+      "K",
+      "T",
+      "U",
+      "H"
+    ],
+    "issued": "2026-06-08",
+    "snapshot": "2026-11-06"
+  },
+  "Malta": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-09",
+    "snapshot": "2026-11-06"
+  },
+  "Marshall Islands": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "H"
+    ],
+    "issued": "2026-05-21",
+    "snapshot": "2026-11-06"
+  },
+  "Martinique": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2024-08-22",
+    "snapshot": "2026-11-06"
+  },
+  "Mauritania": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C",
+      "T",
+      "H"
+    ],
+    "issued": "2026-08-18",
+    "snapshot": "2026-11-06"
+  },
+  "Mauritius": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2025-12-08",
+    "snapshot": "2026-11-06"
+  },
+  "Mexico": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "K",
+      "T"
+    ],
+    "issued": "2026-05-29",
+    "snapshot": "2026-11-06"
+  },
+  "Micronesia, Federated States of": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Moldova": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "O"
+    ],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Monaco": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "T"
+    ],
+    "issued": "2025-05-28",
+    "snapshot": "2026-11-06"
+  },
+  "Mongolia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-29",
+    "snapshot": "2026-11-06"
+  },
+  "Montenegro": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-27",
+    "snapshot": "2026-11-06"
+  },
+  "Montserrat": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Morocco": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2026-09-04",
+    "snapshot": "2026-11-06"
+  },
+  "Mozambique": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "T"
+    ],
+    "issued": "2026-08-21",
+    "snapshot": "2026-11-06"
+  },
+  "Namibia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "H"
+    ],
+    "issued": "2026-05-15",
+    "snapshot": "2026-11-06"
+  },
+  "Nepal": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "N"
+    ],
+    "issued": "2026-09-04",
+    "snapshot": "2026-11-06"
+  },
+  "Netherlands": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2026-08-18",
+    "snapshot": "2026-11-06"
+  },
+  "New Caledonia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-05-21",
+    "snapshot": "2026-11-06"
+  },
+  "New Zealand": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-04-29",
+    "snapshot": "2026-11-06"
+  },
+  "Nicaragua": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C",
+      "H",
+      "D",
+      "O"
+    ],
+    "issued": "2026-05-14",
+    "snapshot": "2026-11-06"
+  },
+  "Niger": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "T"
+    ],
+    "issued": "2026-07-09",
+    "snapshot": "2026-11-06"
+  },
+  "Nigeria": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "T"
+    ],
+    "issued": "2026-06-12",
+    "snapshot": "2026-11-06"
+  },
+  "North Macedonia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-01-14",
+    "snapshot": "2026-11-06"
+  },
+  "Norway": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-06",
+    "snapshot": "2026-11-06"
+  },
+  "Oman": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Pakistan": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "T",
+      "C",
+      "K",
+      "O"
+    ],
+    "issued": "2026-06-16",
+    "snapshot": "2026-11-06"
+  },
+  "Palau": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "H",
+      "O"
+    ],
+    "issued": "2026-01-07",
+    "snapshot": "2026-11-06"
+  },
+  "Panama": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-08-19",
+    "snapshot": "2026-11-06"
+  },
+  "Papua New Guinea": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "N",
+      "O"
+    ],
+    "issued": "2025-04-29",
+    "snapshot": "2026-11-06"
+  },
+  "Paraguay": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-08-19",
+    "snapshot": "2026-11-06"
+  },
+  "Peru": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O"
+    ],
+    "issued": "2026-09-04",
+    "snapshot": "2026-11-06"
+  },
+  "Philippines": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T"
+    ],
+    "issued": "2026-09-01",
+    "snapshot": "2026-11-06"
+  },
+  "Poland": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-06-05",
+    "snapshot": "2026-11-06"
+  },
+  "Portugal": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-12-23",
+    "snapshot": "2026-11-06"
+  },
+  "Qatar": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Romania": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-10-14",
+    "snapshot": "2026-11-06"
+  },
+  "Russia": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "T",
+      "D",
+      "O"
+    ],
+    "issued": "2025-12-29",
+    "snapshot": "2026-11-06"
+  },
+  "Rwanda": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C",
+      "H",
+      "U"
+    ],
+    "issued": "2026-06-04",
+    "snapshot": "2026-11-06"
+  },
+  "Saint Barthelemy": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-20",
+    "snapshot": "2026-11-06"
+  },
+  "Saint Kitts and Nevis": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Saint Lucia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-10",
+    "snapshot": "2026-11-06"
+  },
+  "Saint Martin": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-14",
+    "snapshot": "2026-11-06"
+  },
+  "Saint Vincent and the Grenadines": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Samoa": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "San Marino": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2026-09-10",
+    "snapshot": "2026-11-06"
+  },
+  "Sao Tome and Principe": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "H"
+    ],
+    "issued": "2026-09-04",
+    "snapshot": "2026-11-06"
+  },
+  "Saudi Arabia": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Senegal": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "C",
+      "O"
+    ],
+    "issued": "2025-12-01",
+    "snapshot": "2026-11-06"
+  },
+  "Serbia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-08-27",
+    "snapshot": "2026-11-06"
+  },
+  "Seychelles": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-12-09",
+    "snapshot": "2026-11-06"
+  },
+  "Sierra Leone": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H"
+    ],
+    "issued": "2025-09-15",
+    "snapshot": "2026-11-06"
+  },
+  "Singapore": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-03-09",
+    "snapshot": "2026-11-06"
+  },
+  "Sint Maarten": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-24",
+    "snapshot": "2026-11-06"
+  },
+  "Slovakia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-02-12",
+    "snapshot": "2026-11-06"
+  },
+  "Slovenia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-15",
+    "snapshot": "2026-11-06"
+  },
+  "Solomon Islands": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "O"
+    ],
+    "issued": "2025-04-29",
+    "snapshot": "2026-11-06"
+  },
+  "Somalia": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O",
+      "H"
+    ],
+    "issued": "2026-05-21",
+    "snapshot": "2026-11-06"
+  },
+  "South Africa": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T"
+    ],
+    "issued": "2025-05-27",
+    "snapshot": "2026-11-06"
+  },
+  "South Sudan": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "C",
+      "K",
+      "U",
+      "H",
+      "O"
+    ],
+    "issued": "2026-05-17",
+    "snapshot": "2026-11-06"
+  },
+  "Spain": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "T"
+    ],
+    "issued": "2026-08-01",
+    "snapshot": "2026-11-06"
+  },
+  "Sri Lanka": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "T",
+      "O"
+    ],
+    "issued": "2025-10-14",
+    "snapshot": "2026-11-06"
+  },
+  "Sudan": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O",
+      "H"
+    ],
+    "issued": "2026-05-15",
+    "snapshot": "2026-11-06"
+  },
+  "Suriname": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-09-08",
+    "snapshot": "2026-11-06"
+  },
+  "Sweden": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2026-05-18",
+    "snapshot": "2026-11-06"
+  },
+  "Switzerland": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-14",
+    "snapshot": "2026-11-06"
+  },
+  "Syria": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Taiwan": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-11-25",
+    "snapshot": "2026-11-06"
+  },
+  "Tajikistan": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2026-09-04",
+    "snapshot": "2026-11-06"
+  },
+  "Tanzania": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C",
+      "T",
+      "O",
+      "U",
+      "H"
+    ],
+    "issued": "2026-10-16",
+    "snapshot": "2026-11-06"
+  },
+  "Thailand": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [
+      "U"
+    ],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Timor-Leste": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C"
+    ],
+    "issued": "2026-05-21",
+    "snapshot": "2026-11-06"
+  },
+  "Togo": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "K",
+      "T"
+    ],
+    "issued": "2026-03-09",
+    "snapshot": "2026-11-06"
+  },
+  "Tonga": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2024-12-02",
+    "snapshot": "2026-11-06"
+  },
+  "Trinidad and Tobago": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C",
+      "T",
+      "H"
+    ],
+    "issued": "2026-04-13",
+    "snapshot": "2026-11-06"
+  },
+  "Tunisia": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T",
+      "U",
+      "C"
+    ],
+    "issued": "2026-05-21",
+    "snapshot": "2026-11-06"
+  },
+  "Turkey": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2026-06-09",
+    "snapshot": "2026-11-06"
+  },
+  "Turkmenistan": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-08-21",
+    "snapshot": "2026-11-06"
+  },
+  "Turks and Caicos Islands": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-07-07",
+    "snapshot": "2026-11-06"
+  },
+  "Tuvalu": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2024-12-02",
+    "snapshot": "2026-11-06"
+  },
+  "Uganda": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "T",
+      "H"
+    ],
+    "issued": "2026-06-04",
+    "snapshot": "2026-11-06"
+  },
+  "Ukraine": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "O",
+      "U"
+    ],
+    "issued": "2026-08-28",
+    "snapshot": "2026-11-06"
+  },
+  "United Arab Emirates": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "United Kingdom": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T",
+      "U",
+      "C"
+    ],
+    "issued": "2026-09-09",
+    "snapshot": "2026-11-06"
+  },
+  "Uruguay": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "C"
+    ],
+    "issued": "2026-07-28",
+    "snapshot": "2026-11-06"
+  },
+  "Uzbekistan": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-01-26",
+    "snapshot": "2026-11-06"
+  },
+  "Vanuatu": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2025-05-22",
+    "snapshot": "2026-11-06"
+  },
+  "Vatican City": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "T"
+    ],
+    "issued": "2026-09-10",
+    "snapshot": "2026-11-06"
+  },
+  "Venezuela": {
+    "level": 3,
+    "description": "Reconsider travel",
+    "risks": [
+      "C",
+      "H",
+      "K",
+      "T",
+      "N"
+    ],
+    "issued": "2026-06-27",
+    "snapshot": "2026-11-06"
+  },
+  "Vietnam": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-06-24",
+    "snapshot": "2026-11-06"
+  },
+  "Virgin Islands, British": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2026-05-22",
+    "snapshot": "2026-11-06"
+  },
+  "Yemen": {
+    "level": 4,
+    "description": "Do not travel",
+    "risks": [
+      "U",
+      "C",
+      "H",
+      "K",
+      "T",
+      "O"
+    ],
+    "issued": "2026-10-23",
+    "snapshot": "2026-11-06"
+  },
+  "Zambia": {
+    "level": 1,
+    "description": "Exercise normal precautions",
+    "risks": [],
+    "issued": "2023-07-31",
+    "snapshot": "2026-11-06"
+  },
+  "Zimbabwe": {
+    "level": 2,
+    "description": "Exercise increased caution",
+    "risks": [
+      "U",
+      "C",
+      "O"
+    ],
+    "issued": "2023-06-27",
+    "snapshot": "2026-11-06"
+  }
+}
