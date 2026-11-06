@@ -3568,5 +3568,215 @@
     "country": "Zimbabwe",
     "region": "Africa",
     "subRegion": "Sub-Saharan Africa"
+  },
+  {
+    "cityId": "1484010310",
+    "city": "Cancún",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484694325",
+    "city": "Cabo San Lucas",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484408906",
+    "city": "Puerto Vallarta",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1484301467",
+    "city": "Oaxaca",
+    "country": "Mexico",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1604162901",
+    "city": "Cusco",
+    "country": "Peru",
+    "region": "Americas",
+    "subRegion": "Latin America and the Caribbean"
+  },
+  {
+    "cityId": "1840013305",
+    "city": "Honolulu",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840021543",
+    "city": "San Francisco",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840021990",
+    "city": "San Diego",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840020364",
+    "city": "Las Vegas",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840015099",
+    "city": "Orlando",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1840001839",
+    "city": "New Orleans",
+    "country": "United States",
+    "region": "Americas",
+    "subRegion": "Northern America"
+  },
+  {
+    "cityId": "1380660414",
+    "city": "Venice",
+    "country": "Italy",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1380726561",
+    "city": "Florence",
+    "country": "Italy",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1250774553",
+    "city": "Nice",
+    "country": "France",
+    "region": "Europe",
+    "subRegion": "Western Europe"
+  },
+  {
+    "cityId": "1826492520",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "subRegion": "Northern Europe"
+  },
+  {
+    "cityId": "1620356810",
+    "city": "Porto",
+    "country": "Portugal",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1191004286",
+    "city": "Dubrovnik",
+    "country": "Croatia",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1792988434",
+    "city": "Antalya",
+    "country": "Turkey",
+    "region": "Asia",
+    "subRegion": "Western Asia"
+  },
+  {
+    "cityId": "1724929320",
+    "city": "Granada",
+    "country": "Spain",
+    "region": "Europe",
+    "subRegion": "Southern Europe"
+  },
+  {
+    "cityId": "1764327831",
+    "city": "Phuket",
+    "country": "Thailand",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1360848527",
+    "city": "Denpasar",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1704949870",
+    "city": "Đà Nẵng",
+    "country": "Vietnam",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1116263015",
+    "city": "Siem Reap",
+    "country": "Cambodia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1458236750",
+    "city": "George Town",
+    "country": "Malaysia",
+    "region": "Asia",
+    "subRegion": "South-eastern Asia"
+  },
+  {
+    "cityId": "1410364424",
+    "city": "Jeju",
+    "country": "Korea, South",
+    "region": "Asia",
+    "subRegion": "Eastern Asia"
+  },
+  {
+    "cityId": "1356293537",
+    "city": "Jaipur",
+    "country": "India",
+    "region": "Asia",
+    "subRegion": "Southern Asia"
+  },
+  {
+    "cityId": "1036016939",
+    "city": "Cairns",
+    "country": "Australia",
+    "region": "Oceania",
+    "subRegion": "Australia and New Zealand"
+  },
+  {
+    "cityId": "1242357822",
+    "city": "Nadi",
+    "country": "Fiji",
+    "region": "Oceania",
+    "subRegion": "Melanesia"
+  },
+  {
+    "cityId": "1504172585",
+    "city": "Marrakech",
+    "country": "Morocco",
+    "region": "Africa",
+    "subRegion": "Northern Africa"
+  },
+  {
+    "cityId": "1834823848",
+    "city": "Zanzibar",
+    "country": "Tanzania",
+    "region": "Africa",
+    "subRegion": "Sub-Saharan Africa"
   }
 ]

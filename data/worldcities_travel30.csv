@@ -1,0 +1,31 @@
+city,city_ascii,lat,lng,country,iso2,iso3,admin_name,capital,population,id
+Cancún,Cancun,21.1606,-86.8475,Mexico,MX,MEX,Quintana Roo,minor,888797,1484010310
+Cabo San Lucas,Cabo San Lucas,22.8897,-109.9156,Mexico,MX,MEX,Baja California Sur,,202694,1484694325
+Puerto Vallarta,Puerto Vallarta,20.6458,-105.2222,Mexico,MX,MEX,Jalisco,minor,224166,1484408906
+Oaxaca,Oaxaca,17.0606,-96.7253,Mexico,MX,MEX,Oaxaca,admin,300050,1484301467
+Cusco,Cusco,-13.5250,-71.9722,Peru,PE,PER,Cusco,admin,428450,1604162901
+Honolulu,Honolulu,21.3294,-157.8460,United States,US,USA,Hawaii,admin,346323,1840013305
+San Francisco,San Francisco,37.7558,-122.4449,United States,US,USA,California,,3364862,1840021543
+San Diego,San Diego,32.8313,-117.1222,United States,US,USA,California,,3057778,1840021990
+Las Vegas,Las Vegas,36.2333,-115.2654,United States,US,USA,Nevada,,2256509,1840020364
+Orlando,Orlando,28.4773,-81.3370,United States,US,USA,Florida,,1913597,1840015099
+New Orleans,New Orleans,30.0687,-89.9288,United States,US,USA,Louisiana,,918752,1840001839
+Venice,Venice,45.4397,12.3319,Italy,IT,ITA,Veneto,admin,250369,1380660414
+Florence,Florence,43.7714,11.2542,Italy,IT,ITA,Tuscany,admin,360930,1380726561
+Nice,Nice,43.7034,7.2663,France,FR,FRA,Provence-Alpes-Côte d’Azur,minor,353701,1250774553
+Edinburgh,Edinburgh,55.9500,-3.1833,United Kingdom,GB,GBR,"Edinburgh, City of",,488050,1826492520
+Porto,Porto,41.1495,-8.6108,Portugal,PT,PRT,Porto,admin,231800,1620356810
+Dubrovnik,Dubrovnik,42.6403,18.1083,Croatia,HR,HRV,Dubrovačko-Neretvanska Županija,admin,41562,1191004286
+Antalya,Antalya,36.8874,30.7075,Turkey,TR,TUR,Antalya,admin,1344000,1792988434
+Granada,Granada,37.1781,-3.6008,Spain,ES,ESP,Andalusia,minor,232717,1724929320
+Phuket,Phuket,7.8881,98.3975,Thailand,TH,THA,Phuket,admin,79308,1764327831
+Denpasar,Denpasar,-8.6717,115.2339,Indonesia,ID,IDN,Bali,admin,670210,1360848527
+Đà Nẵng,Da Nang,16.0748,108.2240,Vietnam,VN,VNM,Đà Nẵng,admin,,1704949870
+Siem Reap,Siem Reap,13.3622,103.8597,Cambodia,KH,KHM,Siem Reap,admin,147866,1116263015
+George Town,George Town,5.4136,100.3294,Malaysia,MY,MYS,Pulau Pinang,admin,708127,1458236750
+Jeju,Jeju,33.5130,126.5230,"Korea, South",KR,KOR,Jeju,admin,435413,1410364424
+Jaipur,Jaipur,26.9000,75.8000,India,IN,IND,Rājasthān,admin,3073350,1356293537
+Cairns,Cairns,-16.9200,145.7800,Australia,AU,AUS,Queensland,,146778,1036016939
+Nadi,Nadi,-17.8000,177.4167,Fiji,FJ,FJI,Ba,,71048,1242357822
+Marrakech,Marrakech,31.6300,-8.0089,Morocco,MA,MAR,Marrakech-Safi,admin,966987,1504172585
+Zanzibar,Zanzibar,-6.1650,39.1990,Tanzania,TZ,TZA,Zanzibar Urban/West,admin,219007,1834823848
